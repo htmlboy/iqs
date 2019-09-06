@@ -1,0 +1,32 @@
+---
+title: Cálculo de valores con calc()
+layout: layout-slides
+---
+
+%section
+  %h1 Calc()
+  %h2 Cálculo de valores
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          width: calc(100% - 80px);
+        }
+  %p.note
+    La función <code>calc()</code> nos permite hacer cálculos sencillos al momento
+    y asignarlos como valores.
+
+
+%section
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="WNeOgBX" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos hacer operaciones de suma (<code>+</code>), resta (<code>-</code>),
+    multiplicación (<code>*</code>) y división (<code>/</code>). Los operadores
+    necesitan estar separados por&nbsp;espacios.
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" target="_blank")
+      La función <code>calc()</code> en MDN

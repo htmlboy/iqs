@@ -1,0 +1,22 @@
+//Colors
+$white: #fafafa;
+
+$bodycolor: #333333; //#2D211F;
+$bgcolor: #e2e8f0; //#F4F4D9;
+$headbgcolor: #002b36; //#72ae95;
+$headbordercolor: #00a5cf;
+
+$link: $headbordercolor;
+
+$smallspacing: 1.5rem;
+$largespacing: 3rem;
+
+$breakpoint: (600/16) + rem;
+
+//CSS Vars
+:root {
+  --spacing: #{$smallspacing};
+  @media (min-width: $breakpoint) {
+    --spacing: #{$largespacing};
+  }
+}

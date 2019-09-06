@@ -1,0 +1,47 @@
+---
+title: Selectores básicos
+layout: layout-slides
+---
+
+%section
+  %h1 Selectores básicos
+
+%section
+  .codepen(data-height="200" data-editable="true" data-theme-id="0" data-slug-hash="gBooEX" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    El selector de etiqueta es su propio nombre, sin caracteres adicionales.
+
+%section
+  .codepen(data-height="250" data-editable="true" data-theme-id="0" data-slug-hash="PyEQoR" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    El selector se escrible con un punto y a continuación el nombre de la clase elegida. Las clases no pueden tener espacios, caracteres especiales (tildes, eñes, signos de puntuación…), ni empezar por un&nbsp;numeral.
+
+%section
+  .codepen(data-height="250" data-editable="true" data-theme-id="0" data-slug-hash="JmMpKb" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos definir estilos que afecten a una clase pero solo si se aplica una etiqueta concreta. Para esto, escribimos el nombre de la etiqueta y a continuación el selector de clase, sin espacios.
+
+%section
+  .codepen(data-height="280" data-editable="true" data-theme-id="0" data-slug-hash="aREYBY" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    El espacio entre dos selectores indica que el segundo es descendiente del primero. Por ejemplo, los párrafos dentro de la clase principal.
+
+%section
+  .codepen(data-height="250" data-editable="true" data-theme-id="0" data-slug-hash="aREYEj" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    Podemos seguir anidando selectores descencientes, separando cada uno por un espacio.
+
+%section
+  .codepen(data-height="250" data-editable="true" data-theme-id="0" data-slug-hash="NOXYmp" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos dar estilos haciendo referencia al atributo <code>id</code> en vez de al de clase. Si es el caso, emplearemos la almohadilla (<code>#</code>) en vez de el punto. Siempre que podamos, es preferible usar clases, ya que el selector de id es muy específico y nos dará problemas.
+
+%section
+  .codepen(data-height="280" data-editable="true" data-theme-id="0" data-slug-hash="yLBgqxv" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    Cuanto más específico sea un selector, más pesa, y puede alterar la cascada.
+
+%section
+  .codepen(data-height="250" data-editable="true" data-theme-id="0" data-slug-hash="wYpjad" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    El selector <code>*</code> afecta a todas las etiquetas HTML.

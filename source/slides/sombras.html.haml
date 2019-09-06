@@ -1,0 +1,48 @@
+---
+title: Sombras
+layout: layout-slides
+---
+
+%section
+  %h1 Sombras
+
+%section
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="bGbWRBb" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Una sombra de caja se declara normalmente con diversos valores separados por
+    espacios: desplazamiento en el eje X, en el eje Y, difuminado y color.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="NWKjggq" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Si añadimos un valor más después del difuminado, se interpretará como el <i>spread</i>
+    o &ldquo;padding de la sombra&rdquo; un espaciado de color, previo al&nbsp;difuminado.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="wvwdepB" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Precediendo los valores de la sombra con el parámetro <code>inset</code>,
+    la sombra se renderizará por dentro de la caja.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="eYOWRME" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos asignar tantas sombras como queramos, separadas por&nbsp;comas.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="PoYmjxw" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    La propiedad <code>text-shadow</code> permite aplicar sombras al texto de
+    forma equivalente a <code>box-shadow</code>. La única diferencia es que no
+    acepta el valor <code>inset</code>.
+
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank")
+      La propiedad <code>box-shadow</code> en MDN
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow" target="_blank")
+      La propiedad <code>text-shadow</code> en MDN

@@ -1,0 +1,49 @@
+---
+title: Sintaxis CSS
+layout: layout-slides
+---
+
+%section
+  %h1 Sintaxis CSS
+%section
+  %pre
+    %code
+      &lt;link rel="stylesheet" href="estilos.css" &gt;
+  %p
+    Vincularemos una hoja de estilos a un archivo HTML a través de la etiqueta <code>&lt;link&gt;</code>.
+
+%section
+  %pre
+    %code
+      :preserve
+        selector {
+          propiedad: valor;
+        }
+  %p.note
+    Escribimos las reglas de CSS siguiendo el esquema <code>selector { propiedad: valor; }</code>. Cada instrucción se finaliza con un punto y coma. Todas las instrucciones englobadas entre llaves afectan a dicho selector.
+
+%section
+  .codepen(data-height="200" data-editable="true" data-theme-id="0" data-slug-hash="rqGLyq" data-default-tab="css,result" data-user="htmlboy")
+
+%section
+  %pre
+    %code
+      :preserve
+        h1, h2, h3 {
+          font-size: 24px;
+        }
+  %p
+    Podemos agrupar selectores separándolos por comas para asignarles los mismos estilos.
+
+%section
+  %pre
+    %code
+      h1 {font-size: 24px;}
+      h1 {font-size: 20px;}
+  %p
+    En caso de dos declaraciones que entran en conflicto (mismo selector, misma propiedad), la declaración posterior prevalece.
+
+%section
+  %pre
+    %code
+      \/* Comentario de CSS */

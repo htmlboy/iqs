@@ -1,0 +1,18 @@
+.nav {
+  margin-top: 2rem;
+  a {
+    color: $white;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    position: relative;
+    &.is-active:after {
+      content: '';
+      display: block;
+      width: 2em;
+      border-bottom: 4px solid $headbordercolor;
+      position: absolute;
+      bottom: -0.5em;
+      left: calc(50% - 1em);
+    }
+  }
+}

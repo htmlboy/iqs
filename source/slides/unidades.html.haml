@@ -1,0 +1,53 @@
+---
+title: Unidades en CSS
+layout: layout-slides
+---
+
+%section
+  %h1 Unidades en CSS
+
+%section
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="OJLmGyM" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Los valores en <code>px</code> son absolutos. Los valores en <code>em</code>
+    dependen del <code>font-size</code> heredado, e indican una proporción respecto
+    a este tamaño&nbsp;heredado. Los valores en <code>%</code> funcionan de manera
+    similar a los <code>em</code> cuando se aplican a tipografía (cuando se
+    aplican a una anchura, dependen del espacio&nbsp;disponible).
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ExYmJZd" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Los valores en <code>rem</code> son proporcionales al tamaño tipográfico de
+    la etiqueta <code>html</code> directamente, independientemente de la&nbsp;herencia.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBmMpO" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Las unidades relativas al viewport (<code>vw</code> para anchura,
+    <code>vh</code> para altura) funcionan de forma similar a los porcentajes
+    (<code>100vh</code> = 100% del alto de la&nbsp;pantalla).
+  %p.note
+    Es preferible no forzar <code>100vw</code> porque en algunos sistemas
+    operativos puede provocar scroll&nbsp;horizontal.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="VwZbNBL" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Las unidad relativa a la anchura del viewport (<code>vw</code>) es
+    interesante para crear encabezados&nbsp;adaptables.
+
+%section
+  %p
+    Como complemento a <code>vw</code> y <code>vw</code> podemos emplear
+    <code>vmin</code> (1% del ancho o alto de pantalla, dependiendo de qué lado
+    sea menor) y <code>vmax</code> (1% del ancho o alto de pantalla, dependiendo de qué lado
+    sea&nbsp;mayor).
+
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units" target="_blank")
+      Unidades de CSS en MDN

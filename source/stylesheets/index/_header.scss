@@ -1,0 +1,13 @@
+.header {
+  background-color: $headbgcolor;
+  color: $white;
+  border-left: 10px solid rgba(black, 0.2);
+  margin: 0 calc(var(--spacing) * -1) 4rem;
+  padding: 3rem var(--spacing) 0.5rem calc(var(--spacing) - 10px);
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}

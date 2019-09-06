@@ -1,0 +1,46 @@
+---
+title: Floats
+layout: layout-slides
+---
+
+%section
+  %h1 Floats
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="dQoGYb" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    Podemos posicionar un elemento de bloque junto a otro elemento de bloque utilizando la propiedad <code>float</code>. Por ejemplo, <code>float:left</code>.
+
+%section
+  %p
+    Aunque esta técnica permite crear columnas, es recomendable emplear métodos
+    más avanzados, como&nbsp;flexbox.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="wvwgYMR" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    Podemos hacer flotar un elemento (o una imagen) para rodearlo de&nbsp;texto.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="RqPrRr" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    Si hacemos que dos elementos floten a la derecha (<code>float:right</code>) se producirá un cambio de orden.
+
+%section
+  %p
+    Podemos devolver un elemento a su estado no-flotante original con <code>float:none</code>.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="YRXwpX" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Un elemento que flota recibe la anchura de su contenido por defecto. Podemos fijarle un <code>width</code> en porcentaje, y un <code>margin</code>. No te olvides del <code>box-sizing: border-box</code>.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="oQXbyj" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Los elementos flotantes pueden producir solapamientos con el contenido que no flota, por lo que es interesante meterlos en un div contenedor que tenga un <code>overflow:hidden</code>.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="dQoGqM" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Cuando el <code>overflow:hidden</code> suponga un problema, se puede emplear la técnica clearfix.

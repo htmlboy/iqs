@@ -1,0 +1,97 @@
+---
+title: Modelo de caja
+layout: layout-slides
+---
+
+%section
+  %h1 Modelo de caja
+
+%section
+  %div(style="display: flex; align-items: center; margin: auto;")
+    %div(style="width: 100%")
+      %span(style="font-size: .75em; color: white;")
+        ← width →
+      %div(style="background-color: hotpink; color: white; height: 200px; display: flex; flex-direction: column; justify-content: center;")
+        %span(style="font-size: .75em; color: white;")
+          ↑
+          %br
+          height
+          %br
+          ↓
+  %p
+    Todos los elementos HTML tienen forma de caja. Esta caja tiene una anchura (<code>width</code>), y una altura (<code>height</code>).
+
+%section
+  %span(style="font-size: .5em;")
+    margin
+  %div(style="width: 50%; border: 2px dashed; background-color: hotpink; color: white; margin: auto; padding: .1em;")
+    %span(style="font-size: .5em; top: -.4em; position: relative;")
+      padding
+    %div(style="min-height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255,255,255,.1); margin: 0 1em;")
+      Contenido
+    %span(style="font-size: .5em; top: -.4em; position: relative;")
+      padding
+  %span(style="font-size: .5em; top: -1em; position: relative;")
+    margin
+  %p
+    Estas cajas tienen contenido, espacio entre el contenido y el borde (<code>padding</code>) y espacio o margen entre el borde y otras cajas (<code>margin</code>).
+
+%section
+  .codepen(data-height="350" data-theme-id="0" data-slug-hash="qJKMjo" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Las propiedades <code>width</code> y <code>height</code> sirven para fijar la anchura y la altura. Si no fijamos una anchura, las etiquetas de tipo bloque tienden a ocupar el 100%, y los de línea dependen de su contenido. Si no fijamos una altura, la caja adopta la altura del contenido.
+
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          min-width: 200px;
+          max-width: 90%;
+          min-height: 200px;
+          max-height: 1200px;
+        }
+  %p
+    Además de fijar un <code>width</code> o un <code>height</code>, también podemos dar anchuras o alturas mínimas o máximas.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="XxYPZe" data-default-tab="css,result" data-user="htmlboy")
+
+  %p
+    Podemos dar un valor de <code>margin</code> diferente a cada lado de la caja.
+
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          margin: 20px;
+        }
+  %p
+    O el mismo margen para los 4 lados.
+
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          margin: 20px 10px 30px 15px;
+        }
+  %p
+    La propiedad <code>margin</code> es una propiedad abreviada, que admite hasta 4 valores separados por espacios.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="EdReEo" data-default-tab="css,result" data-user="htmlboy")
+
+  %p
+    El padding sigue unas reglas similares al margin.
+
+%section
+  %pre
+    %code
+      :preserve
+        *{
+          box-sizing: border-box;
+        }
+  %p.note
+    Para evitar que el <code>padding</code> y el <code>border</code> alteren la anchura total que hemos marcado con la propiedad <code>width</code>, podemos cambiar el modelo de caja al principio de nuestra CSS, para todos los elementos.

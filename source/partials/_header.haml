@@ -1,0 +1,17 @@
+.header
+  %h1 Introduction to web&nbsp;design
+  %p Web design slides and resources by <a href="http://javierusobiaga.com" target="_blank">Javier&nbsp;Usobiaga</a>.
+
+  %nav.nav
+    - if !current_page.data.menuActive
+      %a.is-active(href="/index.html")
+        Slides
+    - else
+      %a(href="/index.html")
+        Slides
+    - if current_page.data.menuActive == "resources"
+      %a.is-active(href="/resources.html")
+        Resources
+    - else
+      %a(href="/resources.html")
+        Resources

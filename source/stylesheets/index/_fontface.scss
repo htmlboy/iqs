@@ -1,0 +1,43 @@
+// League Gothic
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/league-gothic/league-gothic.woff') format('woff'),
+    url('../fonts/league-gothic/league-gothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Tipografía Lato
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato/lato-bold.woff') format('woff'),
+    url('../fonts/lato/lato-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato/lato-regular.woff') format('woff'),
+    url('../fonts/lato/lato-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato/lato-italic.woff') format('woff'),
+    url('../fonts/lato/lato-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+//Tipografía Source Code Pro
+
+@font-face {
+  font-family: 'source code';
+  src: url('../fonts/sourcecode/SourceCodePro-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

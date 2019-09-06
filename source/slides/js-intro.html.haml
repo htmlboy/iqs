@@ -1,0 +1,86 @@
+---
+title: Introducción a JavaScript
+layout: layout-slides
+---
+
+%section
+  %h1 Introducción a JavaScript
+%section
+  %h2 JavaScript es un lenguaje de programación
+  %p
+    Programamos comportamientos: ˝cuando se hace click aquí, ocurre algo˝.
+%section
+  %h2 Objetivos
+  %ul
+    %li acceder al contenido de una web
+    %li modificar el contenido de una web
+    %li programar reglas
+    %li reaccionar a eventos
+%section
+  %h2 Ejemplo
+  %p
+    ˝Si yo hago click…˝
+  %p
+    ˝en un elemento que tenga la clase 'elemento'…˝
+  %p
+    ˝…quita o ponle la clase 'activo' ˝
+%section
+  .codepen(data-height="500" data-theme-id="0" data-slug-hash="JLRqbJ" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
+%section
+  %p
+    Para usar JavaScript, necesitamos vincular un archivo con la extensión .js al final de nuestro HTML.
+  %pre
+    %code
+      :preserve
+          &lt;script src="comportamiento.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+%section
+  %p
+    En JavaScript (y en programación) podemos encontrar:
+  %ul
+    %li Valores: literales, numéricos, booleanos
+    %li Variables
+    %li Funciones
+    %li Loops
+    %li Eventos
+%section
+  %p Las variables son "comodines" o identificadores que pueden tener un valor u otro. Nos sirven para manipular datos que no conocemos.
+%section
+  .codepen(data-height="500" data-theme-id="0" data-slug-hash="MVbeMX" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+%section
+  %p Las funciones nos permiten crear código reutilizable, que solo se activará cuando lo llamemos.
+%section
+  .codepen(data-height="500" data-theme-id="0" data-slug-hash="YapGzy" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+%section
+  %p Las loops nos permiten crear tareas de forma repetitiva o cíclica.
+%section
+  %p Los eventos nos permiten asociar funciones a sucesos concretos (hacer click, cargar la página, etc).
+%section
+  %img.clean(src="js-intro-content/logo-jquery.png" alt="jQuery")
+  %p
+    jQuery es un conjunto de funciones prefabricadas para que nos sea más fácil escribir y aprender JavaScript.
+  %p
+    Es como aprender a andar en bicicleta con ruedecitas.
+%section
+  %p
+    Para usar jQuery, tenemos que descargarlo de <a href="http://jquery.com" target="_blank">jQuery.com</a> y cargarlo antes que nuestro archivo de JS.
+  %pre
+    %code
+      :preserve
+          &lt;script src="jquery.js"&gt;&lt;/script&gt;
+          &lt;script src="comportamiento.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+%section
+  .codepen(data-height="500" data-theme-id="0" data-slug-hash="pLNbLW" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+%section
+  %h2 Ejemplos de interacción
+%section
+  %p Despliega un menú
+  .codepen(data-height="500" data-theme-id="0" data-slug-hash="WzoGGz" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+%section
+  %p Sistema de pestañas
+  .codepen(data-height="500" data-theme-id="0" data-slug-hash="XENjaL" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+%section
+  %p Sistema de acordeón
+  .codepen(data-height="500" data-theme-id="0" data-slug-hash="NYbRwM" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")

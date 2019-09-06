@@ -1,0 +1,75 @@
+---
+title: Imágenes responsive
+layout: layout-slides
+---
+
+%section
+  %h1 Imágenes responsive
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="YzKxzev" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos cambiar una imagen de fondo por otra de mayor resolución (preparando
+    el archivo apropiado) con una media query de resolución
+    (<code>min-resolution</code>). Preguntando la resolución del dispositivo
+    podremos cargar la imagen apropiada (<code>96dpi</code> es un pixel-ratio
+    de 1; <code>192dpi</code>, de 2; <code>288dpi</code>, de 3).
+
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;img
+          src="img/300.jpg"
+          srcset="img/300.jpg 300w,
+                  img/600.jpg 600w,
+                  img/1000.jpg 1000w"
+          alt="" /&gt;
+  %p.note
+    Para imágenes de contenido podemos utilizar el atributo <code>srcset</code>,
+    en el que daremos diferentes tamaños de imágenes separados por&nbsp;comas.
+  %p.note
+    El prescriptor <code>w</code> indica la anchura que tienen estas fotos en una
+    resolución de <code>96dpi</code> o un pixel-ratio de 1.
+
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;img
+          srcset="img/300.jpg 300w,
+                  img/600.jpg 600w,
+                  img/1000.jpg 1000w"
+           sizes="(min-width: 1000px) 750px,
+                  (min-width: 600px) 500px,
+                  100px"
+          /&gt;
+  %p.note
+    Con el atributo <code>sizes</code> podemos indicar los tamaños a los que se
+    verá la imagen separados por comas, de mayor a menor (el valor entre paréntesis
+    actúa como una media query). El último valor es el valor por defecto si lo anterior
+    no se&nbsp;cumple.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="mdbMdNo" data-default-tab="html,result" data-user="htmlboy")
+  %p.note
+    Con los tamaños de archivo y el atributo <code>sizes</code>, el navegador decide
+    qué archivo descargar. Es normal que en pantallas de mayor resolución el
+    el navegador descargue imágenes de mayor anchura de la que en teoría
+    le&nbsp;corespodería.
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution" target="_blank")
+      Media queries de resolución en MDN
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank")
+      Explicación de las imágenes responsive en MDN
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Art_direction" target="_blank")
+      Uso de la etiqueta <code>picture</code> para tener un control editorial
+      sobre las imágenes responsive (MDN)
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank")
+      Más información sobre la etiqueta <code>picture</code> (MDN)

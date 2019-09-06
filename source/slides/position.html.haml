@@ -1,0 +1,41 @@
+---
+title: Position
+layout: layout-slides
+---
+
+%section
+  %h1 Position
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="NEqxJz" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    Podemos sacar un elemento de su flujo natural dentro de una página con la propiedad <code>position: absolute</code>.
+
+%section
+  %p
+    Un elemento posicionado absolutamente se muestra por defecto en el lugar que ocuparía de manera natural, pero sin desplazar otros contenidos.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="aQONOv" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    Podemos controlar la posición del elemento con las propiedades <code>top</code>, <code>bottom</code>, <code>left</code> o <code>right</code>.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="xQGVZV" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Para conseguir que un elemento posicionado absolutamente lo haga respecto a otro elemento (en vez de respecto al navegador), necesitamos que un elemento que lo contenga tenga <code>position:relative</code>.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="LXVNLy" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    En caso de disponer de varios elementos posicionados, podemos controlar su orden de dibujado con la propiedad <code>z-index</code>.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="WYvwEm" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Como alternativa al <code>position:absolute</code>, existe el <code>position:fixed</code>, que mantiene un elemento fijo respecto a la ventana del navegador.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="BaBpqWM" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Y el <code>position:sticky</code>, que mantiene un elemento fijo respecto a la ventana del navegador una vez se ha hecho scroll hasta cierto&nbsp;punto.

@@ -1,0 +1,30 @@
+---
+title: Estilos para listas
+layout: layout-slides
+---
+
+%section
+  %h1 Estilos para listas
+%section
+  %pre
+    %code.css
+      :preserve
+        ul {
+          list-style: disc;
+          list-style-position: outside;
+          padding-left: 40px;
+        }
+  %p.note
+    Los listados (<code>ul</code> y <code>ol</code>) tienen un conjunto de
+    estilos por defecto, que probablemente querremos sobrescribir.
+
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="eYOvPQz" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos modificar estos estilos con propiedades como <code>list-style-type</code>
+    o <code>list-style-position</code>.
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style" target="_blank")
+      Estilos de lista en Mozilla Development&nbsp;Network

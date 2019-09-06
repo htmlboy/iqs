@@ -1,0 +1,40 @@
+---
+title: Transiciones
+layout: layout-slides
+---
+
+%section
+  %h1 Transiciones
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          transition: background-color 1s linear;
+        }
+  %p.note
+    La propiedad <code>transition</code> nos permite que un cambio de estado (:hover, asignar una
+    clase…) no suceda de golpe, sino con una transición. Para esto, asignaremos
+    al elemento que nos interese esta propiedad, con los valores separados por
+    espacios de la propiedad a transicionar, duración y velocidad.
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBZayj" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Además de la duración, podemos añadir un nuev valor temporal (en
+    <code>s</code> o <code>ms</code>), que sería un retraso en el inicio de
+    la&nbsp;transición.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="NWKgByK" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos emplear las curvas de velocidad que hay por defecto (<code>linear</code>,
+    <code>ease</code>, <code>ease-in</code>, <code>ease-out</code>,
+    <code>ease-in-out</code>) o definir nuestra propia curva con <code>cubic-bezier()</code>.
+
+%section
+  %h2 Más información
+  %p.note
+  %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank")
+    La propiedad <code>transition</code> en MDN
+  %p
+    Editor online de curvas de velocidad: <a href="http://cubic-bezier.com" target="_blank">cubic-bezier.com</a>

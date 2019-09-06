@@ -1,0 +1,33 @@
+.reveal {
+  h1 {
+    line-height: 1.1;
+  }
+
+  img.clean {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .note,
+  .note p {
+    font-size: 0.8em;
+  }
+
+  p {
+    margin-bottom: 0.5em;
+  }
+
+  p + p {
+    margin-top: 0;
+  }
+
+  .img-collage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      margin-left: 15px !important;
+      margin-right: 15px !important;
+    }
+  }
+}

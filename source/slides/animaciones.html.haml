@@ -1,0 +1,69 @@
+---
+title: Animaciones
+layout: layout-slides
+---
+
+%section
+  %h1 Animaciones
+%section
+  %pre
+    %code
+      :preserve
+        @keyframes miAnimacion{
+          from{
+            width: 10px;
+          }
+          to{
+            width: 100px;
+          }
+        }
+  %p.note
+    Las animaciones se deben declarar primero como <code>@keyframes</code>
+    (con un nombre), e indican los estados de la animación. En su forma más simple,
+    indicamos los estilos de inicio (<code>from</code>) y los de fin (<code>to</code>).
+%section
+  %pre
+    %code
+      :preserve
+        @keyframes miAnimacion{
+          0%{
+            width: 10px;
+          }
+          50%{
+            width: 80px;
+          }
+          100%{
+            width: 100px;
+          }
+        }
+  %p.note
+    Para animaciones con más puntos intermedios, podemos usar porcentajes para
+    declarar cada <i>keyframe</i>.
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="qBWjyLY" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Mediante la propiedad <code>animation</code> asignaremos al elemento que nos
+    interese el nombre de los <i>keyframes</i>, la duración de la animación
+    (en <code>s</code> o <code>ms</code>), y si queremos podemos indicar el número
+    de repeticiones (<code>infinite</code> si queremos que no pare).
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBZzYP" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    También podemos indicar la palabra <code>alternate</code> si queremos que haga
+    la animación de forma inversa cuando ha completado una repetición.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="bGbRxEE" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Con <code>animation-fill-mode: forwards;</code> podemos hacer que un elemento
+    quede en su último keyframe cuando haya terminado la animación.
+  %p.note
+    Con <code>animation-play-state: paused</code> podemos pausar una animación
+    en un momento concreto (por ejemplo, al pasar el ratón por encima).
+
+%section
+  %h2 Más información
+  %p.note
+  %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank")
+    La propiedad <code>animation</code> en MDN

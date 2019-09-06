@@ -1,0 +1,64 @@
+---
+title: Estilos para enlaces
+layout: layout-slides
+---
+
+%section
+  %h1 Estilos para enlaces
+%section
+  %pre
+    %code
+      :preserve
+        a {
+          color: blue;
+          text-decoration: none;
+        }
+  %p.note
+    Los enlaces tienen <code>color</code> y <code>text-decoration</code> por
+    defecto, por lo que hay que sobrescribirlos&nbsp;explícitamente.
+
+%section
+  %pre
+    %code
+      :preserve
+        a:hover {
+          text-decoration: underline;
+        }
+  %p.note
+    Las pseudo-clases (o "estado") se escriben con dos puntos (<code>:</code>).
+    El estado de <code>:hover</code> indica cuando el ratón pasa sobre el enlace.
+
+%section
+  %pre
+    %code
+      :preserve
+        a:active {
+          color: orange;
+        }
+  %p.note
+    El estado de <code>:active</code> indica el momento en el que se presiona el&nbsp;enlace.
+
+%section
+  %pre
+    %code
+      :preserve
+        a:visited {
+          color: blue;
+        }
+  %p.note
+    El estado de <code>:visited</code> indica que el enlace ha sido visitado.
+    En muchos casos querremos sobrescribir este estado para que mantenga el
+    color&nbsp;original.
+%section
+  %pre
+    %code.css
+      :preserve
+        a:focus {
+          background-color: lightgrey;
+        }
+  %p.note
+    El estado de <code>:focus</code> indica que el foco del navegador está en ese
+    elemento en particular. Interesante especialmente si navegamos con el&nbsp;teclado.
+
+%section
+  .codepen(data-height="550" data-editable="true" data-theme-id="0" data-slug-hash="WNepJoX" data-default-tab="css,result" data-user="htmlboy")

@@ -1,0 +1,27 @@
+---
+title: Overflows
+layout: layout-slides
+---
+
+%section
+  %h1 Overflows
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="VVLvxR" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Cuando un elemento tiene una altura fija, si su contenido tiene una altura mayor, el contenido puede rebosar. Podemos controlar esto con la propiedad <code>overflow</code>, que por defecto es <code>visible</code>.
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="VVLvGN" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Escribiendo <code>overflow:hidden</code> ocultaremos todo el contenido que sobrepase al contenedor.
+
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="xQGwmy" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Si escribimos <code>overflow:auto</code>, por otro lado, permitiremos que se pueda hacer scroll si el contenido sobrepasa al contenedor.
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="LXVpqa" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    También podemos escribir <code>overflow:scroll</code>, pero con esta opción, en algunos sistemas operativos se pueden mostrar las barras incluso aunque el contenido no sobrepase.

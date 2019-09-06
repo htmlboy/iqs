@@ -1,0 +1,71 @@
+---
+title: Variables y organización de archivos
+layout: layout-slides
+---
+
+%section
+  %h1 Variables
+  %h2 Y organización de archivos
+
+
+%section
+  %pre
+    %code.css
+      :preserve
+        html {
+          --color: hotpink;
+        }
+        p {
+          color: var(--color);
+        }
+  %p.note
+    CSS nos permite centralizar valores (tamaños, colores…) en variables, para
+    facilitar los cambios de manera consistente. Las variables se pueden declarar
+    de forma global en el selector <code>html</code> o <code>:root</code> (el nombre
+    de las variables siempre empieza por <code>--</code>) y emplearse con la
+    función <code>var()</code> y el nombre de la&nbsp;variable.
+
+%section
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="NWKjQqR" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos declarar las variables en otro contexto que no sea el <code>:root</code>,
+    y estarán disponibles en este contexto. También podemos sobreescribirlas en un
+    nodo&nbsp;concreto.
+
+%section
+  %pre
+    %code.css
+      :preserve
+        @import url(general.css);
+        @import url(tipografia.css);
+  %p.note
+    El archivo principal de estilos puede incorporar otros archivos externos con
+    la regla <code>@import</code>. Esto permite tener un solo archivo de estilos
+    vinculado en el <code>head</code>, pero que la propia CSS esté dividida en
+    varios archivos para facilitar el trabajo.
+
+%section
+  %pre
+    %code.css
+      :preserve
+        @import url(variables.css);
+        @import url(general.css);
+        @import url(tipografia.css);
+        @import url(botones.css);
+        @import url(layout.css);
+        @import url(cabecera.css);
+        @import url(footer.css);
+        @import url(galeria.css);
+        @import url(video.css);
+        @import url(productos-relacionados.css);
+  %p.note
+    Divide la CSS en diferentes archivos según su función. Ordénalos de lo
+    más general a lo más específico. Centraliza las variables en uno o varios
+    archivos para tener estilos más consistentes.
+
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*" target="_blank")
+      Las variables de CSS (también conocidas como <i>custom properties</i>) en MDN

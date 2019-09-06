@@ -1,0 +1,44 @@
+---
+title: Bordes
+layout: layout-slides
+---
+
+%section
+  %h1 Bordes
+
+%section
+  %pre
+    %code.css
+      :preserve
+        .example {
+          border: 5px solid blue;
+        }
+  %p.note
+    Para asignar un borde debemos declarar la anchura y el tipo. También podemos
+    asignar el color, si no por defecto es el color del cuerpo de&nbsp;texto.
+
+%section
+  %pre
+    %code.css
+      :preserve
+        .example {
+          border-width: 5px;
+          border-type: solid;
+          border-color: blue;
+        }
+  %p.note
+    La propiedad <code>border</code> se puede desglosar en 3 propiedades
+    <code>border-width</code>, <code>border-type</code>,
+    <code>border-color</code> si preferimos modificar solo una de&nbsp;ellas.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="qBWrQPM" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    También podemos hacer referencia al borde superior, derecho, inferior o izquierdo.
+
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank")
+      Estilos de bordes en Mozilla Development&nbsp;Network

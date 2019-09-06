@@ -1,0 +1,60 @@
+---
+title: Media queries y layout responsive
+layout: layout-slides
+---
+
+%section
+  %h1 Media queries
+  %h2 y layout responsive
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="NWKvGdm" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    La base de una web responsive es una estructura en anchuras porcentuales,
+    capaz de adaptarse a la anchura del navegador.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="qBWXOpP" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Añdiendo a nuestra CSS <code>img {max-width: 100%;}</code> nos aseguramos de
+    que las imágenes se reduzcan cuando su contenedor es más pequeño que su
+    tamaño&nbsp;natural.
+
+%section
+  %pre
+    %code.css
+      :preserve
+        @media (max-width: 700px) {
+          .example {background-color: red;}
+        }
+  %p.note
+    Una media query es una regla condicional (la condición se pone entre paréntesis
+    y hace referencia a las condicidiones de la ventana del navegador o del&nbsp;dispositivo).
+  %p.note
+    El código CSS que hay entre las llaves de una media query solo se aplicará si
+    la condición se&nbsp;cumple.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="mdbMeGQ" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Una media query de <code>max-width</code> solo se aplicará cuando la ventana
+    sea igual o menor a la anchura que hayamos&nbsp;marcado.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="QWLMyWy" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Una media query de <code>min-width</code> solo se aplicará cuando la ventana
+    sea igual o mayor que la anchura que hayamos&nbsp;marcado.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="oNvebXP" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos acotar una media query entre un mínimo y un máximo con la palabra
+    <code>and</code> y una&nbsp;segunda condición.
+
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank")
+      Media queries en MDN

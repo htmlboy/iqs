@@ -1,0 +1,70 @@
+---
+title: Flexbox
+layout: layout-slides
+---
+
+%section
+  %h1 Flexbox
+%section
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="gOYRBYg" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Si asignamos la propiedad <code>display: flex</code> a un elemento,
+    se convierte en un espacio flexbox, y sus descendientes directos tienden a
+    alinearse sobre el eje principal.
+
+%section
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="vYBZVLK" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos cambiar la dirección del eje principal con
+    <code>flex-direction: column</code> (columna). El valor por defecto es
+    <code>row</code> (fila), pero también existe <code>row-reverse</code> (fila
+    invertida) y <code>column-reverse</code> (columna invertida).
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="KKPqGax" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Un espacio flexbox intentará siempre ordenar todo el contenido sobre el eje
+    principal, incluso si no tiene espacio. Podemos modificar este comportamiento
+    con la propiedad <code>flex-wrap: wrap</code> (por defecto es <code>nowrap</code>).
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="RwbgepK" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos controlar el ancho por defecto de un elemento dentro de un espacio flexbox
+    con <code>flex-basis</code>, indicar qué proporción de espacio sobrante puede
+    ocupar un elemento con <code>flex-grow</code> (por defecto es 0) y en qué proporción
+    debe reducirse un elemento cuando no haya espacio disponible con
+    <code>flex-shrink</code> (por defecto es 1).
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ZEzyqXZ" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos cambiar el orden de los elementos dentro de un espacio flexbox. Por
+    defecto todos los elementos tienen un <code>order: 0</code>, pero siempre se
+    ordenarán de valores más bajos a más altos.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="RwbgeQg" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos alinear el contenido sobre el eje principal con la propiedad <code>justify-content</code>.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="GRKEYXO" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos alinear el contenido en el eje cruzado con la propiedad <code>align-items</code>.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="WNeOaPL" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos cambiar la alineación de un elemento en particular respecto al eje
+    cruzado con <code>align-self</code>. También podemos conseguir cambios en el
+    eje principal si usamos <code>margin-top/bottom/left/right: auto</code>.
+
+
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/flexbox" target="_blank")
+      Flexbox en MDN

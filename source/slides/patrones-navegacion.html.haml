@@ -1,0 +1,69 @@
+---
+title: Patrones de navegación responsive
+layout: layout-slides
+---
+
+%section
+  %h1 Navegación responsive
+
+%section
+  %img(src="patrones-navegacion-content/do-nothing-nav.png" alt="")
+  %p.note
+    El problema principal con pantallas medianas y pequeñas es que la navegación,
+    que es un atajo para acceder al resto de la web, se convierte en un elemento
+    incómodo.
+
+%section
+  %p.note
+    Las soluciones más habituales pasan por esconder esta navegación
+    detrás de un elemento accionable, aunque es importante preguntarse qué papel
+    cumplen esta navegación y si está respondiendo adecuadamente a las necesidades
+    del&nbsp;usuario.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="mlyvu" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    El patrón más simple es dejar la navegación al pie y poner un enlace&nbsp;interno.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="sHvaz" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    La navegación en Toggle crea un desplegable con JavaScript en el punto donde
+    estaría la navegación en pantalla grande.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="rAoBh" data-default-tab="html,result" data-user="sturobson")
+  %p.note
+    La navegación flyout despliega el menú desde un lateral, oculto&nbsp;incialmente.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="orJwL" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    La navegación Priority+ es interesante para mostrar al menos algunos enlaces,
+    en vez de ocultarlo todo.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="waVzmK" data-default-tab="html,result" data-user="Dreamdealer")
+  %p.note
+    La misma filosofía del Priority+ se puede aplicar a otros formatos de navegación
+    y crear desplegables.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="czwer" data-default-tab="html,result" data-user="micahgodbolt")
+  %p.note
+    En el caso de navegaciones multi-nivel (con desplegables), una solución es
+    crear&nbsp;subdesplegables.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vljdx" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    Pero otra solución es que la subnavegación no esté disponible cuando no hay
+    espacio, y que el propio contenido de la página a la que accedamos nos permita
+    navegar (<a href="https://www.worldwildlife.org/" target="_blank">ejemplo: WWF</a>).
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://bradfrost.github.io/this-is-responsive/patterns.html#navigation" target="_blank")
+      Más patrones de navegación responsive (Brad Frost)

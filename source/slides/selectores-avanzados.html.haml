@@ -1,0 +1,76 @@
+---
+title: Selectores avanzados
+layout: layout-slides
+---
+
+%section
+  %h1 Selectores avanzados
+
+%section
+  .codepen(data-height="450" data-editable="true" data-theme-id="0" data-slug-hash="OJLgPMM" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    El selector de hijo (<code>&gt;</code>) solo afecta a un descendiente
+    directo (en vez de a los anidados). El selector <code>+</code> hace referencia
+    al elemento adyacente a&nbsp;continuación.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="OJLgLmQ" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Las pseudo-clases <code>:first-child</code> y <code>:last-child</code> hacen
+    referencia a la posición que ocupa un elemento (si es primero o último
+    respetivamente) en un contexto (o nodo) concreto del HTML.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="VwZWwwQ" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Con la pseudo-clase <code>:nth-child()</code> podemos aplicar estilos a
+    elementos en una posición concreta. Pasando un número entre paréntesis, nos
+    referimos al elemento en esa posición. Si añadimos una <code>n</code>, indicamos
+    repetición, y sumando o restando un número modificamos el punto en el que se
+    empieza a contar.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="xxKrxRL" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Con <code>:first-of-type</code>, <code>:last-of-type</code> o bien <code>:nth-of-type()</code> podemos hacer referencia a la posición de
+    un elemento según su tipo de etiqueta&nbsp;HTML.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="xxKrbdm" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    El selector de atributo <code>[]</code> se puede aplicar a un elemento que
+    tenga un atributo o cuyo atributo sea igual a cierto valor.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBZEyB" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    El selector <code>:not()</code> permite aplicar una excepción a la norma que
+    se escribe (una clase, un atributo…). No permite combinaciones de&nbsp;parámetros.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ExYXvbd" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Los pseudo-elementos <code>::before</code> y <code>::after</code> permiten añadir
+    contenido al principio y al final de una etiqueta HTML que pueda tener contenido
+    (no funcionan con <code>&lt;img&gt;</code>, por ejemplo).
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="oNvweav" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    El pseudo-elemento <code>::first-line</code> permite hacer referencia a la
+    primera línea de un bloque de texto. <code>::first-letter</code> hace referencia
+    a la primera letra, y <code>::selection</code> al texto seleccionado.
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank")
+      Selectores de CSS en Mozilla Development&nbsp;Network
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank")
+      Pseudo-clases en Mozilla Development&nbsp;Network
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank")
+      Pseudo-elementos en Mozilla Development&nbsp;Network
