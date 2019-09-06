@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Bordes</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Bordes</h1>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  border: 5px solid blue;&#x000A;}</code></pre>
+<p class='note'>
+Para asignar un borde debemos declarar la anchura y el tipo. También podemos
+asignar el color, si no por defecto es el color del cuerpo de&nbsp;texto.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  border-width: 5px;&#x000A;  border-type: solid;&#x000A;  border-color: blue;&#x000A;}</code></pre>
+<p class='note'>
+La propiedad <code>border</code> se puede desglosar en 3 propiedades
+<code>border-width</code>, <code>border-type</code>,
+<code>border-color</code> si preferimos modificar solo una de&nbsp;ellas.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='qBWrQPM' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+También podemos hacer referencia al borde superior, derecho, inferior o izquierdo.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border' target='_blank'>
+Estilos de bordes en Mozilla Development&nbsp;Network
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Fondos</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Fondos</h1>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background-color: #dd6a92;&#x000A;}</code></pre>
+<p class='note'>
+El color de fondo de un elemento en HTML se declara con <code>background-color</code>.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background-image: url(ruta/imagen.jpg);&#x000A;}</code></pre>
+<p class='note'>
+La propiedad <code>background-image</code> permite asignar una imagen como fondo.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background-image: url(ruta/imagen1.jpg),&#x000A;                    url(ruta/imagen2.jpg);&#x000A;}</code></pre>
+<p class='note'>
+Podríamos declarar varias imágenes de fondo, separadas por comas.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='RwbpEGr' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+La propiedad <code>background-repeat</code> nos permite indicar si la
+imagen de fondo se repite y cómo. La propiedad <code>background-position</code>
+nos permite alinear la imagen respecto al fondo.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background: hotpink url(imagen.jpg) no-repeat right top;&#x000A;}</code></pre>
+<p class='note'>
+La propiedad <code>background</code> permite asignar los valores de las
+propiedades de fondo seguidas, separadas por espacios.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='VwZpqXa' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+La propiedad <code>background-size</code> permite controlar el tamaño al que
+aparecen las imágenes de fondo.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='jONBXev' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con la propiedad <code>background-image</code> también podemos declarar un
+degradado. En las funciones <code>linear-gradient()</code> o
+<code>radial-gradient()</code> indicaremos ángulo o posición y colores de corte.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/background' target='_blank'>
+La propiedad <code>background</code> en MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/background-size' target='_blank'>
+La propiedad <code>background-size</code> en MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient' target='_blank'>
+Degradados lineales en MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient' target='_blank'>
+Degradados radiales en MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient' target='_blank'>
+Degradados lineales en repetición en MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient' target='_blank'>
+Degradados radiales en repetición en MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

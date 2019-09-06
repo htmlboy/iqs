@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Modelo de caja</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Modelo de caja</h1>
+</section>
+<section>
+<div style='display: flex; align-items: center; margin: auto;'>
+<div style='width: 100%'>
+<span style='font-size: .75em; color: white;'>
+← width →
+</span>
+<div style='background-color: hotpink; color: white; height: 200px; display: flex; flex-direction: column; justify-content: center;'>
+<span style='font-size: .75em; color: white;'>
+↑
+<br>
+height
+<br>
+↓
+</span>
+</div>
+</div>
+</div>
+<p>
+Todos los elementos HTML tienen forma de caja. Esta caja tiene una anchura (<code>width</code>), y una altura (<code>height</code>).
+</p>
+</section>
+<section>
+<span style='font-size: .5em;'>
+margin
+</span>
+<div style='width: 50%; border: 2px dashed; background-color: hotpink; color: white; margin: auto; padding: .1em;'>
+<span style='font-size: .5em; top: -.4em; position: relative;'>
+padding
+</span>
+<div style='min-height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255,255,255,.1); margin: 0 1em;'>
+Contenido
+</div>
+<span style='font-size: .5em; top: -.4em; position: relative;'>
+padding
+</span>
+</div>
+<span style='font-size: .5em; top: -1em; position: relative;'>
+margin
+</span>
+<p>
+Estas cajas tienen contenido, espacio entre el contenido y el borde (<code>padding</code>) y espacio o margen entre el borde y otras cajas (<code>margin</code>).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-height='350' data-slug-hash='qJKMjo' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Las propiedades <code>width</code> y <code>height</code> sirven para fijar la anchura y la altura. Si no fijamos una anchura, las etiquetas de tipo bloque tienden a ocupar el 100%, y los de línea dependen de su contenido. Si no fijamos una altura, la caja adopta la altura del contenido.
+</p>
+</section>
+<section>
+<pre><code>.example{&#x000A;  min-width: 200px;&#x000A;  max-width: 90%;&#x000A;  min-height: 200px;&#x000A;  max-height: 1200px;&#x000A;}</code></pre>
+<p>
+Además de fijar un <code>width</code> o un <code>height</code>, también podemos dar anchuras o alturas mínimas o máximas.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='XxYPZe' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+Podemos dar un valor de <code>margin</code> diferente a cada lado de la caja.
+</p>
+</section>
+<section>
+<pre><code>.example{&#x000A;  margin: 20px;&#x000A;}</code></pre>
+<p>
+O el mismo margen para los 4 lados.
+</p>
+</section>
+<section>
+<pre><code>.example{&#x000A;  margin: 20px 10px 30px 15px;&#x000A;}</code></pre>
+<p>
+La propiedad <code>margin</code> es una propiedad abreviada, que admite hasta 4 valores separados por espacios.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='EdReEo' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+El padding sigue unas reglas similares al margin.
+</p>
+</section>
+<section>
+<pre><code>*{&#x000A;  box-sizing: border-box;&#x000A;}</code></pre>
+<p class='note'>
+Para evitar que el <code>padding</code> y el <code>border</code> alteren la anchura total que hemos marcado con la propiedad <code>width</code>, podemos cambiar el modelo de caja al principio de nuestra CSS, para todos los elementos.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

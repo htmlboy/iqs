@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Enlaces</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Enlaces</h1>
+</section>
+<section>
+<h2>
+<code>&lt;a&gt;</code>
+</h2>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='200' data-slug-hash='LgzNXM' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+La etiqueta <code>&lt;a&gt;</code> se utiliza para crear enlaces a otras páginas web.
+</p>
+</section>
+<section>
+<pre><code>&lt;a href="pagina.html"&gt;Ejemplo de texto&lt;/a&gt;</code></pre>
+<p>
+El atributo <code>href</code> sirve para indicar la ruta para llegar a la página web que queremos enlazar.
+</p>
+</section>
+<section>
+<pre><code>&lt;a href="http://google.com"&gt;Ejemplo de texto&lt;/a&gt;</code></pre>
+<p>
+Si la página que enlazamos es externa, tendremos que poner la dirección completa, incluyendo <code>http://</code>.
+</p>
+</section>
+<section>
+<pre><code>&lt;a href="http://google.com" target="_blank"&gt;Ejemplo de texto&lt;/a&gt;</code></pre>
+<p>
+Si queremos que se cargue en una nueva pestaña, usaremos el atributo <code>target="_blank"</code>.
+</p>
+</section>
+<section>
+<pre><code>&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&#x000A;&#x000A;…&#x000A;…&#x000A;&#x000A;&lt;h3 id="contacto"&gt;Ejemplo de texto&lt;/h3&gt;</code></pre>
+<p class='note'>
+Podemos enlazar a secciones concretas de una página que tengan el atributo <code>id</code>. Los <code>id</code> son identificadores únicos, y no hay dos con el mismo valor en una página. <br>Nos referiremos a los <code>id</code> con una almohadilla o hash: <code>#</code>
+</p>
+</section>
+<section>
+<pre><code>&lt;a href="mailto:javier@swwweet.com"&gt;Envíame un mail&lt;/a&gt;</code></pre>
+<p class='note'>
+Podemos enlazar a un mail con el prefijo <code>mailto:</code>, y esto abrirá el programa de correo electrónico que haya instalado por defecto en el ordenador.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Esquinas redondeadas</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Esquinas redondeadas</h1>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  border-radius: 20px;&#x000A;}</code></pre>
+<p class='note'>
+Podemos declarar el radio de redondeo de una caja con la propiedad <code>border-radius</code>.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  border-radius: 20px 25% 0 10px;&#x000A;}</code></pre>
+<p class='note'>
+Podemos dar hasta 4 valores separados por espacios, que se asignarán siguiendo
+la dirección de las agujas del reloj, empezando por la esquina superior&nbsp;izquierda.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  border-top-left-radius: 20px;&#x000A;  border-top-right-radius: 25%;&#x000A;  border-bottom-right-radius: 0;&#x000A;  border-bottom-left-radius: 10px;&#x000A;}</code></pre>
+<p class='note'>
+O bien modificar el <code>border-radius</code> de una esquina en concreto.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='rNByQov' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius' target='_blank'>
+<code>border-radius</code> en Mozilla Development&nbsp;Network
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

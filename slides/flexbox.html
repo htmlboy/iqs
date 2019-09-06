@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Flexbox</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Flexbox</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='gOYRBYg' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Si asignamos la propiedad <code>display: flex</code> a un elemento,
+se convierte en un espacio flexbox, y sus descendientes directos tienden a
+alinearse sobre el eje principal.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='vYBZVLK' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos cambiar la dirección del eje principal con
+<code>flex-direction: column</code> (columna). El valor por defecto es
+<code>row</code> (fila), pero también existe <code>row-reverse</code> (fila
+invertida) y <code>column-reverse</code> (columna invertida).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='KKPqGax' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Un espacio flexbox intentará siempre ordenar todo el contenido sobre el eje
+principal, incluso si no tiene espacio. Podemos modificar este comportamiento
+con la propiedad <code>flex-wrap: wrap</code> (por defecto es <code>nowrap</code>).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='RwbgepK' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos controlar el ancho por defecto de un elemento dentro de un espacio flexbox
+con <code>flex-basis</code>, indicar qué proporción de espacio sobrante puede
+ocupar un elemento con <code>flex-grow</code> (por defecto es 0) y en qué proporción
+debe reducirse un elemento cuando no haya espacio disponible con
+<code>flex-shrink</code> (por defecto es 1).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='ZEzyqXZ' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos cambiar el orden de los elementos dentro de un espacio flexbox. Por
+defecto todos los elementos tienen un <code>order: 0</code>, pero siempre se
+ordenarán de valores más bajos a más altos.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='RwbgeQg' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos alinear el contenido sobre el eje principal con la propiedad <code>justify-content</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='GRKEYXO' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos alinear el contenido en el eje cruzado con la propiedad <code>align-items</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='WNeOaPL' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos cambiar la alineación de un elemento en particular respecto al eje
+cruzado con <code>align-self</code>. También podemos conseguir cambios en el
+eje principal si usamos <code>margin-top/bottom/left/right: auto</code>.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/flexbox' target='_blank'>
+Flexbox en MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

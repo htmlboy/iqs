@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Unidades en CSS</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Unidades en CSS</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='OJLmGyM' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Los valores en <code>px</code> son absolutos. Los valores en <code>em</code>
+dependen del <code>font-size</code> heredado, e indican una proporción respecto
+a este tamaño&nbsp;heredado. Los valores en <code>%</code> funcionan de manera
+similar a los <code>em</code> cuando se aplican a tipografía (cuando se
+aplican a una anchura, dependen del espacio&nbsp;disponible).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='ExYmJZd' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Los valores en <code>rem</code> son proporcionales al tamaño tipográfico de
+la etiqueta <code>html</code> directamente, independientemente de la&nbsp;herencia.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='vYBmMpO' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Las unidades relativas al viewport (<code>vw</code> para anchura,
+<code>vh</code> para altura) funcionan de forma similar a los porcentajes
+(<code>100vh</code> = 100% del alto de la&nbsp;pantalla).
+</p>
+<p class='note'>
+Es preferible no forzar <code>100vw</code> porque en algunos sistemas
+operativos puede provocar scroll&nbsp;horizontal.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='VwZbNBL' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Las unidad relativa a la anchura del viewport (<code>vw</code>) es
+interesante para crear encabezados&nbsp;adaptables.
+</p>
+</section>
+<section>
+<p>
+Como complemento a <code>vw</code> y <code>vw</code> podemos emplear
+<code>vmin</code> (1% del ancho o alto de pantalla, dependiendo de qué lado
+sea menor) y <code>vmax</code> (1% del ancho o alto de pantalla, dependiendo de qué lado
+sea&nbsp;mayor).
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units' target='_blank'>
+Unidades de CSS en MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

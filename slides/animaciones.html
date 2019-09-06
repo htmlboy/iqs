@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Animaciones</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Animaciones</h1>
+</section>
+<section>
+<pre><code>@keyframes miAnimacion{&#x000A;  from{&#x000A;    width: 10px;&#x000A;  }&#x000A;  to{&#x000A;    width: 100px;&#x000A;  }&#x000A;}</code></pre>
+<p class='note'>
+Las animaciones se deben declarar primero como <code>@keyframes</code>
+(con un nombre), e indican los estados de la animación. En su forma más simple,
+indicamos los estilos de inicio (<code>from</code>) y los de fin (<code>to</code>).
+</p>
+</section>
+<section>
+<pre><code>@keyframes miAnimacion{&#x000A;  0%{&#x000A;    width: 10px;&#x000A;  }&#x000A;  50%{&#x000A;    width: 80px;&#x000A;  }&#x000A;  100%{&#x000A;    width: 100px;&#x000A;  }&#x000A;}</code></pre>
+<p class='note'>
+Para animaciones con más puntos intermedios, podemos usar porcentajes para
+declarar cada <i>keyframe</i>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='qBWjyLY' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Mediante la propiedad <code>animation</code> asignaremos al elemento que nos
+interese el nombre de los <i>keyframes</i>, la duración de la animación
+(en <code>s</code> o <code>ms</code>), y si queremos podemos indicar el número
+de repeticiones (<code>infinite</code> si queremos que no pare).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='vYBZzYP' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+También podemos indicar la palabra <code>alternate</code> si queremos que haga
+la animación de forma inversa cuando ha completado una repetición.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='bGbRxEE' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con <code>animation-fill-mode: forwards;</code> podemos hacer que un elemento
+quede en su último keyframe cuando haya terminado la animación.
+</p>
+<p class='note'>
+Con <code>animation-play-state: paused</code> podemos pausar una animación
+en un momento concreto (por ejemplo, al pasar el ratón por encima).
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'></p>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/animation' target='_blank'>
+La propiedad <code>animation</code> en MDN
+</a>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

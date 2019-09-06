@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Patrones de navegación responsive</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Navegación responsive</h1>
+</section>
+<section>
+<img alt='' src='patrones-navegacion-content/do-nothing-nav.png'>
+<p class='note'>
+El problema principal con pantallas medianas y pequeñas es que la navegación,
+que es un atajo para acceder al resto de la web, se convierte en un elemento
+incómodo.
+</p>
+</section>
+<section>
+<p class='note'>
+Las soluciones más habituales pasan por esconder esta navegación
+detrás de un elemento accionable, aunque es importante preguntarse qué papel
+cumplen esta navegación y si está respondiendo adecuadamente a las necesidades
+del&nbsp;usuario.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='mlyvu' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+El patrón más simple es dejar la navegación al pie y poner un enlace&nbsp;interno.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='sHvaz' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+La navegación en Toggle crea un desplegable con JavaScript en el punto donde
+estaría la navegación en pantalla grande.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='rAoBh' data-theme-id='0' data-user='sturobson'></div>
+<p class='note'>
+La navegación flyout despliega el menú desde un lateral, oculto&nbsp;incialmente.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='orJwL' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+La navegación Priority+ es interesante para mostrar al menos algunos enlaces,
+en vez de ocultarlo todo.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='waVzmK' data-theme-id='0' data-user='Dreamdealer'></div>
+<p class='note'>
+La misma filosofía del Priority+ se puede aplicar a otros formatos de navegación
+y crear desplegables.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='czwer' data-theme-id='0' data-user='micahgodbolt'></div>
+<p class='note'>
+En el caso de navegaciones multi-nivel (con desplegables), una solución es
+crear&nbsp;subdesplegables.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='vljdx' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+Pero otra solución es que la subnavegación no esté disponible cuando no hay
+espacio, y que el propio contenido de la página a la que accedamos nos permita
+navegar (<a href="https://www.worldwildlife.org/" target="_blank">ejemplo: WWF</a>).
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://bradfrost.github.io/this-is-responsive/patterns.html#navigation' target='_blank'>
+Más patrones de navegación responsive (Brad Frost)
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

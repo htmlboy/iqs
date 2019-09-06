@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Introducción a JavaScript</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Introducción a JavaScript</h1>
+</section>
+<section>
+<h2>JavaScript es un lenguaje de programación</h2>
+<p>
+Programamos comportamientos: ˝cuando se hace click aquí, ocurre algo˝.
+</p>
+</section>
+<section>
+<h2>Objetivos</h2>
+<ul>
+<li>acceder al contenido de una web</li>
+<li>modificar el contenido de una web</li>
+<li>programar reglas</li>
+<li>reaccionar a eventos</li>
+</ul>
+</section>
+<section>
+<h2>Ejemplo</h2>
+<p>
+˝Si yo hago click…˝
+</p>
+<p>
+˝en un elemento que tenga la clase 'elemento'…˝
+</p>
+<p>
+˝…quita o ponle la clase 'activo' ˝
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='js,result' data-embed-version='2' data-height='500' data-slug-hash='JLRqbJ' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<p>
+Para usar JavaScript, necesitamos vincular un archivo con la extensión .js al final de nuestro HTML.
+</p>
+<pre><code>  &lt;script src="comportamiento.js"&gt;&lt;/script&gt;&#x000A;&lt;/body&gt;</code></pre>
+</section>
+<section>
+<p>
+En JavaScript (y en programación) podemos encontrar:
+</p>
+<ul>
+<li>Valores: literales, numéricos, booleanos</li>
+<li>Variables</li>
+<li>Funciones</li>
+<li>Loops</li>
+<li>Eventos</li>
+</ul>
+</section>
+<section>
+<p>Las variables son "comodines" o identificadores que pueden tener un valor u otro. Nos sirven para manipular datos que no conocemos.</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='js,result' data-embed-version='2' data-height='500' data-slug-hash='MVbeMX' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<p>Las funciones nos permiten crear código reutilizable, que solo se activará cuando lo llamemos.</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='js,result' data-embed-version='2' data-height='500' data-slug-hash='YapGzy' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<p>Las loops nos permiten crear tareas de forma repetitiva o cíclica.</p>
+</section>
+<section>
+<p>Los eventos nos permiten asociar funciones a sucesos concretos (hacer click, cargar la página, etc).</p>
+</section>
+<section>
+<img alt='jQuery' class='clean' src='js-intro-content/logo-jquery.png'>
+<p>
+jQuery es un conjunto de funciones prefabricadas para que nos sea más fácil escribir y aprender JavaScript.
+</p>
+<p>
+Es como aprender a andar en bicicleta con ruedecitas.
+</p>
+</section>
+<section>
+<p>
+Para usar jQuery, tenemos que descargarlo de <a href="http://jquery.com" target="_blank">jQuery.com</a> y cargarlo antes que nuestro archivo de JS.
+</p>
+<pre><code>  &lt;script src="jquery.js"&gt;&lt;/script&gt;&#x000A;  &lt;script src="comportamiento.js"&gt;&lt;/script&gt;&#x000A;&lt;/body&gt;</code></pre>
+</section>
+<section>
+<div class='codepen' data-default-tab='js,result' data-embed-version='2' data-height='500' data-slug-hash='pLNbLW' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<h2>Ejemplos de interacción</h2>
+</section>
+<section>
+<p>Despliega un menú</p>
+<div class='codepen' data-default-tab='js,result' data-embed-version='2' data-height='500' data-slug-hash='WzoGGz' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<p>Sistema de pestañas</p>
+<div class='codepen' data-default-tab='js,result' data-embed-version='2' data-height='500' data-slug-hash='XENjaL' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<p>Sistema de acordeón</p>
+<div class='codepen' data-default-tab='js,result' data-embed-version='2' data-height='500' data-slug-hash='NYbRwM' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

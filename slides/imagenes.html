@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Imágenes</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Imágenes</h1>
+</section>
+<section>
+<h2>
+<code>&lt;img&gt;</code>
+</h2>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='300' data-slug-hash='oaGxqQ' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+La etiqueta <code>&lt;img&gt;</code> se utiliza para mostrar imágenes de contenido en una web.
+</p>
+</section>
+<section>
+<pre><code>&lt;img src="gato.jpg"&gt;</code></pre>
+<p>
+El atributo <code>src</code> sirve para indicar la ruta para llegar al archivo de la imagen, incluyendo el nombre del propio archivo.
+</p>
+</section>
+<section>
+<pre><code>&lt;img src="gato.jpg" alt="Un gato pardo"&gt;</code></pre>
+<p>
+Si la imagen tiene valor informativo, debemos poner un texto que la describa en el atributo <code>alt</code> y así podrá ser interpretada por lectores de pantalla.
+</p>
+</section>
+<section>
+<pre><code>&lt;img src="imagen.jpg" alt=""&gt;</code></pre>
+<p>
+Si la imagen no tiene valor informativo, debemos dejar el atributo <code>alt</code> vacío.
+</p>
+</section>
+<section>
+<pre><code>&lt;img src="images/gato.jpg" alt=""&gt;</code></pre>
+<p>
+Si una imagen se encuentra dentro de una carpeta respecto a la página (archivo HTML) que la llama, se debe poner el nombre de la carpeta.
+</p>
+</section>
+<section>
+<img alt='' src='imagenes-content/arbol-carpetas.png'>
+<p>
+Si la carpeta de imágenes se encuentra en un nivel de carpetas superior respecto al archivo HTML, usaremos dos puntos (<code>..</code>) para subir un nivel de carpetas.
+</p>
+<pre><code>&lt;img src="../images/gato.jpg" alt=""&gt;&#x000A;</code></pre>
+</section>
+<section>
+<pre><code>&lt;img src="../../images/gato.jpg" alt=""&gt;</code></pre>
+<p>
+Para cada nivel de carpetas que queramos subir, añadiremos dos puntos más.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

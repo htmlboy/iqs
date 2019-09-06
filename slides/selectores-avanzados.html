@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Selectores avanzados</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Selectores avanzados</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='450' data-slug-hash='OJLgPMM' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+El selector de hijo (<code>&gt;</code>) solo afecta a un descendiente
+directo (en vez de a los anidados). El selector <code>+</code> hace referencia
+al elemento adyacente a&nbsp;continuación.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='OJLgLmQ' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Las pseudo-clases <code>:first-child</code> y <code>:last-child</code> hacen
+referencia a la posición que ocupa un elemento (si es primero o último
+respetivamente) en un contexto (o nodo) concreto del HTML.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='VwZWwwQ' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con la pseudo-clase <code>:nth-child()</code> podemos aplicar estilos a
+elementos en una posición concreta. Pasando un número entre paréntesis, nos
+referimos al elemento en esa posición. Si añadimos una <code>n</code>, indicamos
+repetición, y sumando o restando un número modificamos el punto en el que se
+empieza a contar.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='xxKrxRL' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con <code>:first-of-type</code>, <code>:last-of-type</code> o bien <code>:nth-of-type()</code> podemos hacer referencia a la posición de
+un elemento según su tipo de etiqueta&nbsp;HTML.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='xxKrbdm' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+El selector de atributo <code>[]</code> se puede aplicar a un elemento que
+tenga un atributo o cuyo atributo sea igual a cierto valor.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='vYBZEyB' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+El selector <code>:not()</code> permite aplicar una excepción a la norma que
+se escribe (una clase, un atributo…). No permite combinaciones de&nbsp;parámetros.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='ExYXvbd' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Los pseudo-elementos <code>::before</code> y <code>::after</code> permiten añadir
+contenido al principio y al final de una etiqueta HTML que pueda tener contenido
+(no funcionan con <code>&lt;img&gt;</code>, por ejemplo).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='oNvweav' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+El pseudo-elemento <code>::first-line</code> permite hacer referencia a la
+primera línea de un bloque de texto. <code>::first-letter</code> hace referencia
+a la primera letra, y <code>::selection</code> al texto seleccionado.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors' target='_blank'>
+Selectores de CSS en Mozilla Development&nbsp;Network
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes' target='_blank'>
+Pseudo-clases en Mozilla Development&nbsp;Network
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements' target='_blank'>
+Pseudo-elementos en Mozilla Development&nbsp;Network
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

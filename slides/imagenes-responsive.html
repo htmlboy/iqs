@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Imágenes responsive</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Imágenes responsive</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='YzKxzev' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos cambiar una imagen de fondo por otra de mayor resolución (preparando
+el archivo apropiado) con una media query de resolución
+(<code>min-resolution</code>). Preguntando la resolución del dispositivo
+podremos cargar la imagen apropiada (<code>96dpi</code> es un pixel-ratio
+de 1; <code>192dpi</code>, de 2; <code>288dpi</code>, de 3).
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;img&#x000A;  src="img/300.jpg"&#x000A;  srcset="img/300.jpg 300w,&#x000A;          img/600.jpg 600w,&#x000A;          img/1000.jpg 1000w"&#x000A;  alt="" /&gt;</code></pre>
+<p class='note'>
+Para imágenes de contenido podemos utilizar el atributo <code>srcset</code>,
+en el que daremos diferentes tamaños de imágenes separados por&nbsp;comas.
+</p>
+<p class='note'>
+El prescriptor <code>w</code> indica la anchura que tienen estas fotos en una
+resolución de <code>96dpi</code> o un pixel-ratio de 1.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;img&#x000A;  srcset="img/300.jpg 300w,&#x000A;          img/600.jpg 600w,&#x000A;          img/1000.jpg 1000w"&#x000A;   sizes="(min-width: 1000px) 750px,&#x000A;          (min-width: 600px) 500px,&#x000A;          100px"&#x000A;  /&gt;</code></pre>
+<p class='note'>
+Con el atributo <code>sizes</code> podemos indicar los tamaños a los que se
+verá la imagen separados por comas, de mayor a menor (el valor entre paréntesis
+actúa como una media query). El último valor es el valor por defecto si lo anterior
+no se&nbsp;cumple.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='mdbMdNo' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con los tamaños de archivo y el atributo <code>sizes</code>, el navegador decide
+qué archivo descargar. Es normal que en pantallas de mayor resolución el
+el navegador descargue imágenes de mayor anchura de la que en teoría
+le&nbsp;corespodería.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/@media/resolution' target='_blank'>
+Media queries de resolución en MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images' target='_blank'>
+Explicación de las imágenes responsive en MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Art_direction' target='_blank'>
+Uso de la etiqueta <code>picture</code> para tener un control editorial
+sobre las imágenes responsive (MDN)
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture' target='_blank'>
+Más información sobre la etiqueta <code>picture</code> (MDN)
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

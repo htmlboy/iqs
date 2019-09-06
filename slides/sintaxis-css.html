@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Sintaxis CSS</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Sintaxis CSS</h1>
+</section>
+<section>
+<pre><code>&lt;link rel="stylesheet" href="estilos.css" &gt;</code></pre>
+<p>
+Vincularemos una hoja de estilos a un archivo HTML a través de la etiqueta <code>&lt;link&gt;</code>.
+</p>
+</section>
+<section>
+<pre><code>selector {&#x000A;  propiedad: valor;&#x000A;}</code></pre>
+<p class='note'>
+Escribimos las reglas de CSS siguiendo el esquema <code>selector { propiedad: valor; }</code>. Cada instrucción se finaliza con un punto y coma. Todas las instrucciones englobadas entre llaves afectan a dicho selector.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='200' data-slug-hash='rqGLyq' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<pre><code>h1, h2, h3 {&#x000A;  font-size: 24px;&#x000A;}</code></pre>
+<p>
+Podemos agrupar selectores separándolos por comas para asignarles los mismos estilos.
+</p>
+</section>
+<section>
+<pre><code>h1 {font-size: 24px;}
+h1 {font-size: 20px;}</code></pre>
+<p>
+En caso de dos declaraciones que entran en conflicto (mismo selector, misma propiedad), la declaración posterior prevalece.
+</p>
+</section>
+<section>
+<pre><code>/* Comentario de CSS */</code></pre>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

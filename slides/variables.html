@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Variables y organización de archivos</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Variables</h1>
+<h2>Y organización de archivos</h2>
+</section>
+<section>
+<pre><code class='css'>html {&#x000A;  --color: hotpink;&#x000A;}&#x000A;p {&#x000A;  color: var(--color);&#x000A;}</code></pre>
+<p class='note'>
+CSS nos permite centralizar valores (tamaños, colores…) en variables, para
+facilitar los cambios de manera consistente. Las variables se pueden declarar
+de forma global en el selector <code>html</code> o <code>:root</code> (el nombre
+de las variables siempre empieza por <code>--</code>) y emplearse con la
+función <code>var()</code> y el nombre de la&nbsp;variable.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='NWKjQqR' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos declarar las variables en otro contexto que no sea el <code>:root</code>,
+y estarán disponibles en este contexto. También podemos sobreescribirlas en un
+nodo&nbsp;concreto.
+</p>
+</section>
+<section>
+<pre><code class='css'>@import url(general.css);&#x000A;@import url(tipografia.css);</code></pre>
+<p class='note'>
+El archivo principal de estilos puede incorporar otros archivos externos con
+la regla <code>@import</code>. Esto permite tener un solo archivo de estilos
+vinculado en el <code>head</code>, pero que la propia CSS esté dividida en
+varios archivos para facilitar el trabajo.
+</p>
+</section>
+<section>
+<pre><code class='css'>@import url(variables.css);&#x000A;@import url(general.css);&#x000A;@import url(tipografia.css);&#x000A;@import url(botones.css);&#x000A;@import url(layout.css);&#x000A;@import url(cabecera.css);&#x000A;@import url(footer.css);&#x000A;@import url(galeria.css);&#x000A;@import url(video.css);&#x000A;@import url(productos-relacionados.css);</code></pre>
+<p class='note'>
+Divide la CSS en diferentes archivos según su función. Ordénalos de lo
+más general a lo más específico. Centraliza las variables en uno o varios
+archivos para tener estilos más consistentes.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/--*' target='_blank'>
+Las variables de CSS (también conocidas como <i>custom properties</i>) en MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

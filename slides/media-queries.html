@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Media queries y layout responsive</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Media queries</h1>
+<h2>y layout responsive</h2>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='NWKvGdm' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+La base de una web responsive es una estructura en anchuras porcentuales,
+capaz de adaptarse a la anchura del navegador.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='qBWXOpP' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Añdiendo a nuestra CSS <code>img {max-width: 100%;}</code> nos aseguramos de
+que las imágenes se reduzcan cuando su contenedor es más pequeño que su
+tamaño&nbsp;natural.
+</p>
+</section>
+<section>
+<pre><code class='css'>@media (max-width: 700px) {&#x000A;  .example {background-color: red;}&#x000A;}</code></pre>
+<p class='note'>
+Una media query es una regla condicional (la condición se pone entre paréntesis
+y hace referencia a las condicidiones de la ventana del navegador o del&nbsp;dispositivo).
+</p>
+<p class='note'>
+El código CSS que hay entre las llaves de una media query solo se aplicará si
+la condición se&nbsp;cumple.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='mdbMeGQ' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Una media query de <code>max-width</code> solo se aplicará cuando la ventana
+sea igual o menor a la anchura que hayamos&nbsp;marcado.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='QWLMyWy' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Una media query de <code>min-width</code> solo se aplicará cuando la ventana
+sea igual o mayor que la anchura que hayamos&nbsp;marcado.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='oNvebXP' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos acotar una media query entre un mínimo y un máximo con la palabra
+<code>and</code> y una&nbsp;segunda condición.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries' target='_blank'>
+Media queries en MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

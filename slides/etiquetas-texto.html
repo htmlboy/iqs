@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Etiquetas de texto</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Etiquetas de texto</h1>
+</section>
+<section>
+<h2>
+<code>&lt;p&gt;</code>
+</h2>
+<p>
+Agrupa las porciones de texto que identificamos como&nbsp;párrafos.
+</p>
+</section>
+<section>
+<h2>
+<code>&lt;br&gt;</code>
+</h2>
+<p>
+Crea un salto de línea dentro de un párrafo o una línea de texto.
+</p>
+</section>
+<section>
+<h2>
+<code>&lt;h1&gt;</code>
+</h2>
+<p>
+Identifica el título principal de una página. Normalmente solo
+hay uno por página.
+</p>
+</section>
+<section>
+<h3>
+<pre><code>&lt;h1&gt;&#x000A;  Encabezado de primer nivel&#x000A;&lt;/h1&gt;&#x000A;</code></pre>
+</h3>
+</section>
+<section>
+<h4>
+<code>&lt;h1&gt;<br>
+&lt;h2&gt;<br>
+&lt;h3&gt;<br>
+&lt;h4&gt;<br>
+&lt;h5&gt;<br>
+&lt;h6&gt;</code>
+</h4>
+<p>
+Cada uno de estos encabezados hace referencia a su importancia
+dentro del texto, nunca al orden en el que&nbsp;aparecen.
+</p>
+</section>
+<section>
+<h2>
+<code>&lt;em&gt;</code>
+</h2>
+<p>
+Marca <em>énfasis</em> en un trozo de texto en particular. Suele
+mostrarse como cursiva.
+</p>
+</section>
+<section>
+<pre><code>&lt;p&gt;&#x000A;  Podemos dar énfasis <em>a palabras en concreto</em>.&#x000A;&lt;/p&gt;</code></pre>
+</section>
+<section>
+<h2>
+<code>&lt;strong&gt;</code>
+</h2>
+<p>
+Indica que una o varias palabras tienen <strong>importancia</strong> dentro del texto.
+Suele mostrarse como negrita.
+</p>
+</section>
+<section>
+<pre><code>&lt;p&gt;&#x000A;  O bien pdemos dar <strong>importancia</strong>&#x000A;  a palabras en concreto.&#x000A;&lt;/p&gt;&#x000A;</code></pre>
+</section>
+<section>
+<h2>
+<code>&lt;span&gt;</code>
+</h2>
+<p>
+Agrupa un trozo de texto y nos permite asignarle una&nbsp;clase.
+</p>
+</section>
+<section>
+<pre><code>&lt;p&gt;&#x000A;  El <span class="rojo">span</span>&#x000A;  nos sirve para acotar palabras en concreto.&#x000A;&lt;/p&gt;</code></pre>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Estilos para enlaces</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Estilos para enlaces</h1>
+</section>
+<section>
+<pre><code>a {&#x000A;  color: blue;&#x000A;  text-decoration: none;&#x000A;}</code></pre>
+<p class='note'>
+Los enlaces tienen <code>color</code> y <code>text-decoration</code> por
+defecto, por lo que hay que sobrescribirlos&nbsp;explícitamente.
+</p>
+</section>
+<section>
+<pre><code>a:hover {&#x000A;  text-decoration: underline;&#x000A;}</code></pre>
+<p class='note'>
+Las pseudo-clases (o "estado") se escriben con dos puntos (<code>:</code>).
+El estado de <code>:hover</code> indica cuando el ratón pasa sobre el enlace.
+</p>
+</section>
+<section>
+<pre><code>a:active {&#x000A;  color: orange;&#x000A;}</code></pre>
+<p class='note'>
+El estado de <code>:active</code> indica el momento en el que se presiona el&nbsp;enlace.
+</p>
+</section>
+<section>
+<pre><code>a:visited {&#x000A;  color: blue;&#x000A;}</code></pre>
+<p class='note'>
+El estado de <code>:visited</code> indica que el enlace ha sido visitado.
+En muchos casos querremos sobrescribir este estado para que mantenga el
+color&nbsp;original.
+</p>
+</section>
+<section>
+<pre><code class='css'>a:focus {&#x000A;  background-color: lightgrey;&#x000A;}</code></pre>
+<p class='note'>
+El estado de <code>:focus</code> indica que el foco del navegador está en ese
+elemento en particular. Interesante especialmente si navegamos con el&nbsp;teclado.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='550' data-slug-hash='WNepJoX' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

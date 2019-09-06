@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Transiciones</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Transiciones</h1>
+</section>
+<section>
+<pre><code>.example{&#x000A;  transition: background-color 1s linear;&#x000A;}</code></pre>
+<p class='note'>
+La propiedad <code>transition</code> nos permite que un cambio de estado (:hover, asignar una
+clase…) no suceda de golpe, sino con una transición. Para esto, asignaremos
+al elemento que nos interese esta propiedad, con los valores separados por
+espacios de la propiedad a transicionar, duración y velocidad.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='vYBZayj' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Además de la duración, podemos añadir un nuev valor temporal (en
+<code>s</code> o <code>ms</code>), que sería un retraso en el inicio de
+la&nbsp;transición.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='NWKgByK' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos emplear las curvas de velocidad que hay por defecto (<code>linear</code>,
+<code>ease</code>, <code>ease-in</code>, <code>ease-out</code>,
+<code>ease-in-out</code>) o definir nuestra propia curva con <code>cubic-bezier()</code>.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'></p>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/transition' target='_blank'>
+La propiedad <code>transition</code> en MDN
+</a>
+<p>
+Editor online de curvas de velocidad: <a href="http://cubic-bezier.com" target="_blank">cubic-bezier.com</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>
