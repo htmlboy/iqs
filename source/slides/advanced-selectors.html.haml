@@ -1,0 +1,77 @@
+---
+title: Advanced selectors
+layout: layout-slides
+---
+
+%section
+  %h1 Advanced selectors
+
+%section
+  .codepen(data-height="450" data-editable="true" data-theme-id="0" data-slug-hash="OJLgPMM" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The child selector (<code>&gt;</code>) only applies to a direct descendant
+    (rather than nested ones). The <code>+</code> selector refers to the adjacent
+    element below.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="OJLgLmQ" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The pseudo-classes <code>:first-child</code> and <code>:last-child</code>
+    refer to the position that an element occupies (if it is first or last) in a
+    context (or HTML node).
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="VwZWwwQ" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    With the pseudo-class <code>:nth-child()</code> we can apply styles to
+    elements in a specific position. We refer to the element in a position by giving
+    a number (argument) inside the parentheses. If we add an <code>n</code>, we
+    indicate repetition, and adding or subtracting a number will modify the point
+    at which it begins to count.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="xxKrxRL" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    With <code>:first-of-type</code>, <code>:last-of-type</code> or
+    <code>:nth-of-type()</code> we can refer to the position of an element
+    according to its type of HTML tag.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="xxKrbdm" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The <code>[]</code> attribute selector can be applied to an element that has
+    an attribute or which attribute is equal to a certain value.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBZEyB" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The <code>:not()</code> selector applies an exception to the rule (a class,
+    an attribute…). It does not allow combinations of parameters.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ExYXvbd" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The pseudo-elements <code>::before</code> and <code>::after</code> allow us
+    to add content at the beginning and end of an HTML tag, providing this tag can
+    have contents (they do not work with <code>&lt;img&gt;</code>, for example).
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="oNvweav" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The pseudo-element <code>::first-line</code> allows us to apply styles to the
+    first line of a block of text. <code>::first-letter</code> applies styles to
+    the first letter, and <code>::selection</code> to the selected text.
+
+%section
+  %h2 More information
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank")
+      CSS selectors at MDN
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank")
+      Pseudo-classes at MDN
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank")
+      Pseudo-elements at MDN
