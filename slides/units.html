@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Unidades en CSS</title>
+  <title>CSS Units</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,57 +29,55 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Unidades en CSS</h1>
+<h1>CSS Units</h1>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='OJLmGyM' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Los valores en <code>px</code> son absolutos. Los valores en <code>em</code>
-dependen del <code>font-size</code> heredado, e indican una proporción respecto
-a este tamaño&nbsp;heredado. Los valores en <code>%</code> funcionan de manera
-similar a los <code>em</code> cuando se aplican a tipografía (cuando se
-aplican a una anchura, dependen del espacio&nbsp;disponible).
+The values in <code>px</code> are absolute. The values in <code>em</code>
+depend on the <code>font-size</code> inherited, and indicate a proportion to
+this inherited size. The values in <code>%</code> work similarly to the
+<code>em</code> when applied to typography (when applied to a width, they
+depend on the available space).
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='ExYmJZd' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Los valores en <code>rem</code> son proporcionales al tamaño tipográfico de
-la etiqueta <code>html</code> directamente, independientemente de la&nbsp;herencia.
+The values in <code>rem</code> are proportional to the font size of the
+<code>html</code> tag directly, regardless of inheritance.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='vYBmMpO' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Las unidades relativas al viewport (<code>vw</code> para anchura,
-<code>vh</code> para altura) funcionan de forma similar a los porcentajes
-(<code>100vh</code> = 100% del alto de la&nbsp;pantalla).
+The units related to the viewport (<code>vw</code> for width,
+<code>vh</code> for height) work in a similar way to percentages
+(<code>100vh</code> = 100% of the screen height).
 </p>
 <p class='note'>
-Es preferible no forzar <code>100vw</code> porque en algunos sistemas
-operativos puede provocar scroll&nbsp;horizontal.
+It is advisable to avoid making something <code>100vw</code> wide because in
+some operating systems can cause horizontal scrolling.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='VwZbNBL' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Las unidad relativa a la anchura del viewport (<code>vw</code>) es
-interesante para crear encabezados&nbsp;adaptables.
+The viewport width unit (<code>vw</code>) is interesting to create adapting&nbsp;headers.
 </p>
 </section>
 <section>
 <p>
-Como complemento a <code>vw</code> y <code>vw</code> podemos emplear
-<code>vmin</code> (1% del ancho o alto de pantalla, dependiendo de qué lado
-sea menor) y <code>vmax</code> (1% del ancho o alto de pantalla, dependiendo de qué lado
-sea&nbsp;mayor).
+In addition to <code>vw</code> and <code>vw</code> there are the units <code>vmin</code>
+(1% of the screen width or height, depending on which side is smaller) and
+<code >vmax</code> (1% of the screen width or height, depending on which side is larger).
 </p>
 </section>
 <section>
-<h2>Más información</h2>
+<h2>More information</h2>
 <p class='note'>
 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units' target='_blank'>
-Unidades de CSS en MDN
+CSS units at MDN
 </a>
 </p>
 </section>
