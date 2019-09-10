@@ -1,10 +1,10 @@
 ---
-title: Modelo de caja
+title: Box model
 layout: layout-slides
 ---
 
 %section
-  %h1 Modelo de caja
+  %h1 Box model
 
 %section
   %div(style="display: flex; align-items: center; margin: auto;")
@@ -19,7 +19,7 @@ layout: layout-slides
           %br
           ↓
   %p
-    Todos los elementos HTML tienen forma de caja. Esta caja tiene una anchura (<code>width</code>), y una altura (<code>height</code>).
+    All HTML elements are box-shaped. This box has a <code>width</code> and a <code>height</code>.
 
 %section
   %span(style="font-size: .5em;")
@@ -28,18 +28,22 @@ layout: layout-slides
     %span(style="font-size: .5em; top: -.4em; position: relative;")
       padding
     %div(style="min-height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255,255,255,.1); margin: 0 1em;")
-      Contenido
+      Content
     %span(style="font-size: .5em; top: -.4em; position: relative;")
       padding
   %span(style="font-size: .5em; top: -1em; position: relative;")
     margin
   %p
-    Estas cajas tienen contenido, espacio entre el contenido y el borde (<code>padding</code>) y espacio o margen entre el borde y otras cajas (<code>margin</code>).
+    These boxes have content, space between the content and the border
+    (<code>padding</code>) and space between the border and other boxes (<code>margin</code>).
 
 %section
   .codepen(data-height="350" data-theme-id="0" data-slug-hash="qJKMjo" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Las propiedades <code>width</code> y <code>height</code> sirven para fijar la anchura y la altura. Si no fijamos una anchura, las etiquetas de tipo bloque tienden a ocupar el 100%, y los de línea dependen de su contenido. Si no fijamos una altura, la caja adopta la altura del contenido.
+    The <code>width</code> and <code>height</code> properties are used to set
+    the width and height. If we don't set a width, block-type tags tend to be
+    100% width, and line-type tags depend on their content. If we don't set a
+    height, the box gets the height of the content.
 
 %section
   %pre
@@ -52,13 +56,13 @@ layout: layout-slides
           max-height: 1200px;
         }
   %p
-    Además de fijar un <code>width</code> o un <code>height</code>, también podemos dar anchuras o alturas mínimas o máximas.
-
+    Apart from setting a <code>width</code> or a <code>height</code>, we can also
+    give minimum or maximum widths or heights.
 %section
   .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="XxYPZe" data-default-tab="css,result" data-user="htmlboy")
 
   %p
-    Podemos dar un valor de <code>margin</code> diferente a cada lado de la caja.
+    We can give a different value of <code>margin</code> on each side of the box.
 
 %section
   %pre
@@ -68,7 +72,7 @@ layout: layout-slides
           margin: 20px;
         }
   %p
-    O el mismo margen para los 4 lados.
+    Or the same margin for all 4 sides.
 
 %section
   %pre
@@ -78,13 +82,14 @@ layout: layout-slides
           margin: 20px 10px 30px 15px;
         }
   %p
-    La propiedad <code>margin</code> es una propiedad abreviada, que admite hasta 4 valores separados por espacios.
+    The <code>margin</code> property is an abbreviated property, which supports
+    up to 4 values separated by spaces.
 
 %section
   .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="EdReEo" data-default-tab="css,result" data-user="htmlboy")
 
   %p
-    El padding sigue unas reglas similares al margin.
+    The <code>padding</code> property follows rules similar to <code>margin</code>.
 
 %section
   %pre
@@ -94,4 +99,6 @@ layout: layout-slides
           box-sizing: border-box;
         }
   %p.note
-    Para evitar que el <code>padding</code> y el <code>border</code> alteren la anchura total que hemos marcado con la propiedad <code>width</code>, podemos cambiar el modelo de caja al principio de nuestra CSS, para todos los elementos.
+    To prevent <code>padding</code> and <code>border</code> from changing the
+    total width that we have marked with the <code>width</code> property, we can
+    change the box model at the beginning of our CSS, for all the elements.
