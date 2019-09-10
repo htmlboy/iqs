@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Modelo de caja</title>
+  <title>Box model</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,7 +29,7 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Modelo de caja</h1>
+<h1>Box model</h1>
 </section>
 <section>
 <div style='display: flex; align-items: center; margin: auto;'>
@@ -49,7 +49,7 @@ height
 </div>
 </div>
 <p>
-Todos los elementos HTML tienen forma de caja. Esta caja tiene una anchura (<code>width</code>), y una altura (<code>height</code>).
+All HTML elements are box-shaped. This box has a <code>width</code> and a <code>height</code>.
 </p>
 </section>
 <section>
@@ -61,7 +61,7 @@ margin
 padding
 </span>
 <div style='min-height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255,255,255,.1); margin: 0 1em;'>
-Contenido
+Content
 </div>
 <span style='font-size: .5em; top: -.4em; position: relative;'>
 padding
@@ -71,49 +71,57 @@ padding
 margin
 </span>
 <p>
-Estas cajas tienen contenido, espacio entre el contenido y el borde (<code>padding</code>) y espacio o margen entre el borde y otras cajas (<code>margin</code>).
+These boxes have content, space between the content and the border
+(<code>padding</code>) and space between the border and other boxes (<code>margin</code>).
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-height='350' data-slug-hash='qJKMjo' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Las propiedades <code>width</code> y <code>height</code> sirven para fijar la anchura y la altura. Si no fijamos una anchura, las etiquetas de tipo bloque tienden a ocupar el 100%, y los de línea dependen de su contenido. Si no fijamos una altura, la caja adopta la altura del contenido.
+The <code>width</code> and <code>height</code> properties are used to set
+the width and height. If we don't set a width, block-type tags tend to be
+100% width, and line-type tags depend on their content. If we don't set a
+height, the box gets the height of the content.
 </p>
 </section>
 <section>
 <pre><code>.example{&#x000A;  min-width: 200px;&#x000A;  max-width: 90%;&#x000A;  min-height: 200px;&#x000A;  max-height: 1200px;&#x000A;}</code></pre>
 <p>
-Además de fijar un <code>width</code> o un <code>height</code>, también podemos dar anchuras o alturas mínimas o máximas.
+Apart from setting a <code>width</code> or a <code>height</code>, we can also
+give minimum or maximum widths or heights.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='XxYPZe' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-Podemos dar un valor de <code>margin</code> diferente a cada lado de la caja.
+We can give a different value of <code>margin</code> on each side of the box.
 </p>
 </section>
 <section>
 <pre><code>.example{&#x000A;  margin: 20px;&#x000A;}</code></pre>
 <p>
-O el mismo margen para los 4 lados.
+Or the same margin for all 4 sides.
 </p>
 </section>
 <section>
 <pre><code>.example{&#x000A;  margin: 20px 10px 30px 15px;&#x000A;}</code></pre>
 <p>
-La propiedad <code>margin</code> es una propiedad abreviada, que admite hasta 4 valores separados por espacios.
+The <code>margin</code> property is an abbreviated property, which supports
+up to 4 values separated by spaces.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='EdReEo' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-El padding sigue unas reglas similares al margin.
+The <code>padding</code> property follows rules similar to <code>margin</code>.
 </p>
 </section>
 <section>
 <pre><code>*{&#x000A;  box-sizing: border-box;&#x000A;}</code></pre>
 <p class='note'>
-Para evitar que el <code>padding</code> y el <code>border</code> alteren la anchura total que hemos marcado con la propiedad <code>width</code>, podemos cambiar el modelo de caja al principio de nuestra CSS, para todos los elementos.
+To prevent <code>padding</code> and <code>border</code> from changing the
+total width that we have marked with the <code>width</code> property, we can
+change the box model at the beginning of our CSS, for all the elements.
 </p>
 </section>
 
