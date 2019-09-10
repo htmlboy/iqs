@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Selectores avanzados</title>
+  <title>Advanced selectors</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,86 +29,87 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Selectores avanzados</h1>
+<h1>Advanced selectors</h1>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='450' data-slug-hash='OJLgPMM' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-El selector de hijo (<code>&gt;</code>) solo afecta a un descendiente
-directo (en vez de a los anidados). El selector <code>+</code> hace referencia
-al elemento adyacente a&nbsp;continuación.
+The child selector (<code>&gt;</code>) only applies to a direct descendant
+(rather than nested ones). The <code>+</code> selector refers to the adjacent
+element below.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='OJLgLmQ' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Las pseudo-clases <code>:first-child</code> y <code>:last-child</code> hacen
-referencia a la posición que ocupa un elemento (si es primero o último
-respetivamente) en un contexto (o nodo) concreto del HTML.
+The pseudo-classes <code>:first-child</code> and <code>:last-child</code>
+refer to the position that an element occupies (if it is first or last) in a
+context (or HTML node).
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='VwZWwwQ' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Con la pseudo-clase <code>:nth-child()</code> podemos aplicar estilos a
-elementos en una posición concreta. Pasando un número entre paréntesis, nos
-referimos al elemento en esa posición. Si añadimos una <code>n</code>, indicamos
-repetición, y sumando o restando un número modificamos el punto en el que se
-empieza a contar.
+With the pseudo-class <code>:nth-child()</code> we can apply styles to
+elements in a specific position. We refer to the element in a position by giving
+a number (argument) inside the parentheses. If we add an <code>n</code>, we
+indicate repetition, and adding or subtracting a number will modify the point
+at which it begins to count.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='xxKrxRL' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Con <code>:first-of-type</code>, <code>:last-of-type</code> o bien <code>:nth-of-type()</code> podemos hacer referencia a la posición de
-un elemento según su tipo de etiqueta&nbsp;HTML.
+With <code>:first-of-type</code>, <code>:last-of-type</code> or
+<code>:nth-of-type()</code> we can refer to the position of an element
+according to its type of HTML tag.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='xxKrbdm' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-El selector de atributo <code>[]</code> se puede aplicar a un elemento que
-tenga un atributo o cuyo atributo sea igual a cierto valor.
+The <code>[]</code> attribute selector can be applied to an element that has
+an attribute or which attribute is equal to a certain value.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='vYBZEyB' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-El selector <code>:not()</code> permite aplicar una excepción a la norma que
-se escribe (una clase, un atributo…). No permite combinaciones de&nbsp;parámetros.
+The <code>:not()</code> selector applies an exception to the rule (a class,
+an attribute…). It does not allow combinations of parameters.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='ExYXvbd' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Los pseudo-elementos <code>::before</code> y <code>::after</code> permiten añadir
-contenido al principio y al final de una etiqueta HTML que pueda tener contenido
-(no funcionan con <code>&lt;img&gt;</code>, por ejemplo).
+The pseudo-elements <code>::before</code> and <code>::after</code> allow us
+to add content at the beginning and end of an HTML tag, providing this tag can
+have contents (they do not work with <code>&lt;img&gt;</code>, for example).
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='oNvweav' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-El pseudo-elemento <code>::first-line</code> permite hacer referencia a la
-primera línea de un bloque de texto. <code>::first-letter</code> hace referencia
-a la primera letra, y <code>::selection</code> al texto seleccionado.
+The pseudo-element <code>::first-line</code> allows us to apply styles to the
+first line of a block of text. <code>::first-letter</code> applies styles to
+the first letter, and <code>::selection</code> to the selected text.
 </p>
 </section>
 <section>
-<h2>Más información</h2>
+<h2>More information</h2>
 <p class='note'>
 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors' target='_blank'>
-Selectores de CSS en Mozilla Development&nbsp;Network
+CSS selectors at MDN
 </a>
 </p>
 <p class='note'>
 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes' target='_blank'>
-Pseudo-clases en Mozilla Development&nbsp;Network
+Pseudo-classes at MDN
 </a>
 </p>
 <p class='note'>
 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements' target='_blank'>
-Pseudo-elementos en Mozilla Development&nbsp;Network
+Pseudo-elements at MDN
 </a>
 </p>
 </section>

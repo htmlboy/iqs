@@ -45,33 +45,32 @@ and the name of the&nbsp;variable.
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='NWKjQqR' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Podemos declarar las variables en otro contexto que no sea el <code>:root</code>,
-y estarán disponibles en este contexto. También podemos sobreescribirlas en un
-nodo&nbsp;concreto.
+We can declare the variables in a context different from <code>:root</code>,
+and they will be available in this context. We can also overwrite them on a
+specific node.
 </p>
 </section>
 <section>
-<pre><code class='css'>@import url(general.css);&#x000A;@import url(tipografia.css);</code></pre>
+<pre><code class='css'>@import url(general.css);&#x000A;@import url(typography.css);</code></pre>
 <p class='note'>
-El archivo principal de estilos puede incorporar otros archivos externos con
-la regla <code>@import</code>. Esto permite tener un solo archivo de estilos
-vinculado en el <code>head</code>, pero que la propia CSS esté dividida en
-varios archivos para facilitar el trabajo.
+The main style file can include external files with the <code>@import</code>
+rule. This allows to have a single style file linked in the <code>head</code>,
+and the styles divided into several files to ease working with it.
 </p>
 </section>
 <section>
-<pre><code class='css'>@import url(variables.css);&#x000A;@import url(general.css);&#x000A;@import url(tipografia.css);&#x000A;@import url(botones.css);&#x000A;@import url(layout.css);&#x000A;@import url(cabecera.css);&#x000A;@import url(footer.css);&#x000A;@import url(galeria.css);&#x000A;@import url(video.css);&#x000A;@import url(productos-relacionados.css);</code></pre>
+<pre><code class='css'>@import url(variables.css);&#x000A;@import url(general.css);&#x000A;@import url(typography.css);&#x000A;@import url(buttons.css);&#x000A;@import url(layout.css);&#x000A;@import url(header.css);&#x000A;@import url(footer.css);&#x000A;@import url(gallery.css);&#x000A;@import url(video.css);&#x000A;@import url(related-products.css);</code></pre>
 <p class='note'>
-Divide la CSS en diferentes archivos según su función. Ordénalos de lo
-más general a lo más específico. Centraliza las variables en uno o varios
-archivos para tener estilos más consistentes.
+Divide the CSS into different files according to their function. Arrange them
+from the most general to the most specific. Centralize variables in one or
+more files to have more consistent styles.
 </p>
 </section>
 <section>
-<h2>Más información</h2>
+<h2>More information</h2>
 <p class='note'>
 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/--*' target='_blank'>
-Las variables de CSS (también conocidas como <i>custom properties</i>) en MDN
+CSS variables (also known as <i>custom properties</i>) at MDN
 </a>
 </p>
 </section>
