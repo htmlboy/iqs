@@ -1,0 +1,51 @@
+---
+title: CSS Units
+layout: layout-slides
+---
+
+%section
+  %h1 CSS Units
+
+%section
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="OJLmGyM" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The values in <code>px</code> are absolute. The values in <code>em</code>
+    depend on the <code>font-size</code> inherited, and indicate a proportion to
+    this inherited size. The values in <code>%</code> work similarly to the
+    <code>em</code> when applied to typography (when applied to a width, they
+    depend on the available space).
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ExYmJZd" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The values in <code>rem</code> are proportional to the font size of the
+    <code>html</code> tag directly, regardless of inheritance.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBmMpO" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The units related to the viewport (<code>vw</code> for width,
+    <code>vh</code> for height) work in a similar way to percentages
+    (<code>100vh</code> = 100% of the screen height).
+  %p.note
+    It is advisable to avoid making something <code>100vw</code> wide because in
+    some operating systems can cause horizontal scrolling.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="VwZbNBL" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The viewport width unit (<code>vw</code>) is interesting to create adapting&nbsp;headers.
+
+%section
+  %p
+    In addition to <code>vw</code> and <code>vw</code> there are the units <code>vmin</code>
+    (1% of the screen width or height, depending on which side is smaller) and
+    <code >vmax</code> (1% of the screen width or height, depending on which side is larger).
+
+
+%section
+  %h2 More information
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units" target="_blank")
+      CSS units at MDN

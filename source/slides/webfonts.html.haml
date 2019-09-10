@@ -9,16 +9,15 @@ layout: layout-slides
 %section
   .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="RwbVEdG" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Cuando declaramos una familia tipográfica, especialmente si confiamos en que
-    esté instalada en el ordenador del usuario, podemos declarar alternativas,
-    separadas por&nbsp;comas.
+    When setting a typeface family, especially if we trust that it would be installed
+    on the user's computer, we can declare alternatives, separated by commas.
 
 %section
   .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="qBWmgeX" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Si cargamos una tipografía desde un servicio externo, como Google Fonts,
-    debemos asegurarnos de cargar su hoja de estilos, con los pesos adecuados, y
-    cualquier otra&nbsp;instrucción.
+    If we load a typeface from an external service, such as Google Fonts, we will
+    have to load their stylesheet, with the appropriate weights, and follow
+    any other instructions.
 
 %section
   %pre
@@ -31,10 +30,9 @@ layout: layout-slides
           font-style: normal;
         }
   %p.note
-    Si cargamos webfonts desde los archivos de nuestra web, pondremos una
-    declaración <code>@font-face</code> al principio de nuestra CSS para cada
-    archivo de cada peso tipográfico, indicando la familia, peso y estilo
-    del&nbsp;mismo.
+    If we load webfonts from our web archives, we will put an <code>@font-face</code>
+    declaration at the beginning of our CSS for each file of each font weight,
+    indicating its family, weight and style.
 
 %section
   %pre
@@ -49,24 +47,24 @@ layout: layout-slides
           font-style: normal;
         }
   %p.note
-    Podemos indicar varios formatos de archivo (woff y woff2 son el estándar, y
-    woff2 el más ligero). El navegador descargará el primer archivo que sea capaz
-    de&nbsp;interpretar.
+    We can set several file formats (woff and woff2 are the standard, and woff2
+    the lightest). The browser will download the first file that is capable of
+    interpreting.
 
 %section
-  %h2 Más información
+  %h2 More information
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" target="_blank")
-      La regla <code>@font-face</code> en MDN
+      <code>@font-face</code> rule at MDN
   %p.note
     %a(href="https://fonts.google.com/" target="_blank")
-      Google Fonts (tipografías gratuitas)
+      Google Fonts (free fonts)
   %p.note
     %a(href="https://fonts.adobe.com/" target="_blank")
-      Adobe Fonts (suscripción Creative Cloud)
+      Adobe Fonts (Creative Cloud subscription)
   %p.note
     %a(href="https://www.fontsquirrel.com/" target="_blank")
-      Font Squirrel (tipografías gratuitas)
+      Font Squirrel (free fonts)
   %p.note
     %a(href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank")
-      Font Squirrel Webfont Gererator (conversor de formatos)
+      Font Squirrel Webfont Gererator (format converter)
