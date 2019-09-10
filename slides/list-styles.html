@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Enlaces</title>
+  <title>List styles</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,45 +29,28 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Enlaces</h1>
+<h1>List styles</h1>
 </section>
 <section>
-<h2>
-<code>&lt;a&gt;</code>
-</h2>
-<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='200' data-slug-hash='LgzNXM' data-theme-id='0' data-user='htmlboy'></div>
-<p>
-La etiqueta <code>&lt;a&gt;</code> se utiliza para crear enlaces a otras páginas web.
-</p>
-</section>
-<section>
-<pre><code>&lt;a href="pagina.html"&gt;Ejemplo de texto&lt;/a&gt;</code></pre>
-<p>
-El atributo <code>href</code> sirve para indicar la ruta para llegar a la página web que queremos enlazar.
-</p>
-</section>
-<section>
-<pre><code>&lt;a href="http://google.com"&gt;Ejemplo de texto&lt;/a&gt;</code></pre>
-<p>
-Si la página que enlazamos es externa, tendremos que poner la dirección completa, incluyendo <code>http://</code>.
-</p>
-</section>
-<section>
-<pre><code>&lt;a href="http://google.com" target="_blank"&gt;Ejemplo de texto&lt;/a&gt;</code></pre>
-<p>
-Si queremos que se cargue en una nueva pestaña, usaremos el atributo <code>target="_blank"</code>.
-</p>
-</section>
-<section>
-<pre><code>&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&#x000A;&#x000A;…&#x000A;…&#x000A;&#x000A;&lt;h3 id="contacto"&gt;Ejemplo de texto&lt;/h3&gt;</code></pre>
+<pre><code class='css'>ul {&#x000A;  list-style: disc;&#x000A;  list-style-position: outside;&#x000A;  padding-left: 40px;&#x000A;}</code></pre>
 <p class='note'>
-Podemos enlazar a secciones concretas de una página que tengan el atributo <code>id</code>. Los <code>id</code> son identificadores únicos, y no hay dos con el mismo valor en una página. <br>Nos referiremos a los <code>id</code> con una almohadilla o hash: <code>#</code>
+Lists (<code>ul</code> and <code>ol</code>) have a set of default styles,
+which we will probably want to overwrite.
 </p>
 </section>
 <section>
-<pre><code>&lt;a href="mailto:javier@swwweet.com"&gt;Envíame un mail&lt;/a&gt;</code></pre>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='500' data-slug-hash='eYOvPQz' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Podemos enlazar a un mail con el prefijo <code>mailto:</code>, y esto abrirá el programa de correo electrónico que haya instalado por defecto en el ordenador.
+We can modify these styles with properties such as <code>list-style-type</code>
+or <code>list-style-position</code>.
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/list-style' target='_blank'>
+List styles at Mozilla Development&nbsp;Network
+</a>
 </p>
 </section>
 

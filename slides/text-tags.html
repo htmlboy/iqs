@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Sombras</title>
+  <title>Text tags</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,55 +29,84 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Sombras</h1>
+<h1>Text tags</h1>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='bGbWRBb' data-theme-id='0' data-user='htmlboy'></div>
-<p class='note'>
-Una sombra de caja se declara normalmente con diversos valores separados por
-espacios: desplazamiento en el eje X, en el eje Y, difuminado y color.
-</p>
-</section>
-<section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='NWKjggq' data-theme-id='0' data-user='htmlboy'></div>
-<p class='note'>
-Si añadimos un valor más después del difuminado, se interpretará como el <i>spread</i>
-o &ldquo;padding de la sombra&rdquo; un espaciado de color, previo al&nbsp;difuminado.
+<h2>
+<code class='html'>&lt;p&gt;</code>
+</h2>
+<p>
+The &lt;p&gt; tag groups each paragraph of a&nbsp;text.
 </p>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='wvwdepB' data-theme-id='0' data-user='htmlboy'></div>
-<p class='note'>
-Precediendo los valores de la sombra con el parámetro <code>inset</code>,
-la sombra se renderizará por dentro de la caja.
+<h2>
+<code class='html'>&lt;br&gt;</code>
+</h2>
+<p>
+The &lt;br&gt; tag makes a text line break inside a paragraph or a text&nbsp;line.
 </p>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='eYOWRME' data-theme-id='0' data-user='htmlboy'></div>
-<p class='note'>
-Podemos asignar tantas sombras como queramos, separadas por&nbsp;comas.
+<h2>
+<code class='html'>&lt;h1&gt;</code>
+</h2>
+<p>
+Identifies the main heading of a page. Normally there is only one per&nbsp;page.
 </p>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='PoYmjxw' data-theme-id='0' data-user='htmlboy'></div>
-<p class='note'>
-La propiedad <code>text-shadow</code> permite aplicar sombras al texto de
-forma equivalente a <code>box-shadow</code>. La única diferencia es que no
-acepta el valor <code>inset</code>.
+<h3>
+<pre><code class='html'>&lt;h1&gt;&#x000A;  First level heading&#x000A;&lt;/h1&gt;&#x000A;</code></pre>
+</h3>
+</section>
+<section>
+<h4>
+<code class='html'>&lt;h1&gt;<br>
+&lt;h2&gt;<br>
+&lt;h3&gt;<br>
+&lt;h4&gt;<br>
+&lt;h5&gt;<br>
+&lt;h6&gt;</code>
+</h4>
+<p>
+Each of these headings refers to their importance within the text, never to
+the order in which they&nbsp;appear.
 </p>
 </section>
 <section>
-<h2>Más información</h2>
-<p class='note'>
-<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow' target='_blank'>
-La propiedad <code>box-shadow</code> en MDN
-</a>
+<h2>
+<code class='html'>&lt;em&gt;</code>
+</h2>
+<p>
+Adds <em>emphasis</em> on a particular piece of text. It is usually rendered as&nbsp;italic.
 </p>
-<p class='note'>
-<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow' target='_blank'>
-La propiedad <code>text-shadow</code> en MDN
-</a>
+</section>
+<section>
+<pre><code class='html'>&lt;p&gt;&#x000A;  We can emphasize <em>specific words</em>.&#x000A;&lt;/p&gt;</code></pre>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;strong&gt;</code>
+</h2>
+<p>
+Indicates that one or more words have <strong> importance </strong> within
+the text. It is usually rendered as&nbsp;bold.
 </p>
+</section>
+<section>
+<pre><code class='html'>&lt;p&gt;&#x000A;  Or we can give <strong>importance</strong>&#x000A;  to specific words.&#x000A;&lt;/p&gt;&#x000A;</code></pre>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;span&gt;</code>
+</h2>
+<p>
+It groups a piece of text and allows us to assign a&nbsp;class.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;p&gt;&#x000A;  The <span class="red">span tag</span>&#x000A;  lets us to select a string of text.&#x000A;&lt;/p&gt;</code></pre>
 </section>
 
     </div>

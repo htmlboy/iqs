@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Columnas de texto</title>
+  <title>Images</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,29 +29,56 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Columnas de texto</h1>
+<h1>Images</h1>
 </section>
 <section>
-<pre><code class='css'>div {&#x000A;  column-count: 2;&#x000A;}</code></pre>
-<p class='note'>
-La propiedad <code>column-count</code> permite dividir un texto en dos o más&nbsp;columnas.
+<h2>
+<code>&lt;img&gt;</code>
+</h2>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='300' data-slug-hash='oaGxqQ' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The <code>&lt;img&gt;</code> tag is used to display content images on a&nbsp;website.
 </p>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='MWgpGEz' data-theme-id='0' data-user='htmlboy'></div>
-<p class='note'>
-Podemos controlar el ancho de la columna con <code>column-width</code>
-(especialmente si <code>column-count</code> está en <code>auto</code>), el
-espacio entre columnas con <code>column-gap</code> y con <code>column-rule</code>,
-el borde entre&nbsp;columnas.
+<pre><code>&lt;img src="cat.jpg"&gt;</code></pre>
+<p>
+The <code>src</code> attribute is used to indicate the path to reach the
+image file, including the name of the file&nbsp;itself.
 </p>
 </section>
 <section>
-<h2>Más información</h2>
-<p class='note'>
-<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns' target='_blank'>
-Columnas de texto y sus propiedades en Mozilla Development&nbsp;Network
-</a>
+<pre><code>&lt;img src="cat.jpg" alt="A kitty"&gt;</code></pre>
+<p>
+If the image has informative value, we must put a text that describes it in
+the <code>alt</code> attribute, so it can be interpreted by screen&nbsp;readers.
+</p>
+</section>
+<section>
+<pre><code>&lt;img src="image.jpg" alt=""&gt;</code></pre>
+<p>
+If the image has no informative value, we must leave the <code>alt</code> attribute&nbsp;empty.
+</p>
+</section>
+<section>
+<pre><code>&lt;img src="images/cat.jpg" alt=""&gt;</code></pre>
+<p>
+If an image is inside a folder with respect to the page (HTML file) that
+calls it, you must put the name of the&nbsp;folder.
+</p>
+</section>
+<section>
+<img alt='' src='images-content/folder-tree.png'>
+<p>
+If the image folder is at a higher level of folders compared to the HTML
+file, we will use double dot (<code>..</code>) to go up a level of folders.
+</p>
+<pre><code>&lt;img src="../images/cat.jpg" alt=""&gt;&#x000A;</code></pre>
+</section>
+<section>
+<pre><code>&lt;img src="../../images/cat.jpg" alt=""&gt;</code></pre>
+<p>
+For each level of folders we want to go up, we will add another double dot.
 </p>
 </section>
 

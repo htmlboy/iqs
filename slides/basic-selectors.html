@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Selectores básicos</title>
+  <title>Basic selectors</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,54 +29,62 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Selectores básicos</h1>
+<h1>Basic selectors</h1>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='200' data-slug-hash='gBooEX' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-El selector de etiqueta es su propio nombre, sin caracteres adicionales.
+The tag selector is its own name, without any additional&nbsp;characters.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='PyEQoR' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-El selector se escrible con un punto y a continuación el nombre de la clase elegida. Las clases no pueden tener espacios, caracteres especiales (tildes, eñes, signos de puntuación…), ni empezar por un&nbsp;numeral.
+The class selector is written with a dot followed by the name of the chosen
+class. Classes cannot have spaces, special characters (punctuation marks,
+ñ, ç, `, ´, ^…), nor start with a&nbsp;numeral.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='JmMpKb' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Podemos definir estilos que afecten a una clase pero solo si se aplica una etiqueta concreta. Para esto, escribimos el nombre de la etiqueta y a continuación el selector de clase, sin espacios.
+We can create styles that affect a class but only if a specific tag is
+applied. To achieve this, we write the name of the tag and then the class
+selector, without&nbsp;spaces.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='280' data-slug-hash='aREYBY' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-El espacio entre dos selectores indica que el segundo es descendiente del primero. Por ejemplo, los párrafos dentro de la clase principal.
+The space between two selectors indicates that the second is descended from
+the first. For example, paragraphs within the <i>example</i>&nbsp;class.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='aREYEj' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-Podemos seguir anidando selectores descencientes, separando cada uno por un espacio.
+We can continue nesting descendant selectors, separating each one by a&nbsp;space.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='NOXYmp' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Podemos dar estilos haciendo referencia al atributo <code>id</code> en vez de al de clase. Si es el caso, emplearemos la almohadilla (<code>#</code>) en vez de el punto. Siempre que podamos, es preferible usar clases, ya que el selector de id es muy específico y nos dará problemas.
+We can give styles by referring to the <code>id</code> attribute instead of
+the class. If this is the case, we will use the hash (<code>#</code>) instead
+of the dot. Whenever we can, it is preferable to use classes, since the id
+selector is very specific and difficult to override.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='280' data-slug-hash='yLBgqxv' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-Cuanto más específico sea un selector, más pesa, y puede alterar la cascada.
+The more specific a selector, the more important it is, and this can alter the cascade.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='wYpjad' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-El selector <code>*</code> afecta a todas las etiquetas HTML.
+The <code>*</code> selector affects all HTML tags.
 </p>
 </section>
 

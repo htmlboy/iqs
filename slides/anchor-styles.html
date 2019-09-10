@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Esquinas redondeadas</title>
+  <title>Anchor styles</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,37 +29,44 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Esquinas redondeadas</h1>
+<h1>Anchor styles</h1>
 </section>
 <section>
-<pre><code class='css'>.example {&#x000A;  border-radius: 20px;&#x000A;}</code></pre>
+<pre><code class='css'>a {&#x000A;  color: blue;&#x000A;  text-decoration: none;&#x000A;}</code></pre>
 <p class='note'>
-Podemos declarar el radio de redondeo de una caja con la propiedad <code>border-radius</code>.
+Anchor elements have <code>color</code> and <code>text-decoration</code> by
+default, so you have to explicitly overwrite them.
 </p>
 </section>
 <section>
-<pre><code class='css'>.example {&#x000A;  border-radius: 20px 25% 0 10px;&#x000A;}</code></pre>
+<pre><code class='css'>a:hover {&#x000A;  text-decoration: underline;&#x000A;}</code></pre>
 <p class='note'>
-Podemos dar hasta 4 valores separados por espacios, que se asignarán siguiendo
-la dirección de las agujas del reloj, empezando por la esquina superior&nbsp;izquierda.
+Pseudo-classes (or states) are written with a colon (<code>:</code>). The
+<code>:hover</code> state indicates when the mouse passes over the anchor.
 </p>
 </section>
 <section>
-<pre><code class='css'>.example {&#x000A;  border-top-left-radius: 20px;&#x000A;  border-top-right-radius: 25%;&#x000A;  border-bottom-right-radius: 0;&#x000A;  border-bottom-left-radius: 10px;&#x000A;}</code></pre>
+<pre><code>a:active {&#x000A;  color: orange;&#x000A;}</code></pre>
 <p class='note'>
-O bien modificar el <code>border-radius</code> de una esquina en concreto.
+The <code>:active</code> state indicates the moment the anchor is pressed.
 </p>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='rNByQov' data-theme-id='0' data-user='htmlboy'></div>
+<pre><code>a:visited {&#x000A;  color: blue;&#x000A;}</code></pre>
+<p class='note'>
+The <code>:visited</code> state indicates that the link has been visited.
+In many cases this state will be overwritten to keep the original color.
+</p>
 </section>
 <section>
-<h2>Más información</h2>
+<pre><code class='css'>a:focus {&#x000A;  background-color: lightgrey;&#x000A;}</code></pre>
 <p class='note'>
-<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius' target='_blank'>
-<code>border-radius</code> en Mozilla Development&nbsp;Network
-</a>
+The <code>:focus</code> state indicates that the focus of the browser is on
+that particular element. It's especially interesting when browsing with the&nbsp;keyboard.
 </p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='550' data-slug-hash='WNepJoX' data-theme-id='0' data-user='htmlboy'></div>
 </section>
 
     </div>

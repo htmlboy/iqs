@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Estilos tipográficos</title>
+  <title>Borders</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,65 +29,36 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Estilos tipográficos</h1>
+<h1>Borders</h1>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='xxKdmJo' data-theme-id='0' data-user='htmlboy'></div>
-<div class='note'>
-<p>
-Los estilos tipográficos se heredan. Si establecemos una familia tipográfica
-en el <code>body</code>, afecta a sus descendientes.
+<pre><code class='css'>.example {&#x000A;  border: 5px solid blue;&#x000A;}</code></pre>
+<p class='note'>
+To properly set a border we must declare the width and type. We can also
+assign the color, that by default is the color of the body text.
 </p>
-</div>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='wYpjdr' data-theme-id='0' data-user='htmlboy'></div>
-<div class='note'>
-<p>
-Controlamos la familia tipográfica con <code>font-family</code>.
+<pre><code class='css'>.example {&#x000A;  border-width: 5px;&#x000A;  border-type: solid;&#x000A;  border-color: blue;&#x000A;}</code></pre>
+<p class='note'>
+The <code>border</code> property can be broken down into 3 properties:
+<code>border-width</code>, <code> border-type</code> and <code>border-color</code>,
+in case we want to modify only one of them.
 </p>
-<p>
-Controlamos el tamaño tipográfico con <code>font-size</code>.
-</p>
-<p>
-Controlamos el peso tipográfico con <code>font-weight</code>.
-</p>
-</div>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='ZqvoPN' data-theme-id='0' data-user='htmlboy'></div>
-<div class='note'>
-<p>
-Controlamos la variante tipográfica con <code>font-style</code> (normal o&nbsp;itálica).
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='qBWrQPM' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can also refer to the top, right, bottom or left edge.
 </p>
-<p>
-Controlamos el rayado con <code>text-decoration</code>.
-</p>
-<p>
-Controlamos la altura de línea con <code>line-height</code>.
-</p>
-</div>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='WadyeY' data-theme-id='0' data-user='htmlboy'></div>
-<div class='note'>
-<p>
-Para aplicar color al texto, usamos la propiedad <code>color</code> (no confundir con <code>background-color</code>, para los fondos).
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border' target='_blank'>
+Border styles at Mozilla Development&nbsp;Network
+</a>
 </p>
-<p>
-Existen varias formas de declarar el color: palabra clave (inglés), #hexadecimal, rgb()…
-</p>
-</div>
-</section>
-<section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='370' data-slug-hash='YzKNOXq' data-theme-id='0' data-user='htmlboy'></div>
-<div class='note'>
-<p>
-Controlamos la alineación de un cuerpo de texto aplicando
-<code>text-align</code>
-a un elemento de bloque.
-</p>
-</div>
 </section>
 
     </div>

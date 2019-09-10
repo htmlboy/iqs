@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Introduction to the WWW</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Introduction to the&nbsp;WWW</h1>
+</section>
+<section>
+<h2>What is the Internet?</h2>
+</section>
+<section>
+<p class='note'>
+It's the global system of interconnected computer networks that use the Internet
+protocol suite (TCP/IP) to link devices worldwide.
+</p>
+</section>
+<section>
+<h2>How old is the Internet?</h2>
+</section>
+<section>
+<img alt='Arpanet logical map, 1977' src='introduction-web-content/arpanet.png'>
+<p class='note'>
+Its origins date back to 1969, when the first computer connection, known as
+ARPANET, was established between three universities in&nbsp;California.
+</p>
+</section>
+<section>
+<h2>What is the WWW?</h2>
+</section>
+<section>
+<p class='note'>
+It is a system of distribution of hypertext or hypermedia documents
+interconnected and accessible through the&nbsp;Internet.
+</p>
+</section>
+<section>
+<h2>How old is the WWW?</h2>
+</section>
+<section>
+<img alt='Primer servidor web' src='introduction-web-content/first-web-server.jpg'>
+<p class='note'>
+The Web was developed between March 1989 and December 1990, by the Englishman
+Tim Berners-Lee with the help of Belgian Robert Cailliau while working at
+CERN in Geneva, Switzerland.
+</p>
+</section>
+<section>
+<a href='https://worldwideweb.cern.ch/' target='_blank'>
+<img alt='First web browser' src='introduction-web-content/www.png'>
+</a>
+<p class='note'>
+<a href='https://worldwideweb.cern.ch/' target='_blank'>
+First web page and first browser (recreation)
+</a>
+</p>
+</section>
+<section>
+<h2>What is a website made of?</h2>
+</section>
+<section>
+<pre><code class='html'>&lt;html&gt; Content &lt;/html&gt;</code></pre>
+<p class='note'>
+HTML: contents and structure.
+</p>
+</section>
+<section>
+<pre><code class='css'>.css{&#x000A;  color: pink;&#x000A;}</code></pre>
+<p class='note'>
+CSS: visual appearance.
+</p>
+</section>
+<section>
+<pre><code class='js'>var numTotal = 4;&#x000A;if( numTotal > 3 ){&#x000A;  alert("Javascript!");&#x000A;}</code></pre>
+<p class='note'>
+JavaScript: behaviour/programming.
+</p>
+</section>
+<section>
+<h2>What happens when accessing a&nbsp;website?</h2>
+</section>
+<section>
+<img alt='' src='introduction-web-content/server.png'>
+<p class='note'>
+To publish a website we need to host the necessary files on a computer
+permanently connected to the Internet, with specific software and a physical
+address, an IP (example: 79.153.70.215).
+</p>
+<p class='note'>
+We will hire this service, known as <i>hosting</i>, to specialized
+companies, paying an annual rent.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/icann.jpg'>
+<p class='note'>
+In addition, we need to hire a domain (also annual rent). The Internet
+domains are centralized in a registry controlled by the non-profit association
+ICANN, and allow you to associate a name and extension (www.example.com, .net, .org …)
+with the IP of a&nbsp;server.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/browser-address.png'>
+<p class='note'>
+When we enter an address in the browser (or follow a link), the browser
+checks the IP associated with the domain and contacts the&nbsp;server.
+</p>
+<p class='note'>
+Through the rest of the address, the server software knows what HTML file to
+return. When we access the root of the domain (www.example.com), the server
+usually shows the index.html file, the home&nbsp;page.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/web-no-styles.png'>
+<p class='note'>
+The browser downloads a text file (HTML), which has information about its
+contents, but also information about the dependent files (images, stylesheets
+and JavaScript scripts).
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/web-with-styles.png'>
+<p class='note'>
+Once it has downloaded images and stylesheets (CSS), it has enough
+information to display the page in the format we&nbsp;expected.
+</p>
+</section>
+<section>
+<div class='img-collage'>
+<img alt='' src='introduction-web-content/web-with-js.png'>
+<img alt='' src='introduction-web-content/web-with-js-2.png'>
+</div>
+<p class='note'>
+And once it has downloaded and interpreted the JavaScript, it can add
+advanced interaction to the page (which initially does not differ much from
+a Word&nbsp;document).
+</p>
+</section>
+<section>
+<h2>How has the WWW evolved?</h2>
+</section>
+<section>
+<img alt='' src='introduction-web-content/timbl.png'>
+<p class='note'>
+The WWW was developed between 1989 and 1990, and was published in&nbsp;1992.
+</p>
+</section>
+<section>
+<a href='http://www.spacejam.com' target='_blank'>
+<img alt='' src='introduction-web-content/spacejam.png'>
+</a>
+<p class='note'>
+Websites with basic styles were developed using HTML styling tags and very
+limited&nbsp;interaction.
+</p>
+<p class='note'>
+<a href="http://www.spacejam.com" target="_blank">Space Jam website</a>,
+published in 1996.
+</p>
+</section>
+<section>
+<p class='note'>
+In 1995 the first version of JavaScript was launched, which would allow you to
+add programming instructions that are interpreted directly in the browser,
+and thus achieve much more interactive&nbsp;websites.
+</p>
+</section>
+<section>
+<p class='note'>
+In 1996, the first version of CSS, or <i> Cascading Style Sheets </i>, was launched,
+the styling language that would allow separating the content (HTML) from the
+visual presentation.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/crt.jpg'>
+<p class='note'>
+For several years, the web was the property of the desktop computer, whose
+monitors were gaining size and resolution, but they were quite&nbsp;uniform.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/iphone.png'>
+<p class='note'>
+In 2007 the iPhone was released, the first smartphone, and suddenly we were
+forced to create a website that can also work on these devices (and those
+that will come).
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/rwd.png'>
+<p class='note'>
+In 2010 Ethan Marcotte conceived the Responsive Web Design, a set of
+techniques and rules for developing websites that adapt to different devices.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/react.png'>
+<p class='note'>
+Between 2010 and 2014, frameworks such as Angular, React or Vue were created,
+based on JavaScript and designed to create web apps: websites with high
+interaction in the browser without reloading the&nbsp;page.
+</p>
+</section>
+<section>
+<p class='note'>
+The popularization of these libraries and the complexity of the developments
+and tools changed the paradigm of how we view web&nbsp;sites.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/interface.png'>
+<p class='note'>
+We no longer talk about pages, but components.
+</p>
+</section>
+<section>
+<img alt='' src='introduction-web-content/components.png'>
+<p class='note'>
+We identify the elements that compose and repeat throughout an interface, we
+isolate them and centralize their design and&nbsp;development.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Etiquetas de texto</title>
+  <title>HTML Syntax</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,86 +29,112 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Etiquetas de texto</h1>
+<h1>HTML Syntax</h1>
 </section>
 <section>
 <h2>
-<code>&lt;p&gt;</code>
+<code>&lt;tag&gt;</code>
 </h2>
 <p>
-Agrupa las porciones de texto que identificamos como&nbsp;párrafos.
-</p>
-</section>
-<section>
-<h2>
-<code>&lt;br&gt;</code>
-</h2>
-<p>
-Crea un salto de línea dentro de un párrafo o una línea de texto.
-</p>
-</section>
-<section>
-<h2>
-<code>&lt;h1&gt;</code>
-</h2>
-<p>
-Identifica el título principal de una página. Normalmente solo
-hay uno por página.
+HTML tags are marked with
+<code>< ></code>
+symbols
 </p>
 </section>
 <section>
 <h3>
-<pre><code>&lt;h1&gt;&#x000A;  Encabezado de primer nivel&#x000A;&lt;/h1&gt;&#x000A;</code></pre>
+<code>&lt;tag&gt; &lt;/tag&gt;</code>
+</h3>
+<p>
+Most HTML elements have an opening and a closing&nbsp;tag.
+</p>
+</section>
+<section>
+<h3>
+<pre><code>&lt;tag&gt;&#x000A;  Content&#x000A;&lt;/tag&gt;</code></pre>
+</h3>
+<p>
+The content between the opening and closing tags is associated
+to that tag.
+</p>
+</section>
+<section>
+<h3>
+<code>&lt;p&gt;</code>
+</h3>
+<p>
+The &lt;p&gt; tag groups each paragraph of a&nbsp;text.
+</p>
+</section>
+<section>
+<h3>
+<pre><code class='html'>&lt;p&gt;&#x000A;  This is an example.&#x000A;&lt;/p&gt;&#x000A;</code></pre>
 </h3>
 </section>
 <section>
-<h4>
-<code>&lt;h1&gt;<br>
-&lt;h2&gt;<br>
-&lt;h3&gt;<br>
-&lt;h4&gt;<br>
-&lt;h5&gt;<br>
-&lt;h6&gt;</code>
-</h4>
+<h3>
+<code>&lt;br&gt;</code>
+</h3>
 <p>
-Cada uno de estos encabezados hace referencia a su importancia
-dentro del texto, nunca al orden en el que&nbsp;aparecen.
+The &lt;br&gt; tag makes a text line break.
 </p>
 </section>
 <section>
-<h2>
-<code>&lt;em&gt;</code>
-</h2>
+<h3>
+<code>&ltbr&gt; <del>&lt;/br&gt;</del></code>
+</h3>
 <p>
-Marca <em>énfasis</em> en un trozo de texto en particular. Suele
-mostrarse como cursiva.
+HTML elements that cannot have content do not need a closing tag.
 </p>
 </section>
 <section>
-<pre><code>&lt;p&gt;&#x000A;  Podemos dar énfasis <em>a palabras en concreto</em>.&#x000A;&lt;/p&gt;</code></pre>
-</section>
-<section>
-<h2>
-<code>&lt;strong&gt;</code>
-</h2>
+<h3>
+<code>&ltbr /&gt;</code>
+</h3>
 <p>
-Indica que una o varias palabras tienen <strong>importancia</strong> dentro del texto.
-Suele mostrarse como negrita.
+Sometimes, these types of elements can be written in this way, with the symbol
+<code>/</code>
+at the end of the tag.
 </p>
 </section>
 <section>
-<pre><code>&lt;p&gt;&#x000A;  O bien pdemos dar <strong>importancia</strong>&#x000A;  a palabras en concreto.&#x000A;&lt;/p&gt;&#x000A;</code></pre>
-</section>
-<section>
-<h2>
-<code>&lt;span&gt;</code>
-</h2>
-<p>
-Agrupa un trozo de texto y nos permite asignarle una&nbsp;clase.
+<h3>
+<pre><code class='html'>&lt;p class="example"&gt;&#x000A;  This is an example.&#x000A;&lt;/p&gt;</code></pre>
+</h3>
+<p class='note'>
+HTML tags can have attributes, which allow you to apply meta information for
+the browser. They are always written in the opening&nbsp;tag.
 </p>
 </section>
 <section>
-<pre><code>&lt;p&gt;&#x000A;  El <span class="rojo">span</span>&#x000A;  nos sirve para acotar palabras en concreto.&#x000A;&lt;/p&gt;</code></pre>
+<h3>
+<pre><code class='html'>&lt;p class="example" id="main"&gt;&#x000A;  This is an example.&#x000A;&lt;/p&gt;</code></pre>
+</h3>
+<p class='note'>
+Each attribute is associated to its value with the
+<code>=</code>
+symbol and the value or values are quoted.
+</p>
+</section>
+<section>
+<h3>
+<pre><code class='html'>&lt;p class="example alternative" id="main"&gt;&#x000A;  This is an example.&#x000A;&lt;/p&gt;</code></pre>
+</h3>
+<p class='note'>
+The <code>class</code> attribute can have more than one value, separated
+by spaces (the classes are combined). The <code>id</code> attribute can
+only have one value, and there cannot be two <code>id</code> with the same
+value on the same&nbsp;page.
+</p>
+</section>
+<section>
+<h3>
+<pre><code class='html'>&lt;!-- This is a comment --&gt;</code></pre>
+</h3>
+<p class='note'>
+HTML comments allow us to organize our code and tell the browser to ignore
+certain&nbsp;blocks.
+</p>
 </section>
 
     </div>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Color y opacidad</title>
+  <title>Block tags</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,39 +29,52 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Color y opacidad</h1>
+<h1>Block tags</h1>
 </section>
 <section>
-<pre><code>.example{&#x000A;  color: red;&#x000A;  color: #ff0000;&#x000A;  color: rgb(255, 0, 0);&#x000A;}</code></pre>
+<pre><code class='html'>&lt;em&gt; &lt;strong&gt; &lt;span&gt; &lt;a&gt; &lt;img&gt;</code></pre>
 <p>
-Hay varias formas de asignar un color: palabra clave, hexadecimal, <code>rgb()</code>…
+These are line tags (they do not cause a line break&nbsp;below).
 </p>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-height='350' data-slug-hash='QZxBJR' data-theme-id='0' data-user='htmlboy'></div>
+<pre><code class='html'>&lt;p&gt; &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; …</code></pre>
 <p>
-Podemos manipular la opacidad o transparencia a través de la propiedad <code>opacity</code> o el canal alfa de <code>rgba()</code>.
+These are block tags (they cause a line break), but they are aimed to contain
+text strings (not other block&nbsp;tags).
 </p>
 </section>
 <section>
-<img alt='' src='color-opacidad-content/colorpicker.png'>
-<pre><code>.example{&#x000A;  color: hsl(302, 100%, 50%);&#x000A;}</code></pre>
+<pre><code class='html'>&lt;div&gt;</code></pre>
 <p>
-El sistema <code>hsl()</code> es otra forma de declarar color que puede resultar más intuitiva.
+This block tag is used to create structures, blocks and groups of&nbsp;blocks.
 </p>
 </section>
 <section>
-<pre><code>.example{&#x000A;  color: hsla(302, 100%, 50%, 0.5);&#x000A;}</code></pre>
+<pre><code class='html'><div class="header">&#x000A;  <h1>Heading</h1>&#x000A;  <p>Content</p>&#x000A;</div></code></pre>
 <p>
-El sistema <code>hsla()</code> funciona igual que <code>hsl()</code>, pero con el canal alfa.
+We can group contents into a <code>&lt;div&gt;</code> tag and apply styles with a&nbsp;class.
 </p>
 </section>
 <section>
-<a href='http://hslpicker.com' target='_blank'>
-<img alt='' src='color-opacidad-content/hslpicker.png'>
-</a>
+<pre><code class='html'><div class="header">&#x000A;  <h1>Heading</h1>&#x000A;  <p>Content</p>&#x000A;  <div class="highlight">&#x000A;    <p>Highlighted text</p>&#x000A;    <p>Highlighted text</p>&#x000A;  </div>&#x000A;</div></code></pre>
 <p>
-Puedes probar un editor de colores online en <a href="http://hslpicker.com" target="_blank">hslpicker.com</a>.
+The <code>&lt;div&gt;</code> tags can be grouped into each other to create
+more complex&nbsp;structures.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='250' data-slug-hash='MWgJVBG' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The &lt;ul&gt; allow us to create lists. Each item in a list goes
+within a&nbsp;&lt;li&gt;
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='250' data-slug-hash='GRKrxYZ' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The &lt;ol&gt; allow us to create numbered lists. The rest of the rules are the same
+as with the&nbsp;&lt;ul&gt;.
 </p>
 </section>
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Imágenes</title>
+  <title>CSS Syntax</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,53 +29,41 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Imágenes</h1>
+<h1>CSS Syntax</h1>
 </section>
 <section>
-<h2>
-<code>&lt;img&gt;</code>
-</h2>
-<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='300' data-slug-hash='oaGxqQ' data-theme-id='0' data-user='htmlboy'></div>
+<pre><code class='html'>&lt;link rel="stylesheet" href="styles.css" &gt;</code></pre>
 <p>
-La etiqueta <code>&lt;img&gt;</code> se utiliza para mostrar imágenes de contenido en una web.
+A stylesheet is linked to an HTML file through the <code>&lt;link&gt;</code> tag.
 </p>
 </section>
 <section>
-<pre><code>&lt;img src="gato.jpg"&gt;</code></pre>
-<p>
-El atributo <code>src</code> sirve para indicar la ruta para llegar al archivo de la imagen, incluyendo el nombre del propio archivo.
+<pre><code class='css'>selector {&#x000A;  property: value;&#x000A;}</code></pre>
+<p class='note'>
+CSS rules are written following the <code>selector {property: value;}</code> structure.
+Each statement ends with a semicolon. All statements enclosed in curly braces
+affect said&nbsp;selector.
 </p>
 </section>
 <section>
-<pre><code>&lt;img src="gato.jpg" alt="Un gato pardo"&gt;</code></pre>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='200' data-slug-hash='rqGLyq' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<pre><code class='css'>h1, h2, h3 {&#x000A;  font-size: 24px;&#x000A;}</code></pre>
 <p>
-Si la imagen tiene valor informativo, debemos poner un texto que la describa en el atributo <code>alt</code> y así podrá ser interpretada por lectores de pantalla.
+Selectors can be grouped with commas in order to assign them the same&nbsp;styles.
 </p>
 </section>
 <section>
-<pre><code>&lt;img src="imagen.jpg" alt=""&gt;</code></pre>
+<pre><code class='css'>h1 {font-size: 24px;}
+h1 {font-size: 20px;}</code></pre>
 <p>
-Si la imagen no tiene valor informativo, debemos dejar el atributo <code>alt</code> vacío.
+In case of two statements in conflict (same selector, same property),
+the statement below&nbsp;prevails.
 </p>
 </section>
 <section>
-<pre><code>&lt;img src="images/gato.jpg" alt=""&gt;</code></pre>
-<p>
-Si una imagen se encuentra dentro de una carpeta respecto a la página (archivo HTML) que la llama, se debe poner el nombre de la carpeta.
-</p>
-</section>
-<section>
-<img alt='' src='imagenes-content/arbol-carpetas.png'>
-<p>
-Si la carpeta de imágenes se encuentra en un nivel de carpetas superior respecto al archivo HTML, usaremos dos puntos (<code>..</code>) para subir un nivel de carpetas.
-</p>
-<pre><code>&lt;img src="../images/gato.jpg" alt=""&gt;&#x000A;</code></pre>
-</section>
-<section>
-<pre><code>&lt;img src="../../images/gato.jpg" alt=""&gt;</code></pre>
-<p>
-Para cada nivel de carpetas que queramos subir, añadiremos dos puntos más.
-</p>
+<pre><code class='css'>/* CSS Comment */</code></pre>
 </section>
 
     </div>

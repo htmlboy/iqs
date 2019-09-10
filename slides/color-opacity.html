@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Estilos para enlaces</title>
+  <title>Color and opacity</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,45 +29,43 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Estilos para enlaces</h1>
+<h1>Color and opacity</h1>
 </section>
 <section>
-<pre><code>a {&#x000A;  color: blue;&#x000A;  text-decoration: none;&#x000A;}</code></pre>
-<p class='note'>
-Los enlaces tienen <code>color</code> y <code>text-decoration</code> por
-defecto, por lo que hay que sobrescribirlos&nbsp;explícitamente.
+<pre><code>.example{&#x000A;  color: red;&#x000A;  color: #ff0000;&#x000A;  color: rgb(255, 0, 0);&#x000A;}</code></pre>
+<p>
+There are several ways to set a color: keyword, hexadecimal, <code>rgb()</code>…
 </p>
 </section>
 <section>
-<pre><code>a:hover {&#x000A;  text-decoration: underline;&#x000A;}</code></pre>
-<p class='note'>
-Las pseudo-clases (o "estado") se escriben con dos puntos (<code>:</code>).
-El estado de <code>:hover</code> indica cuando el ratón pasa sobre el enlace.
+<div class='codepen' data-default-tab='css,result' data-height='350' data-slug-hash='QZxBJR' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+We can manipulate opacity or transparency through the <code>opacity</code>
+property or the <code>rgba()</code> alpha channel.
 </p>
 </section>
 <section>
-<pre><code>a:active {&#x000A;  color: orange;&#x000A;}</code></pre>
-<p class='note'>
-El estado de <code>:active</code> indica el momento en el que se presiona el&nbsp;enlace.
+<img alt='' src='color-opacity-content/colorpicker.png'>
+<pre><code>.example{&#x000A;  color: hsl(302, 100%, 50%);&#x000A;}</code></pre>
+<p>
+The <code>hsl()</code> system is another way of declaring color that can be
+more intuitive.
 </p>
 </section>
 <section>
-<pre><code>a:visited {&#x000A;  color: blue;&#x000A;}</code></pre>
-<p class='note'>
-El estado de <code>:visited</code> indica que el enlace ha sido visitado.
-En muchos casos querremos sobrescribir este estado para que mantenga el
-color&nbsp;original.
+<pre><code>.example{&#x000A;  color: hsla(302, 100%, 50%, 0.5);&#x000A;}</code></pre>
+<p>
+The <code>hsla()</code> system works the same as <code>hsl()</code>, but
+with the alpha channel.
 </p>
 </section>
 <section>
-<pre><code class='css'>a:focus {&#x000A;  background-color: lightgrey;&#x000A;}</code></pre>
-<p class='note'>
-El estado de <code>:focus</code> indica que el foco del navegador está en ese
-elemento en particular. Interesante especialmente si navegamos con el&nbsp;teclado.
+<a href='http://hslpicker.com' target='_blank'>
+<img alt='' src='color-opacity-content/hslpicker.png'>
+</a>
+<p>
+You can try an online color editor at <a href="http://hslpicker.com" target="_blank">hslpicker.com</a>.
 </p>
-</section>
-<section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='550' data-slug-hash='WNepJoX' data-theme-id='0' data-user='htmlboy'></div>
 </section>
 
     </div>

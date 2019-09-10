@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Estilos para listas</title>
+  <title>Rounded corners</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -29,27 +29,35 @@
   <div class="reveal">
     <div class="slides">
       <section>
-<h1>Estilos para listas</h1>
+<h1>Rounded corners</h1>
 </section>
 <section>
-<pre><code class='css'>ul {&#x000A;  list-style: disc;&#x000A;  list-style-position: outside;&#x000A;  padding-left: 40px;&#x000A;}</code></pre>
+<pre><code class='css'>.example {&#x000A;  border-radius: 20px;&#x000A;}</code></pre>
 <p class='note'>
-Los listados (<code>ul</code> y <code>ol</code>) tienen un conjunto de
-estilos por defecto, que probablemente querremos sobrescribir.
+We can set the rounding radius of an element's corners with the property <code>border-radius</code>.
 </p>
 </section>
 <section>
-<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='500' data-slug-hash='eYOvPQz' data-theme-id='0' data-user='htmlboy'></div>
+<pre><code class='css'>.example {&#x000A;  border-radius: 20px 25% 0 10px;&#x000A;}</code></pre>
 <p class='note'>
-Podemos modificar estos estilos con propiedades como <code>list-style-type</code>
-o <code>list-style-position</code>.
+We can set up to 4 values separated by spaces, which will be assigned
+clockwise, starting at the upper left corner.
 </p>
 </section>
 <section>
-<h2>Más información</h2>
+<pre><code class='css'>.example {&#x000A;  border-top-left-radius: 20px;&#x000A;  border-top-right-radius: 25%;&#x000A;  border-bottom-right-radius: 0;&#x000A;  border-bottom-left-radius: 10px;&#x000A;}</code></pre>
 <p class='note'>
-<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/list-style' target='_blank'>
-Estilos de lista en Mozilla Development&nbsp;Network
+Or modify the <code>border-radius</code> of a particular corner.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='rNByQov' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius' target='_blank'>
+<code>border-radius</code> at Mozilla Development&nbsp;Network
 </a>
 </p>
 </section>
