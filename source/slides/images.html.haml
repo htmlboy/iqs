@@ -1,0 +1,66 @@
+---
+title: Images
+layout: layout-slides
+---
+
+%section
+  %h1 Images
+%section
+  %h2
+    %code
+      &lt;img&gt;
+  .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="oaGxqQ" data-default-tab="html,result" data-user="htmlboy")
+  %p
+    The <code>&lt;img&gt;</code> tag is used to display content images on a&nbsp;website.
+%section
+  %pre
+    %code
+      :preserve
+        &lt;img src="cat.jpg"&gt;
+  %p
+    The <code>src</code> attribute is used to indicate the path to reach the
+    image file, including the name of the file&nbsp;itself.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;img src="cat.jpg" alt="A kitty"&gt;
+  %p
+    If the image has informative value, we must put a text that describes it in
+    the <code>alt</code> attribute, so it can be interpreted by screen&nbsp;readers.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;img src="image.jpg" alt=""&gt;
+  %p
+    If the image has no informative value, we must leave the <code>alt</code> attribute&nbsp;empty.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;img src="images/cat.jpg" alt=""&gt;
+  %p
+    If an image is inside a folder with respect to the page (HTML file) that
+    calls it, you must put the name of the&nbsp;folder.
+
+%section
+  %img(src="images-content/folder-tree.png" alt="")
+  %p
+    If the image folder is at a higher level of folders compared to the HTML
+    file, we will use double dot (<code>..</code>) to go up a level of folders.
+  %pre
+    %code
+      :preserve
+        &lt;img src="../images/cat.jpg" alt=""&gt;
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;img src="../../images/cat.jpg" alt=""&gt;
+  %p
+    For each level of folders we want to go up, we will add another double dot.

@@ -1,10 +1,10 @@
 ---
-title: Fondos
+title: Backgrounds
 layout: layout-slides
 ---
 
 %section
-  %h1 Fondos
+  %h1 Backgrounds
 
 %section
   %pre
@@ -14,78 +14,76 @@ layout: layout-slides
           background-color: #dd6a92;
         }
   %p.note
-    El color de fondo de un elemento en HTML se declara con <code>background-color</code>.
+    The background color of an HTML element is declared with <code>background-color</code>.
+%section
+  %pre
+    %code.css
+      :preserve
+        .example {
+          background-image: url(path/image.jpg);
+        }
+  %p.note
+    The <code>background-image</code> property sets an image as a background.
 
 %section
   %pre
     %code.css
       :preserve
         .example {
-          background-image: url(ruta/imagen.jpg);
+          background-image: url(path/image1.jpg),
+                            url(path/image2.jpg);
         }
   %p.note
-    La propiedad <code>background-image</code> permite asignar una imagen como fondo.
-
-
-%section
-  %pre
-    %code.css
-      :preserve
-        .example {
-          background-image: url(ruta/imagen1.jpg),
-                            url(ruta/imagen2.jpg);
-        }
-  %p.note
-    Podríamos declarar varias imágenes de fondo, separadas por comas.
+    We could set several background images, separated by commas.
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="RwbpEGr" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    La propiedad <code>background-repeat</code> nos permite indicar si la
-    imagen de fondo se repite y cómo. La propiedad <code>background-position</code>
-    nos permite alinear la imagen respecto al fondo.
+    The <code>background-repeat</code> property defines if the background image
+    is repeated and how. The <code>background-position</code> property allows us
+    to align the image across the background.
 
 %section
   %pre
     %code.css
       :preserve
         .example {
-          background: hotpink url(imagen.jpg) no-repeat right top;
+          background: hotpink url(image.jpg) no-repeat right top;
         }
   %p.note
-    La propiedad <code>background</code> permite asignar los valores de las
-    propiedades de fondo seguidas, separadas por espacios.
+    The <code>background</code> property allows us to assign the values of several
+    background properties together, separated by spaces.
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="VwZpqXa" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    La propiedad <code>background-size</code> permite controlar el tamaño al que
-    aparecen las imágenes de fondo.
+    The <code>background-size</code> property controls the size at which the
+    background images appear.
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="jONBXev" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Con la propiedad <code>background-image</code> también podemos declarar un
-    degradado. En las funciones <code>linear-gradient()</code> o
-    <code>radial-gradient()</code> indicaremos ángulo o posición y colores de corte.
+    With the <code>background-image</code> property we can also set a gradient.
+    In the <code>linear-gradient()</code> or <code>radial-gradient()</code> functions
+    we will set the angle or position and color stops.
 
 %section
-  %h2 Más información
+  %h2 More information
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/background" target="_blank")
-      La propiedad <code>background</code> en MDN
+      <code>background</code> property at MDN
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="_blank")
-      La propiedad <code>background-size</code> en MDN
+      <code>background-size</code> property at MDN
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient" target="_blank")
-      Degradados lineales en MDN
+      Linear gradients at MDN
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient" target="_blank")
-      Degradados radiales en MDN
+      Radial gradients at MDN
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient" target="_blank")
-      Degradados lineales en repetición en MDN
+      Repeating linear gradients at MDN
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient" target="_blank")
-      Degradados radiales en repetición en MDN
+      Repeating radial gradients at MDN

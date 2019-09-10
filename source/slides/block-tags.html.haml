@@ -1,0 +1,65 @@
+---
+title: Block tags
+layout: layout-slides
+---
+
+%section
+  %h1 Block tags
+%section
+  %pre
+    %code.html
+      &lt;em&gt; &lt;strong&gt; &lt;span&gt; &lt;a&gt; &lt;img&gt;
+  %p
+    These are line tags (they do not cause a line break&nbsp;below).
+%section
+  %pre
+    %code.html
+      &lt;p&gt; &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; …
+  %p
+    These are block tags (they cause a line break), but they are aimed to contain
+    text strings (not other block&nbsp;tags).
+
+%section
+  %pre
+    %code.html
+      &lt;div&gt;
+  %p
+    This block tag is used to create structures, blocks and groups of&nbsp;blocks.
+
+%section
+  %pre
+    %code.html
+      :preserve
+        <div class="header">
+          <h1>Heading</h1>
+          <p>Content</p>
+        </div>
+  %p
+    We can group contents into a <code>&lt;div&gt;</code> tag and apply styles with a&nbsp;class.
+
+%section
+  %pre
+    %code.html
+      :preserve
+        <div class="header">
+          <h1>Heading</h1>
+          <p>Content</p>
+          <div class="highlight">
+            <p>Highlighted text</p>
+            <p>Highlighted text</p>
+          </div>
+        </div>
+  %p
+    The <code>&lt;div&gt;</code> tags can be grouped into each other to create
+    more complex&nbsp;structures.
+%section
+  .codepen(data-height="250" data-editable="true" data-theme-id="0" data-slug-hash="MWgJVBG" data-default-tab="html,result" data-user="htmlboy")
+  %p
+    The &lt;ul&gt; allow us to create lists. Each item in a list goes
+    within a&nbsp;&lt;li&gt;
+
+%section
+  .codepen(data-height="250" data-editable="true" data-theme-id="0" data-slug-hash="GRKrxYZ" data-default-tab="html,result" data-user="htmlboy")
+  %p
+    The &lt;ol&gt; allow us to create numbered lists. The rest of the rules are the same
+    as with the&nbsp;&lt;ul&gt;.

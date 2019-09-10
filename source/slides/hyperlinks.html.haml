@@ -1,0 +1,66 @@
+---
+title: Hyperlinks
+layout: layout-slides
+---
+
+%section
+  %h1 Hyperlinks
+%section
+  %h2
+    %code
+      &lt;a&gt;
+  .codepen(data-height="200" data-editable="true" data-theme-id="0" data-slug-hash="LgzNXM" data-default-tab="html,result" data-user="htmlboy")
+  %p
+    The <code>&lt;a&gt;</code> tag (anchor) is used to create links to other web&nbsp;pages.
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;a href="page.html"&gt;Example of text&lt;/a&gt;
+  %p
+    The <code>href</code> attribute is used to indicate the path to reach the web page we want to&nbsp;link.
+
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;a href="http://google.com"&gt;Example of text&lt;/a&gt;
+  %p
+    If the page we link is external, we will have to put the full address,
+    including <code>http://</code>.
+
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;a href="http://google.com" target="_blank"&gt;Example of text&lt;/a&gt;
+  %p
+    If we want it to load in a new tab, we will use the
+    <code>target="_blank"</code>&nbsp;attribute.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+
+        …
+        …
+
+        &lt;h3 id="contacto"&gt;Example&lt;/h3&gt;
+  %p.note
+    We can link to specific sections of a page that have the attribute
+    <code>id</code>. The <code>id</code> are unique identifiers, and there
+    shouldn't be two with the same value on a page.<br>
+  %p.note
+    We will refer to the <code>id</code> with a hash:&nbsp;<code>#</code>
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;a href="mailto:javier@swwweet.com"&gt;Send me an email&lt;/a&gt;
+  %p.note
+    We can link to an email with the prefix <code>mailto:</code>, and this will
+    open the email program that you have installed by default on your&nbsp;computer.
+

@@ -1,0 +1,50 @@
+---
+title: Color and opacity
+layout: layout-slides
+---
+
+%section
+  %h1 Color and opacity
+
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          color: red;
+          color: #ff0000;
+          color: rgb(255, 0, 0);
+        }
+  %p
+    There are several ways to set a color: keyword, hexadecimal, <code>rgb()</code>…
+%section
+  .codepen(data-height="350" data-theme-id="0" data-slug-hash="QZxBJR" data-default-tab="css,result" data-user="htmlboy")
+  %p
+    We can manipulate opacity or transparency through the <code>opacity</code>
+    property or the <code>rgba()</code> alpha channel.
+%section
+  %img(src="color-opacity-content/colorpicker.png" alt="")
+  %pre
+    %code
+      :preserve
+        .example{
+          color: hsl(302, 100%, 50%);
+        }
+  %p
+    The <code>hsl()</code> system is another way of declaring color that can be
+    more intuitive.
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          color: hsla(302, 100%, 50%, 0.5);
+        }
+  %p
+    The <code>hsla()</code> system works the same as <code>hsl()</code>, but
+    with the alpha channel.
+%section
+  %a(href="http://hslpicker.com" target="_blank")
+    %img(src="color-opacity-content/hslpicker.png" alt="")
+  %p
+    You can try an online color editor at <a href="http://hslpicker.com" target="_blank">hslpicker.com</a>.

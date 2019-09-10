@@ -1,0 +1,196 @@
+---
+title: Introduction to the WWW
+layout: layout-slides
+---
+
+%section
+  %h1 Introduction to the&nbsp;WWW
+
+%section
+  %h2 What is the Internet?
+
+%section
+  %p.note
+    It's the global system of interconnected computer networks that use the Internet
+    protocol suite (TCP/IP) to link devices worldwide.
+
+%section
+  %h2 How old is the Internet?
+
+%section
+  %img(src="introduction-web-content/arpanet.png" alt="Arpanet logical map, 1977")
+  %p.note
+    Its origins date back to 1969, when the first computer connection, known as
+    ARPANET, was established between three universities in&nbsp;California.
+%section
+  %h2 What is the WWW?
+%section
+  %p.note
+    It is a system of distribution of hypertext or hypermedia documents
+    interconnected and accessible through the&nbsp;Internet.
+%section
+  %h2 How old is the WWW?
+%section
+  %img(src="introduction-web-content/first-web-server.jpg" alt="Primer servidor web")
+  %p.note
+    The Web was developed between March 1989 and December 1990, by the Englishman
+    Tim Berners-Lee with the help of Belgian Robert Cailliau while working at
+    CERN in Geneva, Switzerland.
+%section
+  %a(href="https://worldwideweb.cern.ch/" target="_blank")
+    %img(src="introduction-web-content/www.png" alt="First web browser")
+  %p.note
+    %a(href="https://worldwideweb.cern.ch/" target="_blank")
+      First web page and first browser (recreation)
+
+%section
+  %h2 What is a website made of?
+%section
+  %pre
+    %code.html
+      &lt;html&gt; Content &lt;/html&gt;
+  %p.note
+    HTML: contents and structure.
+%section
+  %pre
+    %code.css
+      :preserve
+        .css{
+          color: pink;
+        }
+  %p.note
+    CSS: visual appearance.
+%section
+  %pre
+    %code.js
+      :preserve
+        var numTotal = 4;
+        if( numTotal > 3 ){
+          alert("Javascript!");
+        }
+  %p.note
+    JavaScript: behaviour/programming.
+
+%section
+  %h2 What happens when accessing a&nbsp;website?
+%section
+  %img(src="introduction-web-content/server.png" alt="")
+  %p.note
+    To publish a website we need to host the necessary files on a computer
+    permanently connected to the Internet, with specific software and a physical
+    address, an IP (example: 79.153.70.215).
+  %p.note
+    We will hire this service, known as <i>hosting</i>, to specialized
+    companies, paying an annual rent.
+
+%section
+  %img(src="introduction-web-content/icann.jpg" alt="")
+  %p.note
+    In addition, we need to hire a domain (also annual rent). The Internet
+    domains are centralized in a registry controlled by the non-profit association
+    ICANN, and allow you to associate a name and extension (www.example.com, .net, .org …)
+    with the IP of a&nbsp;server.
+
+%section
+  %img(src="introduction-web-content/browser-address.png" alt="")
+  %p.note
+    When we enter an address in the browser (or follow a link), the browser
+    checks the IP associated with the domain and contacts the&nbsp;server.
+  %p.note
+    Through the rest of the address, the server software knows what HTML file to
+    return. When we access the root of the domain (www.example.com), the server
+    usually shows the index.html file, the home&nbsp;page.
+
+%section
+  %img(src="introduction-web-content/web-no-styles.png" alt="")
+  %p.note
+    The browser downloads a text file (HTML), which has information about its
+    contents, but also information about the dependent files (images, stylesheets
+    and JavaScript scripts).
+
+%section
+  %img(src="introduction-web-content/web-with-styles.png" alt="")
+  %p.note
+    Once it has downloaded images and stylesheets (CSS), it has enough
+    information to display the page in the format we&nbsp;expected.
+
+%section
+  .img-collage
+    %img(src="introduction-web-content/web-with-js.png" alt="")
+    %img(src="introduction-web-content/web-with-js-2.png" alt="")
+  %p.note
+    And once it has downloaded and interpreted the JavaScript, it can add
+    advanced interaction to the page (which initially does not differ much from
+    a Word&nbsp;document).
+
+%section
+  %h2 How has the WWW evolved?
+
+%section
+  %img(src="introduction-web-content/timbl.png" alt="")
+  %p.note
+    The WWW was developed between 1989 and 1990, and was published in&nbsp;1992.
+
+%section
+  %a(href="http://www.spacejam.com" target="_blank")
+    %img(src="introduction-web-content/spacejam.png" alt="")
+  %p.note
+    Websites with basic styles were developed using HTML styling tags and very
+    limited&nbsp;interaction.
+  %p.note
+    <a href="http://www.spacejam.com" target="_blank">Space Jam website</a>,
+    published in 1996.
+
+%section
+  %p.note
+    In 1995 the first version of JavaScript was launched, which would allow you to
+    add programming instructions that are interpreted directly in the browser,
+    and thus achieve much more interactive&nbsp;websites.
+
+%section
+  %p.note
+    In 1996, the first version of CSS, or <i> Cascading Style Sheets </i>, was launched,
+    the styling language that would allow separating the content (HTML) from the
+    visual presentation.
+
+%section
+  %img(src="introduction-web-content/crt.jpg" alt="")
+  %p.note
+    For several years, the web was the property of the desktop computer, whose
+    monitors were gaining size and resolution, but they were quite&nbsp;uniform.
+
+%section
+  %img(src="introduction-web-content/iphone.png" alt="")
+  %p.note
+    In 2007 the iPhone was released, the first smartphone, and suddenly we were
+    forced to create a website that can also work on these devices (and those
+    that will come).
+
+%section
+  %img(src="introduction-web-content/rwd.png" alt="")
+  %p.note
+    In 2010 Ethan Marcotte conceived the Responsive Web Design, a set of
+    techniques and rules for developing websites that adapt to different devices.
+
+%section
+  %img(src="introduction-web-content/react.png" alt="")
+  %p.note
+    Between 2010 and 2014, frameworks such as Angular, React or Vue were created,
+    based on JavaScript and designed to create web apps: websites with high
+    interaction in the browser without reloading the&nbsp;page.
+
+%section
+  %p.note
+    The popularization of these libraries and the complexity of the developments
+    and tools changed the paradigm of how we view web&nbsp;sites.
+
+%section
+  %img(src="introduction-web-content/interface.png" alt="")
+  %p.note
+    We no longer talk about pages, but components.
+
+%section
+  %img(src="introduction-web-content/components.png" alt="")
+  %p.note
+    We identify the elements that compose and repeat throughout an interface, we
+    isolate them and centralize their design and&nbsp;development.

@@ -1,0 +1,63 @@
+---
+title: Anchor styles
+layout: layout-slides
+---
+
+%section
+  %h1 Anchor styles
+%section
+  %pre
+    %code.css
+      :preserve
+        a {
+          color: blue;
+          text-decoration: none;
+        }
+  %p.note
+    Anchor elements have <code>color</code> and <code>text-decoration</code> by
+    default, so you have to explicitly overwrite them.
+
+%section
+  %pre
+    %code.css
+      :preserve
+        a:hover {
+          text-decoration: underline;
+        }
+  %p.note
+    Pseudo-classes (or states) are written with a colon (<code>:</code>). The
+    <code>:hover</code> state indicates when the mouse passes over the anchor.
+
+%section
+  %pre
+    %code
+      :preserve
+        a:active {
+          color: orange;
+        }
+  %p.note
+    The <code>:active</code> state indicates the moment the anchor is pressed.
+
+%section
+  %pre
+    %code
+      :preserve
+        a:visited {
+          color: blue;
+        }
+  %p.note
+    The <code>:visited</code> state indicates that the link has been visited.
+    In many cases this state will be overwritten to keep the original color.
+%section
+  %pre
+    %code.css
+      :preserve
+        a:focus {
+          background-color: lightgrey;
+        }
+  %p.note
+    The <code>:focus</code> state indicates that the focus of the browser is on
+    that particular element. It's especially interesting when browsing with the&nbsp;keyboard.
+
+%section
+  .codepen(data-height="550" data-editable="true" data-theme-id="0" data-slug-hash="WNepJoX" data-default-tab="css,result" data-user="htmlboy")

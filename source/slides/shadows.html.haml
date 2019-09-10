@@ -1,48 +1,47 @@
 ---
-title: Sombras
+title: Shadows
 layout: layout-slides
 ---
 
 %section
-  %h1 Sombras
+  %h1 Shadows
 
 %section
   .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="bGbWRBb" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Una sombra de caja se declara normalmente con diversos valores separados por
-    espacios: desplazamiento en el eje X, en el eje Y, difuminado y color.
+    A box shadow is normally declared with various values separated by spaces:
+    displacement on the X axis, on the Y axis, blur and color.
 
 %section
   .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="NWKjggq" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Si añadimos un valor más después del difuminado, se interpretará como el <i>spread</i>
-    o &ldquo;padding de la sombra&rdquo; un espaciado de color, previo al&nbsp;difuminado.
+    If we add one more value after the blur, it will be interpreted as the
+    <i>spread</i> or &ldquo;shadow padding&rdquo;, a color spacing before the blurring.
 
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="wvwdepB" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Precediendo los valores de la sombra con el parámetro <code>inset</code>,
-    la sombra se renderizará por dentro de la caja.
+    Preceding the shadow values with the <code>inset</code> parameter, the shadow
+    will be rendered inside the box.
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="eYOWRME" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Podemos asignar tantas sombras como queramos, separadas por&nbsp;comas.
-
+    We can assign as many shadows as we want, separated by commas.
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="PoYmjxw" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    La propiedad <code>text-shadow</code> permite aplicar sombras al texto de
-    forma equivalente a <code>box-shadow</code>. La única diferencia es que no
-    acepta el valor <code>inset</code>.
+    The <code>text-shadow</code> property allows shadows to be applied to the text
+    the same way as with <code>box-shadow</code>. The main difference is that it
+    does not accept the <code>inset</code> value.
 
 
 %section
-  %h2 Más información
+  %h2 More information
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank")
-      La propiedad <code>box-shadow</code> en MDN
+      <code>box-shadow</code> property at MDN
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow" target="_blank")
-      La propiedad <code>text-shadow</code> en MDN
+      <code>text-shadow</code> property at MDN

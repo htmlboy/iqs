@@ -1,0 +1,123 @@
+---
+title: HTML Syntax
+layout: layout-slides
+---
+
+%section
+  %h1 HTML Syntax
+%section
+  %h2
+    %code
+      &lt;tag&gt;
+  %p
+    HTML tags are marked with
+    %code < >
+    symbols
+
+
+%section
+  %h3
+    %code
+      &lt;tag&gt; &lt;/tag&gt;
+  %p
+    Most HTML elements have an opening and a closing&nbsp;tag.
+
+%section
+  %h3
+    %pre
+      %code
+        :preserve
+          &lt;tag&gt;
+            Content
+          &lt;/tag&gt;
+  %p
+    The content between the opening and closing tags is associated
+    to that tag.
+
+%section
+  %h3
+    %code
+      &lt;p&gt;
+  %p
+    The &lt;p&gt; tag groups each paragraph of a&nbsp;text.
+
+%section
+  %h3
+    %pre
+      %code.html
+        :preserve
+          &lt;p&gt;
+            This is an example.
+          &lt;/p&gt;
+
+%section
+  %h3
+    %code
+      &lt;br&gt;
+  %p
+    The &lt;br&gt; tag makes a text line break.
+
+
+%section
+  %h3
+    %code
+      &ltbr&gt; <del>&lt;/br&gt;</del>
+  %p
+    HTML elements that cannot have content do not need a closing tag.
+%section
+  %h3
+    %code
+      &ltbr /&gt;
+  %p
+    Sometimes, these types of elements can be written in this way, with the symbol
+    %code /
+    at the end of the tag.
+
+%section
+  %h3
+    %pre
+      %code.html
+        :preserve
+          &lt;p class="example"&gt;
+            This is an example.
+          &lt;/p&gt;
+  %p.note
+    HTML tags can have attributes, which allow you to apply meta information for
+    the browser. They are always written in the opening&nbsp;tag.
+
+%section
+  %h3
+    %pre
+      %code.html
+        :preserve
+          &lt;p class="example" id="main"&gt;
+            This is an example.
+          &lt;/p&gt;
+  %p.note
+    Each attribute is associated to its value with the
+    %code =
+    symbol and the value or values are quoted.
+
+%section
+  %h3
+    %pre
+      %code.html
+        :preserve
+          &lt;p class="example alternative" id="main"&gt;
+            This is an example.
+          &lt;/p&gt;
+  %p.note
+    The <code>class</code> attribute can have more than one value, separated
+    by spaces (the classes are combined). The <code>id</code> attribute can
+    only have one value, and there cannot be two <code>id</code> with the same
+    value on the same&nbsp;page.
+
+%section
+  %h3
+    %pre
+      %code.html
+        :preserve
+          &lt;!-- This is a comment --&gt;
+  %p.note
+    HTML comments allow us to organize our code and tell the browser to ignore
+    certain&nbsp;blocks.

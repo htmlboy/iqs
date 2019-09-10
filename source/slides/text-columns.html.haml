@@ -1,0 +1,30 @@
+---
+title: Text columns
+layout: layout-slides
+---
+
+%section
+  %h1 Text columns
+%section
+  %pre
+    %code.css
+      :preserve
+        div {
+          column-count: 2;
+        }
+  %p.note
+    The <code>column-count</code> property divides a text into two or more&nbsp;columns.
+
+
+%section
+  .codepen(data-height="350" data-editable="true" data-theme-id="0" data-slug-hash="MWgpGEz" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    We can control the width of the column with <code>column-width</code>
+    (especially if <code>column-count</code> is set to <code>auto</code>), the
+    space between columns with <code>column-gap</code>, and with
+    <code>column-rule</code>, the border between columns.
+%section
+  %h2 More information
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns" target="_blank")
+      Text columns and their properties at Mozilla Development&nbsp;Network

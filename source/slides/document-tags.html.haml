@@ -1,0 +1,99 @@
+---
+title: Document tags
+layout: layout-slides
+---
+
+%section
+  %h1 Document tags
+
+%section
+  %h3
+    %code.html
+      &lt;html&gt; &lt;/html&gt;
+  %p
+    The <code>&lt;html&gt;</code> tag wraps almost everything: the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags.
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;html&gt;
+          …
+          &lt;body&gt;
+            &lt;h1&gt;Content&lt;/h1&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+  %p
+    The <code>&lt;body&gt;</code> tag includes all the content of the page (texts, images,&nbsp;etc).
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;html&gt;
+          &lt;head&gt;
+            …
+          &lt;/head&gt;
+          &lt;body&gt;
+            …
+          &lt;/body&gt;
+        &lt;/html&gt;
+  %p
+    The <code>&lt;head&gt;</code> tag wraps the meta information that the browser
+    needs to know in order to render the page: stylesheets, &lt;title&gt;, encoding, etc.
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;head&gt;
+          &lt;title&gt; Page title &lt;/title&gt;
+        &lt;/head&gt;
+  %p
+    The <code>&lt;title&gt;</code> tag allows you to give the page a title
+    (different from a heading), that will appear in the browser tab.
+
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+        &lt;/head&gt;
+  %p
+    The <code>&lt;meta&gt;</code> tag with the <code>charset</code> attribute
+    allows us to tell the browser which encoding is using the page, so that the
+    special characters of our text (ñ, ç, ^, `, ´, etc.) are correctly&nbsp;interpreted.
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;head&gt;
+          &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+  %p
+    The <code>&lt;link&gt;</code> tag with the attributes <code>rel="stylesheet"</code>
+    and <code>href</code> allows us to load a&nbsp;stylesheet.
+
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;!DOCTYPE html&gt;
+  %p
+    The <code>&lt;DOCTYPE&gt;</code> tag is used to indicate that a web follows
+    the web standards, and is not created in pre-standard times. It is placed at the beginning of everything, outside the <code>&lt;html&gt;</code> tag.
+%section
+  %pre
+    %code.html
+      :preserve
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt; … &lt;/title&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            …
+          &lt;/body&gt;
+        &lt;/html&gt;
+  %p
+    This is the complete structure of the document tags of a web page.

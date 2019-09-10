@@ -1,0 +1,52 @@
+---
+title: CSS Syntax
+layout: layout-slides
+---
+
+%section
+  %h1 CSS Syntax
+%section
+  %pre
+    %code.html
+      &lt;link rel="stylesheet" href="styles.css" &gt;
+  %p
+    A stylesheet is linked to an HTML file through the <code>&lt;link&gt;</code> tag.
+
+%section
+  %pre
+    %code.css
+      :preserve
+        selector {
+          property: value;
+        }
+  %p.note
+    CSS rules are written following the <code>selector {property: value;}</code> structure.
+    Each statement ends with a semicolon. All statements enclosed in curly braces
+    affect said&nbsp;selector.
+
+%section
+  .codepen(data-height="200" data-editable="true" data-theme-id="0" data-slug-hash="rqGLyq" data-default-tab="css,result" data-user="htmlboy")
+
+%section
+  %pre
+    %code.css
+      :preserve
+        h1, h2, h3 {
+          font-size: 24px;
+        }
+  %p
+    Selectors can be grouped with commas in order to assign them the same&nbsp;styles.
+
+%section
+  %pre
+    %code.css
+      h1 {font-size: 24px;}
+      h1 {font-size: 20px;}
+  %p
+    In case of two statements in conflict (same selector, same property),
+    the statement below&nbsp;prevails.
+
+%section
+  %pre
+    %code.css
+      \/* CSS Comment */
