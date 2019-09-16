@@ -1,25 +1,22 @@
-.reveal h1 {
-  line-height: 1.1; }
-
-.reveal img.clean {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none; }
-
-.reveal .note,
-.reveal .note p {
-  font-size: 0.8em; }
-
-.reveal p {
-  margin-bottom: 0.5em; }
-
-.reveal p + p {
-  margin-top: 0; }
-
-.reveal .img-collage {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; }
-  .reveal .img-collage img {
-    margin-left: 15px !important;
-    margin-right: 15px !important; }
+.reveal {
+  color: rgba(255, 255, 255, 0.8); }
+  .reveal h1 {
+    line-height: 1.1; }
+  .reveal img.clean {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none; }
+  .reveal .note,
+  .reveal .note p {
+    font-size: 0.8em; }
+  .reveal p {
+    margin-bottom: 0.5em; }
+  .reveal p + p {
+    margin-top: 0; }
+  .reveal .img-collage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    .reveal .img-collage img {
+      margin-left: 15px !important;
+      margin-right: 15px !important; }
