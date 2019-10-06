@@ -34,42 +34,50 @@
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='NEqxJz' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-Podemos sacar un elemento de su flujo natural dentro de una página con la propiedad <code>position: absolute</code>.
+We can take out an element of its natural flow within a page with the property <code>position: absolute</code>.
 </p>
 </section>
 <section>
 <p>
-Un elemento posicionado absolutamente se muestra por defecto en el lugar que ocuparía de manera natural, pero sin desplazar otros contenidos.
+An absolutely positioned element appears in its natural place by default, but without displacing other contents (and sometimes overlapping them).
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='aQONOv' data-theme-id='0' data-user='htmlboy'></div>
 <p>
-Podemos controlar la posición del elemento con las propiedades <code>top</code>, <code>bottom</code>, <code>left</code> o <code>right</code>.
+The position of this element can be controlled with <code>top</code>, <code>bottom</code>, <code>left</code> or <code>right</code> properties.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='xQGVZV' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Para conseguir que un elemento posicionado absolutamente lo haga respecto a otro elemento (en vez de respecto al navegador), necesitamos que un elemento que lo contenga tenga <code>position:relative</code>.
+To absolutely position an element inside another element (instead of the browser's window), the parent element needs to be set to <code> position: relative </code>.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='LXVNLy' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-En caso de disponer de varios elementos posicionados, podemos controlar su orden de dibujado con la propiedad <code>z-index</code>.
+In the case of several positioned elements, the order in which they're painted can be controlled with the <code>z-index</code> property.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='WYvwEm' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Como alternativa al <code>position:absolute</code>, existe el <code>position:fixed</code>, que mantiene un elemento fijo respecto a la ventana del navegador.
+As an alternative to <code> position: absolute</code>, we can use <code> position: fixed</code>, which keeps a fixed element within the browser&nbsp;window.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='BaBpqWM' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Y el <code>position:sticky</code>, que mantiene un elemento fijo respecto a la ventana del navegador una vez se ha hecho scroll hasta cierto&nbsp;punto.
+And <code> position: sticky</code>, which turns a regular element into a fixed element once the user has scrolled to some extent.
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/position' target='_blank'>
+<code>position</code> at Mozilla Development&nbsp;Network
+</a>
 </p>
 </section>
 
