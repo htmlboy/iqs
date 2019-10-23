@@ -8,63 +8,63 @@ layout: layout-slides
 %section
   .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="gOYRBYg" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Si asignamos la propiedad <code>display: flex</code> a un elemento,
-    se convierte en un espacio flexbox, y sus descendientes directos tienden a
-    alinearse sobre el eje principal.
+    By setting <code>display: flex</code> to an element, it becomes a flexbox
+    space, and its direct descendants (children) will line up on the main&nbsp;axis.
 
 %section
   .codepen(data-height="300" data-editable="true" data-theme-id="0" data-slug-hash="vYBZVLK" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Podemos cambiar la dirección del eje principal con
-    <code>flex-direction: column</code> (columna). El valor por defecto es
-    <code>row</code> (fila), pero también existe <code>row-reverse</code> (fila
-    invertida) y <code>column-reverse</code> (columna invertida).
+    We can change the main axis direction with <code>flex-direction: column</code>.
+    The default value is <code>row</code>, but there is also <code>row-reverse</code>
+    and <code>column-reverse</code>.
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="KKPqGax" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Un espacio flexbox intentará siempre ordenar todo el contenido sobre el eje
-    principal, incluso si no tiene espacio. Podemos modificar este comportamiento
-    con la propiedad <code>flex-wrap: wrap</code> (por defecto es <code>nowrap</code>).
+    A flexbox space will always try to sort all the content on the main axis,
+    even if it has no room for it. We can modify this behavior with the
+    <code>flex-wrap: wrap</code> property (it's <code>nowrap</code> by default).
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="RwbgepK" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Podemos controlar el ancho por defecto de un elemento dentro de un espacio flexbox
-    con <code>flex-basis</code>, indicar qué proporción de espacio sobrante puede
-    ocupar un elemento con <code>flex-grow</code> (por defecto es 0) y en qué proporción
-    debe reducirse un elemento cuando no haya espacio disponible con
-    <code>flex-shrink</code> (por defecto es 1).
+    The default width of an element within a flexbox space can be controlled with
+    <code>flex-basis</code>. We can also control how much of the remaining space
+    should be asigned to an item with <code>flex-grow</code> (0 by default).
+    And we can control the shrink factor of an item when there is no available space
+    with <code>flex-shrink</code> (1 by default).
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ZEzyqXZ" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Podemos cambiar el orden de los elementos dentro de un espacio flexbox. Por
-    defecto todos los elementos tienen un <code>order: 0</code>, pero siempre se
-    ordenarán de valores más bajos a más altos.
+    We can change the order of the elements within a flexbox space. All elements
+    have an <code>order: 0</code> by default, but they will always be arranged
+    from lower to higher values.
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="RwbgeQg" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Podemos alinear el contenido sobre el eje principal con la propiedad <code>justify-content</code>.
+    We can align the content on the main axis with the
+    <code>justify-content</code> property.
 
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="GRKEYXO" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Podemos alinear el contenido en el eje cruzado con la propiedad <code>align-items</code>.
+    We can align the content on the cross axis with the
+    <code>align-items</code> property.
 
 %section
   .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="WNeOaPL" data-default-tab="css,result" data-user="htmlboy")
   %p.note
-    Podemos cambiar la alineación de un elemento en particular respecto al eje
-    cruzado con <code>align-self</code>. También podemos conseguir cambios en el
-    eje principal si usamos <code>margin-top/bottom/left/right: auto</code>.
+    We can change the alignment of a particular element in the cross axis with
+    <code>align-self</code>. We can also tweak the main axis if we use
+    <code>margin-top / bottom / left / right: auto</code>.
 
 
 
 %section
-  %h2 Más información
+  %h2 More information
   %p.note
     %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/flexbox" target="_blank")
-      Flexbox en MDN
+      Flexbox at MDN
