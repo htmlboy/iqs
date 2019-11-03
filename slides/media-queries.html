@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Media queries y layout responsive</title>
+  <title>Media queries and responsive layouts</title>
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../revealjs/css/reveal.css">
@@ -30,60 +30,59 @@
     <div class="slides">
       <section>
 <h1>Media queries</h1>
-<h2>y layout responsive</h2>
+<h2>and responsive layouts</h2>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='NWKvGdm' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-La base de una web responsive es una estructura en anchuras porcentuales,
-capaz de adaptarse a la anchura del navegador.
+The core of a responsive web is a fluid structure, based in percentage widths,
+capable of adapting to the browser's width.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='qBWXOpP' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Añdiendo a nuestra CSS <code>img {max-width: 100%;}</code> nos aseguramos de
-que las imágenes se reduzcan cuando su contenedor es más pequeño que su
-tamaño&nbsp;natural.
+By adding <code>img {max-width: 100%;}</code> to the CSS we ensure that the
+images are reduced when their container is smaller than their natural size.
 </p>
 </section>
 <section>
 <pre><code class='css'>@media (max-width: 700px) {&#x000A;  .example {background-color: red;}&#x000A;}</code></pre>
 <p class='note'>
-Una media query es una regla condicional (la condición se pone entre paréntesis
-y hace referencia a las condicidiones de la ventana del navegador o del&nbsp;dispositivo).
+A media query is a conditional rule (the condition is placed between parentheses
+and refers to the conditions of the browser window or the device).
 </p>
 <p class='note'>
-El código CSS que hay entre las llaves de una media query solo se aplicará si
-la condición se&nbsp;cumple.
+The CSS code between the <code>{}</code> of a media query will only be
+applied if the condition is met.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='mdbMeGQ' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Una media query de <code>max-width</code> solo se aplicará cuando la ventana
-sea igual o menor a la anchura que hayamos&nbsp;marcado.
+A <code>max-width</code> media query will only be applied when the window is
+equal to or smaller than the specified width.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='QWLMyWy' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Una media query de <code>min-width</code> solo se aplicará cuando la ventana
-sea igual o mayor que la anchura que hayamos&nbsp;marcado.
+A <code>min-width</code> media query will only be applied when the window is
+equal to or greater than the specified width.
 </p>
 </section>
 <section>
 <div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='oNvebXP' data-theme-id='0' data-user='htmlboy'></div>
 <p class='note'>
-Podemos acotar una media query entre un mínimo y un máximo con la palabra
-<code>and</code> y una&nbsp;segunda condición.
+We can narrow a media query between a minimum and a maximum with the
+<code>and</code> keyword and a second condition.
 </p>
 </section>
 <section>
-<h2>Más información</h2>
+<h2>More information</h2>
 <p class='note'>
 <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries' target='_blank'>
-Media queries en MDN
+Media queries at MDN
 </a>
 </p>
 </section>
