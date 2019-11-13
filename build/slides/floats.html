@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Floats</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Floats</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='dQoGYb' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+Podemos posicionar un elemento de bloque junto a otro elemento de bloque utilizando la propiedad <code>float</code>. Por ejemplo, <code>float:left</code>.
+</p>
+</section>
+<section>
+<p>
+Aunque esta técnica permite crear columnas, es recomendable emplear métodos
+más avanzados, como&nbsp;flexbox.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='wvwgYMR' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+Podemos hacer flotar un elemento (o una imagen) para rodearlo de&nbsp;texto.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='RqPrRr' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+Si hacemos que dos elementos floten a la derecha (<code>float:right</code>) se producirá un cambio de orden.
+</p>
+</section>
+<section>
+<p>
+Podemos devolver un elemento a su estado no-flotante original con <code>float:none</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='YRXwpX' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Un elemento que flota recibe la anchura de su contenido por defecto. Podemos fijarle un <code>width</code> en porcentaje, y un <code>margin</code>. No te olvides del <code>box-sizing: border-box</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='oQXbyj' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Los elementos flotantes pueden producir solapamientos con el contenido que no flota, por lo que es interesante meterlos en un div contenedor que tenga un <code>overflow:hidden</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='dQoGqM' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Cuando el <code>overflow:hidden</code> suponga un problema, se puede emplear la técnica clearfix.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

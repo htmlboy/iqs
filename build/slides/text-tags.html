@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Text tags</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Text tags</h1>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;p&gt;</code>
+</h2>
+<p>
+The &lt;p&gt; tag groups each paragraph of a&nbsp;text.
+</p>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;br&gt;</code>
+</h2>
+<p>
+The &lt;br&gt; tag makes a text line break inside a paragraph or a text&nbsp;line.
+</p>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;h1&gt;</code>
+</h2>
+<p>
+Identifies the main heading of a page. Normally there is only one per&nbsp;page.
+</p>
+</section>
+<section>
+<h3>
+<pre><code class='html'>&lt;h1&gt;&#x000A;  First level heading&#x000A;&lt;/h1&gt;&#x000A;</code></pre>
+</h3>
+</section>
+<section>
+<h4>
+<code class='html'>&lt;h1&gt;<br>
+&lt;h2&gt;<br>
+&lt;h3&gt;<br>
+&lt;h4&gt;<br>
+&lt;h5&gt;<br>
+&lt;h6&gt;</code>
+</h4>
+<p>
+Each of these headings refer to their importance within the text, never to
+the order in which they&nbsp;appear.
+</p>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;em&gt;</code>
+</h2>
+<p>
+Adds <em>emphasis</em> on a particular piece of text. It is usually rendered as&nbsp;italic.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;p&gt;&#x000A;  We can emphasize <em>specific words</em>.&#x000A;&lt;/p&gt;</code></pre>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;strong&gt;</code>
+</h2>
+<p>
+Indicates that one or more words have <strong> importance </strong> within
+the text. It is usually rendered as&nbsp;bold.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;p&gt;&#x000A;  Or we can give <strong>importance</strong>&#x000A;  to specific words.&#x000A;&lt;/p&gt;&#x000A;</code></pre>
+</section>
+<section>
+<h2>
+<code class='html'>&lt;span&gt;</code>
+</h2>
+<p>
+It groups a piece of text and allows us to assign a&nbsp;class.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;p&gt;&#x000A;  The <span class="red">span tag</span>&#x000A;  lets us to select a string of text.&#x000A;&lt;/p&gt;</code></pre>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

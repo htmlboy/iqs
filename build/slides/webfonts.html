@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Webfonts</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Webfonts</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='RwbVEdG' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+When setting a typeface family, especially if we trust that it would be installed
+on the user's computer, we can declare alternatives, separated by commas.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='qBWmgeX' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+If we load a typeface from an external service, such as Google Fonts, we will
+have to load their stylesheet, with the appropriate weights, and follow
+any other instructions.
+</p>
+</section>
+<section>
+<pre><code class='css'>@font-face {&#x000A;  font-family: Lobster;&#x000A;  src: url(fonts/lobster-bold.woff) format("woff");&#x000A;  font-weight: bold;&#x000A;  font-style: normal;&#x000A;}</code></pre>
+<p class='note'>
+If we load webfonts from our web archives, we will put an <code>@font-face</code>
+declaration at the beginning of our CSS for each file of each font weight,
+indicating its family, weight and style.
+</p>
+</section>
+<section>
+<pre><code class='css'>@font-face {&#x000A;  font-family: Lobster;&#x000A;    src: url(fonts/lobster-bold.woff2) format("woff2"),&#x000A;         url(fonts/lobster-bold.woff) format("woff"),&#x000A;         url(fonts/lobster-bold.ttf) format("truetype");&#x000A;  font-weight: bold;&#x000A;  font-style: normal;&#x000A;}</code></pre>
+<p class='note'>
+We can set several file formats (woff and woff2 are the standard, and woff2
+the lightest). The browser will download the first file that is capable of
+interpreting.
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face' target='_blank'>
+<code>@font-face</code> rule at MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://fonts.google.com/' target='_blank'>
+Google Fonts (free fonts)
+</a>
+</p>
+<p class='note'>
+<a href='https://fonts.adobe.com/' target='_blank'>
+Adobe Fonts (Creative Cloud subscription)
+</a>
+</p>
+<p class='note'>
+<a href='https://www.fontsquirrel.com/' target='_blank'>
+Font Squirrel (free fonts)
+</a>
+</p>
+<p class='note'>
+<a href='https://www.fontsquirrel.com/tools/webfont-generator' target='_blank'>
+Font Squirrel Webfont Gererator (format converter)
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

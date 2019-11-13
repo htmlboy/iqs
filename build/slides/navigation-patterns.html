@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Responsive navigation patterns</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Responsive navigation</h1>
+</section>
+<section>
+<img alt='' src='navigation-patterns-content/do-nothing-nav.png'>
+<p class='note'>
+The main problem with medium and small screens is that navigation, which is
+a shortcut to access the rest of the web, becomes an awkward element.
+</p>
+</section>
+<section>
+<p class='note'>
+The most common solution is to hide the navigation behind an actionable element,
+although it is important to question the role the navigation is playing and
+if it is responding adequately to the user's&nbsp;needs.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-height='400' data-slug-hash='mlyvu' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+The simplest pattern is to leave the navigation at the bottom and add an anchor on top.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-height='400' data-slug-hash='sHvaz' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+The toggle pattern creates a drop-down with JavaScript.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-height='400' data-slug-hash='IEBrz' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+The flyout navigation displays the menu from a side.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-height='400' data-slug-hash='orJwL' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+Priority+ navigation is an interesting way to show at least part of the navigation, instead of hiding everything.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='waVzmK' data-theme-id='0' data-user='Dreamdealer'></div>
+<p class='note'>
+The same Priority+ philosophy can be applied to other navigation&nbsp;formats.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='czwer' data-theme-id='0' data-user='micahgodbolt'></div>
+<p class='note'>
+In the case of multi-level navigations, a possible solution is to create nested drop-downs.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='400' data-slug-hash='vljdx' data-theme-id='0' data-user='bradfrost'></div>
+<p class='note'>
+But another solution is that subnavigation is not available when there is no
+space; and the content of every page allows us to navigate (<a href="https://www.worldwildlife.org/" target="_blank">example: WWF</a>).
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://bradfrost.github.io/this-is-responsive/patterns.html#navigation' target='_blank'>
+More responsive navigation patterns (by Brad Frost)
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

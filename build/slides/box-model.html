@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Box model</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Box model</h1>
+</section>
+<section>
+<div style='display: flex; align-items: center; margin: auto;'>
+<div style='width: 100%'>
+<span style='font-size: .75em; color: white;'>
+← width →
+</span>
+<div style='background-color: hotpink; color: white; height: 200px; display: flex; flex-direction: column; justify-content: center;'>
+<span style='font-size: .75em; color: white;'>
+↑
+<br>
+height
+<br>
+↓
+</span>
+</div>
+</div>
+</div>
+<p>
+All HTML elements are box-shaped. This box has a <code>width</code> and a <code>height</code>.
+</p>
+</section>
+<section>
+<span style='font-size: .5em;'>
+margin
+</span>
+<div style='width: 50%; border: 2px dashed; background-color: hotpink; color: white; margin: auto; padding: .1em;'>
+<span style='font-size: .5em; top: -.4em; position: relative;'>
+padding
+</span>
+<div style='min-height: 100px; display: flex; align-items: center; justify-content: center; background-color: rgba(255,255,255,.1); margin: 0 1em;'>
+Content
+</div>
+<span style='font-size: .5em; top: -.4em; position: relative;'>
+padding
+</span>
+</div>
+<span style='font-size: .5em; top: -1em; position: relative;'>
+margin
+</span>
+<p>
+These boxes have content, space between the content and the border
+(<code>padding</code>) and space between the border and other boxes (<code>margin</code>).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-height='350' data-slug-hash='qJKMjo' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The <code>width</code> and <code>height</code> properties are used to set
+the width and height. If we don't set a width, block-type tags tend to be
+100% width, and line-type tags depend on their content. If we don't set a
+height, the box gets the height of the content.
+</p>
+</section>
+<section>
+<pre><code>.example{&#x000A;  min-width: 200px;&#x000A;  max-width: 90%;&#x000A;  min-height: 200px;&#x000A;  max-height: 1200px;&#x000A;}</code></pre>
+<p>
+Apart from setting a <code>width</code> or a <code>height</code>, we can also
+give minimum or maximum widths or heights.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='XxYPZe' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+We can give a different value of <code>margin</code> on each side of the box.
+</p>
+</section>
+<section>
+<pre><code>.example{&#x000A;  margin: 20px;&#x000A;}</code></pre>
+<p>
+Or the same margin for all 4 sides.
+</p>
+</section>
+<section>
+<pre><code>.example{&#x000A;  margin: 20px 10px 30px 15px;&#x000A;}</code></pre>
+<p>
+The <code>margin</code> property is an abbreviated property, which supports
+up to 4 values separated by spaces.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='350' data-slug-hash='EdReEo' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The <code>padding</code> property follows rules similar to <code>margin</code>.
+</p>
+</section>
+<section>
+<pre><code>*{&#x000A;  box-sizing: border-box;&#x000A;}</code></pre>
+<p class='note'>
+To prevent <code>padding</code> and <code>border</code> from changing the
+total width that we have marked with the <code>width</code> property, we can
+change the box model at the beginning of our CSS, for all the elements.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

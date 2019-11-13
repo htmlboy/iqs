@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Flexbox</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Flexbox</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='gOYRBYg' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+By setting <code>display: flex</code> to an element, it becomes a flexbox
+space, and its direct descendants (children) will line up on the main&nbsp;axis.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='vYBZVLK' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can change the main axis direction with <code>flex-direction: column</code>.
+The default value is <code>row</code>, but there is also <code>row-reverse</code>
+and <code>column-reverse</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='KKPqGax' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+A flexbox space will always try to sort all the content on the main axis,
+even if it has no room for it. We can modify this behavior with the
+<code>flex-wrap: wrap</code> property (it's <code>nowrap</code> by default).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='RwbgepK' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The default width of an element within a flexbox space can be controlled with
+<code>flex-basis</code>. We can also control how much of the remaining space
+should be asigned to an item with <code>flex-grow</code> (0 by default).
+And we can control the shrink factor of an item when there is no available space
+with <code>flex-shrink</code> (1 by default).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='ZEzyqXZ' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can change the order of the elements within a flexbox space. All elements
+have an <code>order: 0</code> by default, but they will always be arranged
+from lower to higher values.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='RwbgeQg' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can align the content on the main axis with the
+<code>justify-content</code> property.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='GRKEYXO' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can align the content on the cross axis with the
+<code>align-items</code> property.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='WNeOaPL' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can change the alignment of a particular element in the cross axis with
+<code>align-self</code>. We can also tweak the main axis if we use
+<code>margin-top / bottom / left / right: auto</code>.
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/flexbox' target='_blank'>
+Flexbox at MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

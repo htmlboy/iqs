@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Document tags</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Document tags</h1>
+</section>
+<section>
+<h3>
+<code class='html'>&lt;html&gt; &lt;/html&gt;</code>
+</h3>
+<p>
+The <code>&lt;html&gt;</code> tag wraps almost everything: the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;html&gt;&#x000A;  …&#x000A;  &lt;body&gt;&#x000A;    &lt;h1&gt;Content&lt;/h1&gt;&#x000A;  &lt;/body&gt;&#x000A;&lt;/html&gt;</code></pre>
+<p>
+The <code>&lt;body&gt;</code> tag includes all the content of the page (texts, images,&nbsp;etc).
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;html&gt;&#x000A;  &lt;head&gt;&#x000A;    …&#x000A;  &lt;/head&gt;&#x000A;  &lt;body&gt;&#x000A;    …&#x000A;  &lt;/body&gt;&#x000A;&lt;/html&gt;</code></pre>
+<p>
+The <code>&lt;head&gt;</code> tag wraps the meta information that the browser
+needs to know in order to render the page: stylesheets, <code>&lt;title&gt;</code>, encoding, etc.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;head&gt;&#x000A;  &lt;title&gt; Page title &lt;/title&gt;&#x000A;&lt;/head&gt;</code></pre>
+<p>
+The <code>&lt;title&gt;</code> tag allows you to give the page a title
+(different from a heading), that will appear in the browser tab.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;head&gt;&#x000A;  &lt;meta charset="utf-8"&gt;&#x000A;&lt;/head&gt;</code></pre>
+<p>
+The <code>&lt;meta&gt;</code> tag with the <code>charset</code> attribute
+allows us to tell the browser which encoding is using the page, so that the
+special characters of our text (ñ, ç, ^, `, ´, etc.) are correctly&nbsp;interpreted.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;head&gt;&#x000A;  &lt;link rel="stylesheet" href="styles.css"&gt;&#x000A;&lt;/head&gt;</code></pre>
+<p>
+The <code>&lt;link&gt;</code> tag with the attributes <code>rel="stylesheet"</code>
+and <code>href</code> allows us to load a&nbsp;stylesheet.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;!DOCTYPE html&gt;</code></pre>
+<p>
+The <code>&lt;DOCTYPE&gt;</code> tag is used to indicate that a web follows
+the web standards, and is not created in pre-standard times. It is placed at the beginning of everything, outside the <code>&lt;html&gt;</code> tag.
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;!DOCTYPE html&gt;&#x000A;&lt;html&gt;&#x000A;  &lt;head&gt;&#x000A;    &lt;title&gt; … &lt;/title&gt;&#x000A;    &lt;meta charset="utf-8"&gt;&#x000A;    &lt;link rel="stylesheet" href="styles.css"&gt;&#x000A;  &lt;/head&gt;&#x000A;  &lt;body&gt;&#x000A;    …&#x000A;  &lt;/body&gt;&#x000A;&lt;/html&gt;</code></pre>
+<p>
+This is the complete structure of the document tags of a web page.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

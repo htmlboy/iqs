@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Variables and files setup</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Variables</h1>
+<h2>And files setup</h2>
+</section>
+<section>
+<pre><code class='css'>html {&#x000A;  --color: hotpink;&#x000A;}&#x000A;p {&#x000A;  color: var(--color);&#x000A;}</code></pre>
+<p class='note'>
+CSS allows us to centralize values (sizes, colors…) in variables, which eases
+design updates. The variables can be declared globally in the <code>html</code>
+or <code>:root</code> selector (the name of the variables always starts
+with&nbsp;<code>--</code>) and can be used with the <code>var()</code> function
+and the name of the&nbsp;variable.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='NWKjQqR' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can declare the variables in a context different from <code>:root</code>,
+and they will be available in this context. We can also overwrite them on a
+specific node.
+</p>
+</section>
+<section>
+<pre><code class='css'>@import url(general.css);&#x000A;@import url(typography.css);</code></pre>
+<p class='note'>
+The main style file can include external files with the <code>@import</code>
+rule. This allows to have a single style file linked in the <code>head</code>,
+and the styles divided into several files to make working with them easier.
+</p>
+</section>
+<section>
+<pre><code class='css'>@import url(variables.css);&#x000A;@import url(general.css);&#x000A;@import url(typography.css);&#x000A;@import url(buttons.css);&#x000A;@import url(layout.css);&#x000A;@import url(header.css);&#x000A;@import url(footer.css);&#x000A;@import url(gallery.css);&#x000A;@import url(video.css);&#x000A;@import url(related-products.css);</code></pre>
+<p class='note'>
+Divide the CSS into different files according to their function. Arrange them
+from the most general to the most specific. Centralize variables in one or
+more files to have more consistent styles.
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/--*' target='_blank'>
+CSS variables (also known as <i>custom properties</i>) at MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

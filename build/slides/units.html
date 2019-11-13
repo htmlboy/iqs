@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>CSS Units</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>CSS Units</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='300' data-slug-hash='OJLmGyM' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The values in <code>px</code> are absolute. The values in <code>em</code>
+depend on the <code>font-size</code> inherited, and indicate a proportion to
+this inherited size. The values in <code>%</code> work similarly to the
+<code>em</code> when applied to typography (when applied to a width, they
+depend on the available space).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='ExYmJZd' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The values in <code>rem</code> are proportional to the font size of the
+<code>html</code> tag directly, regardless of inheritance.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='vYBmMpO' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The units related to the viewport (<code>vw</code> for width,
+<code>vh</code> for height) work in a similar way to percentages
+(<code>100vh</code> = 100% of the screen height).
+</p>
+<p class='note'>
+It is advisable to avoid making something <code>100vw</code> wide because in
+some operating systems can cause horizontal scrolling.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='VwZbNBL' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The viewport width unit (<code>vw</code>) is interesting to create adapting&nbsp;headers.
+</p>
+</section>
+<section>
+<p>
+In addition to <code>vw</code> and <code>vw</code> there are the units <code>vmin</code>
+(1% of the screen width or height, depending on which side is smaller) and
+<code >vmax</code> (1% of the screen width or height, depending on which side is larger).
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units' target='_blank'>
+CSS units at MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

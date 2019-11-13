@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Block tags</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Block tags</h1>
+</section>
+<section>
+<pre><code class='html'>&lt;em&gt; &lt;strong&gt; &lt;span&gt; &lt;a&gt; &lt;img&gt;</code></pre>
+<p>
+These are line tags (they do not cause a line break&nbsp;below).
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;p&gt; &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; …</code></pre>
+<p>
+These are block tags (they cause a line break), but they are aimed to contain
+text strings (not other block&nbsp;tags).
+</p>
+</section>
+<section>
+<pre><code class='html'>&lt;div&gt;</code></pre>
+<p>
+This block tag is used to create structures, blocks and groups of&nbsp;blocks.
+</p>
+</section>
+<section>
+<pre><code class='html'><div class="header">&#x000A;  <h1>Heading</h1>&#x000A;  <p>Content</p>&#x000A;</div></code></pre>
+<p>
+We can group contents into a <code>&lt;div&gt;</code> tag and apply styles with a&nbsp;class.
+</p>
+</section>
+<section>
+<pre><code class='html'><div class="header">&#x000A;  <h1>Heading</h1>&#x000A;  <p>Content</p>&#x000A;  <div class="highlight">&#x000A;    <p>Highlighted text</p>&#x000A;    <p>Highlighted text</p>&#x000A;  </div>&#x000A;</div></code></pre>
+<p>
+The <code>&lt;div&gt;</code> tags can be grouped into each other to create
+more complex&nbsp;structures.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='250' data-slug-hash='MWgJVBG' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The &lt;ul&gt; allow us to create lists. Each item in a list goes
+within a&nbsp;&lt;li&gt;
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='html,result' data-editable='true' data-height='250' data-slug-hash='GRKrxYZ' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The &lt;ol&gt; allow us to create numbered lists. The rest of the rules are the same
+as with the&nbsp;&lt;ul&gt;.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

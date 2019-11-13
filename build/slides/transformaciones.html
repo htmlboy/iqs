@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Transformaciones</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Transformaciones</h1>
+</section>
+<section>
+<pre><code>.elemento{&#x000A;  transform: scale(.5);&#x000A;}</code></pre>
+<p class='note'>
+Las transformaciones modifican la apariencia de un elemento (escalar, rotar,
+desplazar, deformar…) sin afectar a los elementos que le rodean. Son interesantes
+para añadir interacción y efectos.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='XWrgYKw' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+La transformación de <code>scale()</code> cambiará el tamaño del elemento
+proporcionalmente al número que le pasemos entre paréntesis. Si solo queremos
+modificar la anchura o la altura, podemos usar <code>scaleX()</code> o
+bien&nbsp;<code>scaleY()</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='PoYjaOO' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con <code>rotate()</code> podemos indicar cuánto gira un elemento sobre sí mismo,
+pasando como parámetro los grados (<code>deg</code>).
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='gOYRKvX' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con <code>translate()</code> podemos indicar el desplazamiento en el eje X y
+en el eje Y del elemento, pasando dos valores separados por una coma. Si solo
+queremos desplazar en un eje, podemos usar <code>translateX()</code>
+o&nbsp;<code>translateY()</code>.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='zYOzaMG' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Con <code>skewX()</code> y <code>skewY()</code> podemos deformar un elemento
+en el eje X o Y el número de grados (<code>deg</code>) que le&nbsp;asignemos.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='wvweXZY' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+Podemos asignar varias transformaciones, separadas por espacios. Además,
+podemos controlar el punto desde el que se realizan las transformaciones con
+la propiedad <code>transform-origin</code>.
+</p>
+</section>
+<section>
+<h2>Más información</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/transform' target='_blank'>
+La propiedad <code>transform</code> en MDN
+</a>
+</p>
+<p class='note'>
+También existen las transformaciones 3D, que con la ayuda de la propiedad
+<code>perspective</code>
+permiten añadir un tercer eje a las transformaciones y conseguir así nuevos&nbsp;efectos.
+<br>
+Puedes encontrar más información aquí: <a href="http://3dtransforms.desandro.com/" target="_blank">3dtransforms.desandro.com</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

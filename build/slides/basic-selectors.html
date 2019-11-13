@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Basic selectors</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Basic selectors</h1>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='200' data-slug-hash='gBooEX' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The tag selector is its own name, without any additional&nbsp;characters.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='PyEQoR' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The class selector is written with a dot followed by the name of the chosen
+class. Classes cannot have spaces, special characters (punctuation marks,
+ñ, ç, `, ´, ^…), nor start with a&nbsp;numeral.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='JmMpKb' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can create styles that affect a class but only if a specific tag is
+applied. To achieve this, we write the name of the tag and then the class
+selector, without&nbsp;spaces.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='280' data-slug-hash='aREYBY' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The space between two selectors indicates that the second descends from
+the first. For example, paragraphs within the <i>example</i>&nbsp;class.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='aREYEj' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+We can continue nesting descendant selectors, separating each one by a&nbsp;space.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='NOXYmp' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+We can give styles by referring to the <code>id</code> attribute instead of
+the class. If this is the case, we will use the hash (<code>#</code>) instead
+of the dot. Whenever we can, it is preferable to use classes, since the id
+selector is very specific and difficult to override.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='280' data-slug-hash='yLBgqxv' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The more specific a selector, the more important it is, and this can alter the cascade.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='250' data-slug-hash='wYpjad' data-theme-id='0' data-user='htmlboy'></div>
+<p>
+The <code>*</code> selector affects all HTML tags.
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

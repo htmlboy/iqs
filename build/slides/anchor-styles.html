@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Anchor styles</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Anchor styles</h1>
+</section>
+<section>
+<pre><code class='css'>a {&#x000A;  color: blue;&#x000A;  text-decoration: none;&#x000A;}</code></pre>
+<p class='note'>
+Anchor elements have <code>color</code> and <code>text-decoration</code> by
+default, so you have to explicitly overwrite them.
+</p>
+</section>
+<section>
+<pre><code class='css'>a:hover {&#x000A;  text-decoration: underline;&#x000A;}</code></pre>
+<p class='note'>
+Pseudo-classes (or states) are written with a colon (<code>:</code>). The
+<code>:hover</code> state indicates when the mouse passes over the anchor.
+</p>
+</section>
+<section>
+<pre><code>a:active {&#x000A;  color: orange;&#x000A;}</code></pre>
+<p class='note'>
+The <code>:active</code> state indicates the moment the anchor is pressed.
+</p>
+</section>
+<section>
+<pre><code>a:visited {&#x000A;  color: blue;&#x000A;}</code></pre>
+<p class='note'>
+The <code>:visited</code> state indicates that the link has been visited.
+In many cases this state will be overwritten to keep the original color.
+</p>
+</section>
+<section>
+<pre><code class='css'>a:focus {&#x000A;  background-color: lightgrey;&#x000A;}</code></pre>
+<p class='note'>
+The <code>:focus</code> state indicates that the focus of the browser is on
+that particular element. It's especially interesting when browsing with the&nbsp;keyboard.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='550' data-slug-hash='WNepJoX' data-theme-id='0' data-user='htmlboy'></div>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Backgrounds</title>
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../revealjs/css/reveal.css">
+  <link rel="stylesheet" href="../revealjs/css/theme/moon.css">
+  <link href="../stylesheets/slides.css" rel="stylesheet" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../revealjs/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? '../revealjs/css/print/pdf.css' :
+      '../revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+<h1>Backgrounds</h1>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background-color: #dd6a92;&#x000A;}</code></pre>
+<p class='note'>
+The background color of an HTML element is declared with <code>background-color</code>.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background-image: url(path/image.jpg);&#x000A;}</code></pre>
+<p class='note'>
+The <code>background-image</code> property sets an image as a background.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background-image: url(path/image1.jpg),&#x000A;                    url(path/image2.jpg);&#x000A;}</code></pre>
+<p class='note'>
+We could set several background images, separated by commas.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='RwbpEGr' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The <code>background-repeat</code> property defines if the background image
+is repeated and how. The <code>background-position</code> property allows us
+to align the image across the background.
+</p>
+</section>
+<section>
+<pre><code class='css'>.example {&#x000A;  background: hotpink url(image.jpg) no-repeat right top;&#x000A;}</code></pre>
+<p class='note'>
+The <code>background</code> property allows us to assign the values of several
+background properties together, separated by spaces.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='VwZpqXa' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+The <code>background-size</code> property controls the size at which the
+background images appear.
+</p>
+</section>
+<section>
+<div class='codepen' data-default-tab='css,result' data-editable='true' data-height='400' data-slug-hash='jONBXev' data-theme-id='0' data-user='htmlboy'></div>
+<p class='note'>
+With the <code>background-image</code> property we can also set a gradient.
+In the <code>linear-gradient()</code> or <code>radial-gradient()</code> functions
+we will set the angle or position and color stops.
+</p>
+</section>
+<section>
+<h2>More information</h2>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/background' target='_blank'>
+<code>background</code> property at MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/background-size' target='_blank'>
+<code>background-size</code> property at MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient' target='_blank'>
+Linear gradients at MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient' target='_blank'>
+Radial gradients at MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient' target='_blank'>
+Repeating linear gradients at MDN
+</a>
+</p>
+<p class='note'>
+<a href='https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient' target='_blank'>
+Repeating radial gradients at MDN
+</a>
+</p>
+</section>
+
+    </div>
+  </div>
+
+  <script src="../revealjs/lib/js/head.min.js"></script>
+  <script src="../revealjs/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      transition: 'none',
+      dependencies: [{
+          src: '../revealjs/plugin/markdown/marked.js'
+        },
+        {
+          src: '../revealjs/plugin/markdown/markdown.js'
+        },
+        {
+          src: '../revealjs/plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: '../revealjs/plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>
