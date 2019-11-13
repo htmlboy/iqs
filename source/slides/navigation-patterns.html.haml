@@ -1,0 +1,62 @@
+---
+title: Responsive navigation patterns
+layout: layout-slides
+---
+
+%section
+  %h1 Responsive navigation
+
+%section
+  %img(src="navigation-patterns-content/do-nothing-nav.png" alt="")
+  %p.note
+    The main problem with medium and small screens is that navigation, which is
+    a shortcut to access the rest of the web, becomes an awkward element.
+
+%section
+  %p.note
+    The most common solution is to hide the navigation behind an actionable element,
+    although it is important to question the role the navigation is playing and
+    if it is responding adequately to the user's&nbsp;needs.
+
+%section
+  .codepen(data-height="400" data-theme-id="0" data-slug-hash="mlyvu" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    The simplest pattern is to leave the navigation at the bottom and add an anchor on top.
+
+%section
+  .codepen(data-height="400" data-theme-id="0" data-slug-hash="sHvaz" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    The toggle pattern creates a drop-down with JavaScript.
+
+%section
+  .codepen(data-height="400" data-theme-id="0" data-slug-hash="IEBrz" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    The flyout navigation displays the menu from a side.
+
+
+%section
+  .codepen(data-height="400" data-theme-id="0" data-slug-hash="orJwL" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    Priority+ navigation is an interesting way to show at least part of the navigation, instead of hiding everything.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="waVzmK" data-default-tab="html,result" data-user="Dreamdealer")
+  %p.note
+    The same Priority+ philosophy can be applied to other navigation&nbsp;formats.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="czwer" data-default-tab="html,result" data-user="micahgodbolt")
+  %p.note
+    In the case of multi-level navigations, a possible solution is to create nested drop-downs.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vljdx" data-default-tab="html,result" data-user="bradfrost")
+  %p.note
+    But another solution is that subnavigation is not available when there is no
+    space; and the content of every page allows us to navigate (<a href="https://www.worldwildlife.org/" target="_blank">example: WWF</a>).
+
+%section
+  %h2 More information
+  %p.note
+    %a(href="https://bradfrost.github.io/this-is-responsive/patterns.html#navigation" target="_blank")
+      More responsive navigation patterns (Brad Frost)
