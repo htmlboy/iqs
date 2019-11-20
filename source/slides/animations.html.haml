@@ -1,0 +1,67 @@
+---
+title: Animations
+layout: layout-slides
+---
+
+%section
+  %h1 Animations
+%section
+  %pre
+    %code
+      :preserve
+        @keyframes myAnimation{
+          from{
+            width: 10px;
+          }
+          to{
+            width: 100px;
+          }
+        }
+  %p.note
+    Animations are declared as <code>@keyframes</code> (with a name). This is where
+    the states of the animation are defined. In its simplest form, we can set a
+    start (<code>from</code>) and an end (<code>to</code>).
+%section
+  %pre
+    %code
+      :preserve
+        @keyframes myAnimation{
+          0%{
+            width: 10px;
+          }
+          50%{
+            width: 80px;
+          }
+          100%{
+            width: 100px;
+          }
+        }
+  %p.note
+    For animations with more than two steps, we can use percentages to
+    define each <i>keyframe</i>.
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="qBWjyLY" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The animation keyframes are assigned to an elment with the <code>animation</code>
+    property. We can also set the duration of the animation (in <code>s</code>
+    or <code>ms</code>), and the number of repetitions (it can be <code>infinite</code>).
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBZzYP" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    We can also use the <code>alternate</code> keyword if we want the animation to reverse once it has completed a repetition.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="bGbRxEE" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    With <code>animation-fill-mode: forwards</code> an element will remain in
+    its last keyframe once the animation has ended.
+  %p.note
+    With <code>animation-play-state: paused</code> an animation can be paused
+    at a specific time (i.e. on :hover).
+
+%section
+  %h2 More information
+  %p.note
+  %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank")
+    <code>animation</code> at MDN

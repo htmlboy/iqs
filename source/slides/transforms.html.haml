@@ -1,0 +1,65 @@
+---
+title: Transforms
+layout: layout-slides
+---
+
+%section
+  %h1 Transforms
+%section
+  %pre
+    %code
+      :preserve
+        .element{
+          transform: scale(.5);
+        }
+  %p.note
+    Transforms modify the appearance of an element (scale, rotate, transalate,
+    skew…) without affecting the surrounding elements. They are quite useful for
+    adding interaction and effects.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="XWrgYKw" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    The <code>scale()</code> transform will change the size of the element
+    proportionally to the number between parentheses. If we only want to modify
+    the width or height, we can use <code>scaleX()</code> or <code>scaleY()</code>.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="PoYjaOO" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    With <code>rotate()</code> we can make an element rotate a number of degrees
+    (with the <code>deg</code> unit).
+
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="gOYRKvX" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    With <code>translate()</code> we can indicate the displacement in the X axis
+    and in the Y axis of an element, using two values separated by a comma. If
+    we only want to move on a single axis, we can use <code>translateX()</code> or
+    <code> translateY()</code>.
+
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="zYOzaMG" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    With <code>skewX()</code> and <code>skewY()</code> we can deform an element
+    on the X or Y axis a number of degrees (<code>deg</code>).
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="wvweXZY" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    We can assign several transformations, separated by spaces. In addition, we can control the origin from which the transformations are performed with the <code>transform-origin</code> property.
+
+%section
+  %h2 More information
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank")
+      <code>transform</code> at MDN
+  %p.note
+    Transforms can also be 3D, with the help of the <code>perspective</code> property.
+    They allow adding a third axis to the transformations and thus achieve new effects.
+    %br
+    More information: <a href="http://3dtransforms.desandro.com/" target="_blank">3dtransforms.desandro.com</a>

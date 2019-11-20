@@ -1,0 +1,40 @@
+---
+title: Transitions
+layout: layout-slides
+---
+
+%section
+  %h1 Transitions
+%section
+  %pre
+    %code
+      :preserve
+        .example{
+          transition: background-color 1s linear;
+        }
+  %p.note
+    The <code>transition</code> property allows a transition in a state change
+    (:hover, a class change…). To achieve this, the <code>transition</code> property
+    is added to the target element, with the following values separated by spaces:
+    the property to be transitioned, duration and speed.
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="vYBZayj" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    In addition to the duration, we can add a new temporary value (in
+    <code>s</code> or <code>ms</code>), which will add a delay at the beginning
+    of the transition.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="NWKgByK" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    We can use the default speed curves (<code>linear</code>, <code>ease</code>,
+    <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>) or
+    define our own curve with <br><code>cubic-bezier()</code>.
+
+%section
+  %h2 More information
+  %p.note
+  %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank")
+    <code>transition</code> at MDN
+  %p
+    Cubic bezier online editor: <a href="http://cubic-bezier.com" target="_blank">cubic-bezier.com</a>
