@@ -1,0 +1,89 @@
+---
+title: JavaScript elements
+layout: layout-slides
+---
+
+%section
+  %h1 JavaScript elements
+
+%section
+  %h2 Data
+  %p
+    Data is the information that use the scripts to work. The usual types are numerals (a numeric value), literals (a textual value, usually in quotation marks) and booleans (with a true or false value).
+
+%section
+  %h2 Variables
+  %p
+    Variables are keywords which value can change. They can reference data thay may be unknown at a given moment, but will be interpreted and manipulated by our scripts.
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="ExxJQxo" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
+
+%section
+  %h2 Functions
+  %p
+    Functions group several lines of code that can be executed at our will. They are declared with the word <code>function</code> followed by the function name and a pair of brackets, and the related group of code in curly brackets.
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="NWWmyGx" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
+%section
+  %h2 Conditionals
+  %p
+    Conditionals execute a group of code only when certain conditions are met (for example, when a variable equals a specific value).
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="dyyLdpw" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
+%section
+  %h2 Accessing the DOM
+  %p
+    The DOM is the Document Object Model (how JavaScript interprets a website). Methods from this object, like <code>document.querySelector()</code>, are used to access and manipulate the HTML.
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="vYYMdgw" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
+%section
+  %h2 Loops
+  %p
+    Loops repeat the execution of a group of code a specific number of times (for example, for each element of a given type, or when a specific condition is met).
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="dyyLdWr" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
+%section
+  %h2 Arrays
+  %p
+    Arrays are a list of values assigned to a variable.
+  %pre
+    %code
+      :preserve
+        var fruits = ['lemon', 'orange', 'strawberry', 'kiwi'];
+        console.log(fruits[0]);
+
+%section
+  %h2 Objects
+  %p
+    Objects are data models with properties (relation between a key and its value) and methods (internal functions). Almost everything in JavaScript are objects, like the window objects, the console object and even variables and functions and, as such, these objects have methods and properties that can be accessed.
+
+%section
+  %h3 Objects
+  %pre
+    %code
+      :preserve
+        var myCat = {
+          name: 'Quinto',
+          legs: 4,
+          wellbehaved: false,
+          meow: function() {
+            console.log('🐈 meeeeoooow');
+          }
+        };
+
+        myCat.meow();
+
+%section
+  %h2 Events and listeners
+  %p
+    Events are things that happen on a website, originated either by a user action (clicking, scrolling, pressing a key…) or by the browser itself (starting or finishing to load a page, exiting a page…).
+  %p
+    Listeners are methods that link a specific function with a specific event; for instance, when the action of clicking a button occurs, a function that shows some content is executed.
+
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="BaaEYVz" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")

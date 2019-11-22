@@ -1,86 +1,148 @@
 ---
-title: Introducción a JavaScript
+title: Introduction to JavaScript
 layout: layout-slides
 ---
 
 %section
-  %h1 Introducción a JavaScript
-%section
-  %h2 JavaScript es un lenguaje de programación
-  %p
-    Programamos comportamientos: ˝cuando se hace click aquí, ocurre algo˝.
-%section
-  %h2 Objetivos
-  %ul
-    %li acceder al contenido de una web
-    %li modificar el contenido de una web
-    %li programar reglas
-    %li reaccionar a eventos
-%section
-  %h2 Ejemplo
-  %p
-    ˝Si yo hago click…˝
-  %p
-    ˝en un elemento que tenga la clase 'elemento'…˝
-  %p
-    ˝…quita o ponle la clase 'activo' ˝
-%section
-  .codepen(data-height="500" data-theme-id="0" data-slug-hash="JLRqbJ" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+  %h1 Introduction to JavaScript
 
 %section
+  %h2 JavaScript is a<br>programming language
   %p
-    Para usar JavaScript, necesitamos vincular un archivo con la extensión .js al final de nuestro HTML.
+    It's used to program behaviour: ˝when the user clicks here, something happens˝.
+%section
+  %h2 Goals
+  %ul
+    %li Access the content of a web page
+    %li Modify the content of a web page
+    %li Program rules
+    %li React to events
+%section
+  %h2 Example
+  %p
+    ˝If I click…˝
+  %p
+    ˝on an element with the 'example' class…˝
+  %p
+    ˝…add or remove the 'active' class.˝
+
+%section
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="JLRqbJ" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
+%section
+  %h2 Usage: basics
+
+%section
+  %h3 The script tag
+  %p A JavaScript file can be added to a website using the script tag before the body's closing tag:
   %pre
     %code
       :preserve
-          &lt;script src="comportamiento.js"&gt;&lt;/script&gt;
+          &lt;script src="path/to/file.js"&gt;&lt;/script&gt;
         &lt;/body&gt;
+
 %section
+  %h3 Script order
   %p
-    En JavaScript (y en programación) podemos encontrar:
-  %ul
-    %li Valores: literales, numéricos, booleanos
-    %li Variables
-    %li Funciones
-    %li Loops
-    %li Eventos
+    JS files are executed in order of appearance, therefore you should load
+    external libraries (i.e. <a href="https://jquery.com" target="_blank">jQuery</a>)
+    before loading dependent files.
+
 %section
-  %p Las variables son "comodines" o identificadores que pueden tener un valor u otro. Nos sirven para manipular datos que no conocemos.
+  %h3 The console
+  %p
+    The console can be found under the console tab in the browser's inspector.
+    It allows us to debug our code. It can be used with the <code>console.log()</code>
+    method to print messages and values.
+
 %section
-  .codepen(data-height="500" data-theme-id="0" data-slug-hash="MVbeMX" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="YzzMYNe" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+
 %section
-  %p Las funciones nos permiten crear código reutilizable, que solo se activará cuando lo llamemos.
+  %h2 Usage: syntax
+
 %section
-  .codepen(data-height="500" data-theme-id="0" data-slug-hash="YapGzy" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+  %h3 Writing
+  %p
+    JavaScript is case sensitive; consistency is key when writing variables,
+    functions, etc. Dashes are not tipically used to name variables or properties
+    (since - is also the substraction symbol). Instead of using dashes, compound
+    words are usually written in camel case (each word in the middle of the
+    phrase begins with a capital letter). Example: <code>variableName</code>.
+
 %section
-  %p Las loops nos permiten crear tareas de forma repetitiva o cíclica.
+  %h3 Quotation marks
+  %p
+    Javascript uses quotation marks to enclose values that shouldn't be directly
+    interpreted (usually text values). Double ("") or single ('') quotation marks
+    can be equally used, but they should be used alternately if they are nested.
+    Example:
+  %pre
+    %code
+      :preserve
+        "this is a 'quoted text'"
+
 %section
-  %p Los eventos nos permiten asociar funciones a sucesos concretos (hacer click, cargar la página, etc).
+  %h3 Parenthesis
+  %p
+    JavaScript functions typically have one or more arguments (interpreted values)
+    between parenthesis. The name of the function is written next to the parenthesis,
+    without an space between them. Multiple arguments are separated by commas.
+    Example:
+  %pre
+    %code
+      :preserve
+        console.log("Hola");
+
+%section
+  %h3 Dots
+  %p
+    Dots indicate belonging, usually to an object. For example, <code>console.log()</code>
+    calls the <code>log()</code> function, which belongs to the <code>console</code> object.
+
+%section
+  %h3 Semicolons & curly brackets
+  %p
+    Similarly to CSS, instructions typically end with a <code>;</code> indicating
+    that the next thing is a different instruction. Again similarly to CSS,
+    several instructions can be grouped inside curly brackets <code>{}</code>
+    and use them to link them to other elements, ie functions.
+
+%section
+  %h3 Comments in JS
+  %p
+    Block comments are written with <code>/* */</code>, for example:
+
+  %pre
+    %code
+      :preserve
+        /* text inside a comment */
+  %p
+    Inline comments are written with <code>//</code> at the start of the line,
+    for example:
+  %pre
+    %code
+      :preserve
+        // Commented line
+
 %section
   %img.clean(src="js-intro-content/logo-jquery.png" alt="jQuery")
   %p
-    jQuery es un conjunto de funciones prefabricadas para que nos sea más fácil escribir y aprender JavaScript.
+    jQuery is a JavaScript library with a lot of pre-made helper functions to
+    speed up the writing process.
   %p
-    Es como aprender a andar en bicicleta con ruedecitas.
+    It's quite common between <i>plugins</i> like galleries and modal boxes.
 %section
   %p
-    Para usar jQuery, tenemos que descargarlo de <a href="http://jquery.com" target="_blank">jQuery.com</a> y cargarlo antes que nuestro archivo de JS.
+    If we use jQuery, we should download it from
+    <a href="http://jquery.com" target="_blank">jQuery.com</a> and reference it
+    before our own JS file.
   %pre
     %code
       :preserve
           &lt;script src="jquery.js"&gt;&lt;/script&gt;
-          &lt;script src="comportamiento.js"&gt;&lt;/script&gt;
+          &lt;script src="myscripts.js"&gt;&lt;/script&gt;
         &lt;/body&gt;
 %section
-  .codepen(data-height="500" data-theme-id="0" data-slug-hash="pLNbLW" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
-%section
-  %h2 Ejemplos de interacción
-%section
-  %p Despliega un menú
-  .codepen(data-height="500" data-theme-id="0" data-slug-hash="WzoGGz" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
-%section
-  %p Sistema de pestañas
-  .codepen(data-height="500" data-theme-id="0" data-slug-hash="XENjaL" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
-%section
-  %p Sistema de acordeón
-  .codepen(data-height="500" data-theme-id="0" data-slug-hash="NYbRwM" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
+  %p Example of a jQuery-based script
+  .codepen(data-height="500" data-editable="true" data-theme-id="0" data-slug-hash="WzoGGz" data-default-tab="js,result" data-user="htmlboy" data-embed-version="2")
