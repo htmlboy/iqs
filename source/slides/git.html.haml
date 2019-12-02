@@ -9,7 +9,7 @@ layout: layout-slides
   %p.note
     Developers usually work with centralised code repositories and version
     control software. These code repositories allow developers to work together
-    in the same project and create parallel code versions.
+    in the same project and create parallel code&nbsp;versions.
   %p.note
     The most popular version control software is
     <a href="https://git-scm.com/" target="_blank">Git</a>.
@@ -25,7 +25,7 @@ layout: layout-slides
 %section
   %p.note
     In Git, changes have different states: they might be in the <code>master</code>
-    branch or on a new branch; and they might be just in developer's computer, or
+    branch or on a new branch; and they might be just in developer's own computer, or
     also uploaded to the version control server.
 
 %section
@@ -36,23 +36,35 @@ layout: layout-slides
     Git interaction and GitHub syncing usually relly on the Terminal or Command
     Prompt apps; but the easiest way to start working with these tools is with a
     Graphical User Interface app like
-    <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>.
+    <a href="https://desktop.github.com/" target="_blank">GitHub&nbsp;Desktop</a>.
 
 %section
   %h3 Steps for a new repository
   %ol.note
-    %li Enter your GitHub account and click on ˝New˝.
-    %li Add a name (no spaces or special characters).
-    %li Set it as Public (if you want other users to check it out) or Private.
-    %li Click on ˝Create repository˝.
-    %li Access the new repository, click on ˝Clone or download˝ and select ˝Open in Desktop˝.
-    %li Select the Local Path where the repository will be stored in your computer.
+    %li.fragment Enter your GitHub account and click on ˝New˝.
+    %li.fragment Add a name (no spaces or special characters).
+    %li.fragment Set it as Public (if you want other users to check it out) or Private.
+    %li.fragment Click on ˝Create repository˝.
+    %li.fragment Access the new repository, click on ˝Clone or download˝ and select ˝Open in Desktop˝.
+    %li.fragment Select the Local Path where the repository will be stored in your&nbsp;computer.
 
 %section
   %h3 Steps for adding changes (master branch)
   %ol.note
-    %li Open your local version of the repository in the code editor.
-    %li Create changes and save them.
-    %li In GitHub Desktop, create a Commit (changes package) with a Summary of the changes.
-    %li Click on ˝Commit to master˝
-    %li Click on ˝Push origin˝ when you want to upload these changes to the server.
+    %li.fragment Open your local version of the repository in the code editor.
+    %li.fragment Create changes and save them.
+    %li.fragment In GitHub Desktop, create a Commit (changes package) with a Summary of the changes.
+    %li.fragment Click on ˝Commit to master˝
+    %li.fragment Click on ˝Push origin˝ when you want to upload these changes to the server.
+    %li.fragment And in case you're not sure you have the latest version of the code, you can download it by clicking on ˝Fetch origin˝.
+
+%section
+  %p.note
+    In order to publish a website, you can hire some space in a hosting service,
+    upload your website files with an FTP program (a popular and free one is
+    <a href="https://filezilla-project.org/" target="_blank">FileZilla</a>) and
+    link your domain to that hosting service.
+  %p.note.fragment
+    But another service you could use is
+    <a href="https://www.netlify.com/" target="_blank">Netlify</a>, that can upload
+    the content directly from your GitHub account and the most basic service is free.
