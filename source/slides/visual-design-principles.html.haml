@@ -5,59 +5,280 @@ layout: layout-slides
 
 %section
   %h1 Visual design
+  %h2 Principles & recipes
+
+%section
   %h2 Principles
 
 %section
-  %h2 Usability principles
-  -# Affordability, discoverability, etc
+  %h3 Unity / Harmony
+  %img(src="visual-design-principles-content/1-unity.png")
 
 %section
-  %h2 Color
--# - Composición del color
--# - Matiz, saturación, brillo
--# - Círculos cromáticos
--# - Combinaciones de colores
--# - Recomendaciones de accesibilidad
--# 	- Contraste (ver en escala de grises)
--#   - Información no solo en el color
--#   - Paletas de colores
--#     - Recursos
--#     - Colores para una interfaz
--#       · Aprox 9 shades de gris
--#       · Revisar tips de refactoring UI
+  %h3 Balance
+  %img(src="visual-design-principles-content/2-balance.png")
+
+%section
+  %h3 Hierarchy
+  %img(src="visual-design-principles-content/3-hierarchy.png")
+
+%section
+  %h3 Scale / Proportion
+  %img(src="visual-design-principles-content/4-scale.png")
+
+%section
+  %h3 Dominance / Emphasis
+  %img(src="visual-design-principles-content/5-emphasis.png")
+
+%section
+  %h3 Similarity / Contrast
+  %img(src="visual-design-principles-content/6-contrast.png")
+
+
+%section
+  %h2 Exploration
+  %p.note Finding visual inspiration in other websites is a great way to start a new design.
+  %p.note
+    Galleries like <a href="https://dribbble.com/" target="_blank">Dribble</a> or
+    <a href="https://www.awwwards.com/" target="_blank">Awwwards</a> are an excellent
+    source of patterns are ideas. You can also search for other websites with similar
+    products/services and see how are they presenting&nbsp;themselves.
+%section
+  %p.note
+    Please note: You should never blindly copy another website. It's really unproffessional
+    and ethically wrong. Besides, it will not fulfill your brief, but someone else's.
+  %p.note
+    Instead, look for specific problems and how these websites solved them. Ask yourself
+    what's making that design so good and how a similar solution could fit in your
+    interface and design system.
 
 %section
   %h2 Typography
-  -# - 95% de la información en la web es lenguaje escrito
-  -#   - Optimizar la tipografía es optimizar la legibilidad, la accesibilad, la usabilidad, el equilibrio gráfico general
-  -# - Básicos: contraste, tamaño, line height, length, hierarchy
-  -# - Escala tipográfica
-  -# - tracking y kerning?
-  -# - Tipografías
-  -#   - Personalidad de la tipografía
-  -#   - Clasificación de las familias
-  -# - Elegir webfonts
-  -#   - Tener en cuenta los caracteres
-  -#   - Trabajar con dos tipografías, varios pesos
-  -#   - Buscar el contraste
-  -#     - Grosor, remate, ejes
-  -#   - Misma altura de la x
-  -#   - Ejemplo de conflicto
-  -# - Páginas de combinaciones tipográficas y otros recursos
+  %img(src="visual-design-principles-content/fonts.png")
+  %p.note Typographies have several families and styles. 2 big groups are serif and sans-serif fonts, but there are more.
 
+%section
+  %h3 Fonts have meaning
+  %img(src="visual-design-principles-content/font_types.svg" width="300")
+  %p.note
+    Serif might be seen as more academic, sans-serifs are more casual but have less personality, rounded sans-serifs are more playful.
+
+%section
+  %h3 Font pairing
+  %p.note
+    By using font pairings (using just 2 fonts is a safe bet) you can give some
+    rhythm to your interface and use contrast to guide the user (usually by
+    using headlines in one font and body copy in another font). Don't use 2
+    fonts that are very similar.
+
+%section
+  %h3 Font pairing
+  %p.note
+    An easy way to find contrast between fonts is serif vs. sans-serif. There are
+    several font properties where we could find contrast, i.e., regular vs. condensed.
+
+%section
+  %p.note This is a quick way to pick up a font pairing for your interface:
+  %ul.note
+    %li.fragment
+      Filter Google Fonts by serif and sans-serif and set Font properties to "6+ number of styles". Order by "Most Popular".
+    %li.fragment
+      Select the preview options to "Paragraph" and "14px" or "16px".
+    %li.fragment
+      Click the one that seems to work better for body copy.
+    %li.fragment
+      Check out the "Popular pairings" section. Preview the suggestions and choose the second font (usually the headlines font).
+
+
+%section
+  %h3 Typographic scale
+  %p.note
+    Starting a new design with a typographic scale will give the interface a
+    consistent hierarchy.
+  %p.note
+    Restricting sizes to this scale will make the interface more consistent and easy to use.
+
+%section
+  %img(src="visual-design-principles-content/typographic-scale.png")
+  %p.note
+    A good model for typographic scale with 16px as the body text size.
+
+%section
+  %h3 Other typographic considerations
+  %ul.note
+    %li.fragment
+      Keep your line length between 45 and 75 characters to keep a good reading experience.
+    %li.fragment
+      Line height is proportional to font size, but it should be adjusted, specially
+      for big sizes that might need smaller line heights. Start with <code>1.5</code> and adjust up or down until it feels right.
+
+%section
+  %h2 Color
+  %p.note By using a limited color palette, interfaces keep a consistent and harmonic look.
+  %p.note Color is also a strong hierarchy ally, so palettes usually have accent colors for this purpose.
+
+%section
+  %img(src="visual-design-principles-content/interface-colors.png")
+  %p.note
+    An interface requires an unexpected amount of colors.
+
+%section
+  %p.note
+    These colors can be grouped in 3 categories:
+  %ul.note
+    %li.fragment
+      <strong>Greys</strong>: Text, backgrounds, panels, form controls — almost everything in an interface is grey. 8 to 10 shades.
+    %li.fragment
+      <strong>Primary color(s)</strong>: Most sites need one, maybe two colors
+      that are used for primary actions, active navigation elements, etc. These
+      are the colors that determine the overall look of a site. 5 to 10 lighter
+      and darker shades.
+    %li.fragment
+      <strong>Accent colors</strong>: an eye-grabbing color like yellow, pink,
+      or teal to highlight a new feature; colors to emphasize different semantic
+      states, like red for confirming a destructive action, yellow for a warning
+      message or green to highlight a positive trend. All with 5 to 10 shades.
+
+
+%section
+  %img(src="visual-design-principles-content/colorhues.png")
+  %p.note Color hues are organized in a color wheel.
+
+%section
+  %img(src="visual-design-principles-content/colorwheel.png")
+  %p.note Color pairings are made with distribution rules over this color wheel.
+
+%section
+  %p.note
+    You can find several already-made palettes of primary colors in galleries like
+    <a href="https://www.colourlovers.com/palettes" target="_blank">Colour Lovers</a>,
+    or create your own with tools like
+    <a href="https://color.adobe.com" target="_blank">Adobe&nbsp;Color</a>.
+
+  %p.note
+    <a href="https://javier.xyz/cohesive-colors/">Cohesive colors</a> is also
+    a great tool to get a more harmonic color&nbsp;palette.
+%section
+  %img(src="visual-design-principles-content/colorpicker.png")
+  %p.note Color is composed by hue, saturation and lightness.
+
+%section
+  %img(src="visual-design-principles-content/swatches.png")
+  %p.note
+    Variations of the primary colors of the palette can be made by
+    progressively adjusting lightness and saturation.
+%section
+  %p.note
+    You can create variations of these colors with tools like
+    <a href="https://www.0to255.com/" target="_blank">0 to 255</a> or
+    <a href="https://www.colorbox.io/" target="_blank">ColorBox</a>.
+
+%section
+  %img(src="visual-design-principles-content/greys.png")
+  %p.note
+    Grey variations might have a cool or warm saturation to match your interface needs.
 
 %section
   %h2 Illustration
+  %p.note
+    Photos and icons play a key role in how the user percieves the interface and scans it.
+%section
+  %img(src="visual-design-principles-content/bad-photo.png")
+  %p.note
+    Bad photography ruins design.
+
+%section
+  %p.note
+    Sites like <a href="https://unsplash.com/" target="_blank">Unsplash</a> provide
+    beautiful free stock photos.
+
+%section
+  %p.note
+    But don't abuse stock photos, they can have a fake-impression side&nbsp;effect.
+
+%section
+  %img(src="visual-design-principles-content/stock1.jpg")
+  %p.note
+    This man knows what he's doing.
+%section
+  %img(src="visual-design-principles-content/stock2.jpg")
+  %p.note
+    This man has never worked in construction.
+
+%section
+  %img(src="visual-design-principles-content/stock3.jpg")
+  %p.note
+    I just closed your website. And burnt my computer, just in case.
+
+%section
+  %img(src="visual-design-principles-content/icons.png")
+  %p.note
+    Icons have an intended size, and icons designed for small scale have fewer
+    details. Don't overscale them.
+
+%section
+  %img(src="visual-design-principles-content/photo-contrast.jpg")
+  %p.note
+    Use color or dark layers to get more contrast between text and&nbsp;images.
 
 %section
   %h2 Composition
+  %p.note Hierarchy and alignment are going to lead user's eye.
+  %p.note
+    Don't make every interface element compete for user's attention.
+    Emphasize elements in order of importance.
+
 
 %section
-  %h2 Grids
+  %img(src="visual-design-principles-content/read-order.jpg")
+  %p.note Hierarchy and alignment are going to lead user's eye.
 
+%section
+  %img(src="visual-design-principles-content/grid.png")
+  %p.note Grids are great for keeping elements aligned and column widths consistent and limited.
+
+%section
+  %img(src="visual-design-principles-content/grid-12.png")
+  %p.note The 12-column grid is quite popular because it can be easily divided by 2, 3 or 4 (and by 12).
+
+%section
+  %p.note
+    If you want to try a 12-column grid system, you can try
+    <a href="http://flexboxgrid.com/">Flexbox Grid</a>.
+  %p.note
+    However, you don't need it to keep a consistent alignment if you keep a limited
+    number of widths/sizes in your columns.
+
+%section
+  %img(src="visual-design-principles-content/hierarchy.png")
+  %p.note Font sizes are not the only way to create a hierarchy. Color and font weight are great for this too.
+
+%section
+  %img(src="visual-design-principles-content/boxes.png")
+  %p.note
+    Boxes are great for grouping content, but don't overuse them or you
+    will lose hierarchy.
+
+%section
+  %img(src="visual-design-principles-content/borders.png")
+  %p.note
+    Use fewer borders. They're great for distinguising elements, but can make
+    your design look cluttered.
+
+%section
+  %h2 General design tips
+  %ul.note
+    %li.fragment Start designing a feature, not a layout
+    %li.fragment Start in grey scale, add color afterwards
+    %li.fragment Don’t design too much (keep it simple)
+    %li.fragment Give your design more air (white space)
+    %li.fragment
+      Limit your choices: create a system with typographic scales,
+      color palettes, margins, paddings, widths, shadows…
 
 %section
   %h2 Tools & resources
   %ul.note
-    %li Figma
-    %li Sketch
+    %li <a href="https://www.figma.com/" target="_blank">Figma design online app</a>
+    %li <a href="https://www.sketch.com/" target="_blank">Sketch design app</a>
+    %li <a href="https://cantunsee.space/" target="_blank">Can't Unsee game</a>  (train your designer eye!)
